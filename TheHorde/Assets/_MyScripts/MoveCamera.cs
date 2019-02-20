@@ -26,12 +26,21 @@ public class MoveCamera : MonoBehaviour
     private bool isRotating;    // Is the camera being rotated?
     private bool isZooming;     // Is the camera zooming?
 
+    private float lastFrameTime;
+
+    private void Start()
+    {
+        lastFrameTime = Time.realtimeSinceStartup;
+    }
     //
     // UPDATE
     //
 
     void Update()
     {
+        var myDeltaTime = Time.realtimeSinceStartup - lastFrameTime;
+        lastFrameTime = Time.realtimeSinceStartup;
+
         // Get the left mouse button
         if (Input.GetMouseButtonDown(1))
         {
@@ -83,7 +92,7 @@ public class MoveCamera : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             Vector3 pos = transform.position;
-            Vector3 vector = Quaternion.Euler(0, -90, 0) * transform.right * panSpeed * Time.deltaTime;
+            Vector3 vector = Quaternion.Euler(0, -90, 0) * transform.right * panSpeed * myDeltaTime;
             transform.Translate(vector, Space.World);
         }
         if (Input.GetKey(KeyCode.S))
@@ -91,20 +100,20 @@ public class MoveCamera : MonoBehaviour
             Vector3 pos = transform.position;
             if (pos.z > maxBack)
             {
-                Vector3 vector = Quaternion.Euler(0, -90, 0) * transform.right * panSpeed * Time.deltaTime;
+                Vector3 vector = Quaternion.Euler(0, -90, 0) * transform.right * panSpeed * myDeltaTime;
                 transform.Translate(-vector, Space.World);
             }
         }
         if (Input.GetKey(KeyCode.A))
         {
             Vector3 pos = transform.position;
-            Vector3 vector = transform.right * panSpeed * Time.deltaTime;
+            Vector3 vector = transform.right * panSpeed * myDeltaTime;
             transform.Translate(-vector, Space.World);
         }
         if (Input.GetKey(KeyCode.D))
         {
             Vector3 pos = transform.position;
-            Vector3 vector = transform.right * panSpeed * Time.deltaTime;
+            Vector3 vector = transform.right * panSpeed * myDeltaTime;
             transform.Translate(vector, Space.World);
         }
 

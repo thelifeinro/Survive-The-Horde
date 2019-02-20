@@ -507,11 +507,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxMissionTimeSeconds: 120
   TimeReducedByOnePerson: 15
-  MaxPeople: 6
-  MinPeople: 2
+  MaxPeople: 7
+  MinPeople: 3
   HQMenu: {fileID: 2189262887515867458}
   NeededTimeText: {fileID: 4325935892535329031}
   RemainingPeopleText: {fileID: 5722554600606953395}
+  timebar: {fileID: 0}
+  EventDialoguePrefab: {fileID: 4183938963478276529, guid: e7fdcf658034a1e4f9d64275416c269d,
+    type: 3}
+  missionEvents:
+  - {fileID: 11400000, guid: 9bbeb52d4ef98c04b80558b938040001, type: 2}
+  - {fileID: 11400000, guid: ef18811b39d2cdb4f9e92eb5af78ea9b, type: 2}
+  - {fileID: 11400000, guid: 01e7ce795d716904d89eb80e03f5a7a8, type: 2}
+  - {fileID: 11400000, guid: f740b89a9bef0fb4e8e8596a6d56be91, type: 2}
+  - {fileID: 11400000, guid: 98aa0586ce32bce42bf4847708eeaa12, type: 2}
+  - {fileID: 11400000, guid: 5f3620b8f3643af4d8e15d03dcf57e09, type: 2}
 --- !u!1 &8977618783404235339
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,6 +829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1444482396790528, guid: e825c9846434d174d9dde45e6dde2a41, type: 3}
+      propertyPath: m_TagString
+      value: Canvas
+      objectReference: {fileID: 0}
     - target: {fileID: 71343710, guid: e825c9846434d174d9dde45e6dde2a41, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -936,6 +950,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4239560256519307213, guid: e825c9846434d174d9dde45e6dde2a41,
+        type: 3}
+      propertyPath: m_Name
+      value: PEOPLE
+      objectReference: {fileID: 0}
     - target: {fileID: 6195483464163057488, guid: e825c9846434d174d9dde45e6dde2a41,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1019,11 +1038,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4239560256519307213, guid: e825c9846434d174d9dde45e6dde2a41,
-        type: 3}
-      propertyPath: m_Name
-      value: PEOPLE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e825c9846434d174d9dde45e6dde2a41, type: 3}

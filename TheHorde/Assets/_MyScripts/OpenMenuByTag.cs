@@ -16,9 +16,12 @@ public class OpenMenuByTag : MonoBehaviour
         panel.SetActive(false);
     }
 
-    // Update is called once per frame
     void OnMouseDown()
     {
         panel.SetActive(true);
+
+        //freeze time; make sure to unfreeze it when exitting the menu!!!
+        Time.timeScale = 0;
     }
+
 }

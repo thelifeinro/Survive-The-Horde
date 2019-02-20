@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174c0f8915075a242a226794b30c7028, type: 3}
+  m_Name: ME_6
+  m_EditorClassIdentifier: 
+  EventQuestion: We found a cave and heard screams from inside. Maybe someone needs
+    help. Go in?
+  Outcomes:
+  - Text: A blonde woman is nursing an injured man back to health inside that cave.
+      They won't accept our help but gave us some scraps as a thank you.
+    peopleLost: 0
+    addedPeople: 0
+    addedScraps: 35
+  - Text: An old man is screaming in pain. He's been shot right through the cheek.
+      It's amazing he survived that!  Bringing him home!
+    peopleLost: 0
+    addedPeople: 1
+    addedScraps: 20

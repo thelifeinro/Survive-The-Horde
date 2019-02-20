@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174c0f8915075a242a226794b30c7028, type: 3}
+  m_Name: ME_3
+  m_EditorClassIdentifier: 
+  EventQuestion: Commander, we found a middle aged woman sleeping in a car. Should
+    we engage?
+  Outcomes:
+  - Text: This woman is crazy! She attacked us with a shotgun and killed two of us.
+      Had to put her down before she killed all of us.
+    peopleLost: 2
+    addedPeople: 0
+    addedScraps: 0
+  - Text: The woman also has a son. They seem to be good people. We are bringing them
+      to our community.
+    peopleLost: 0
+    addedPeople: 2
+    addedScraps: 30
+  - Text: This woman was not sleeping! She was one of the DEAD. She bit and killed
+      one of our men. Her car will make for some good scraps though.
+    peopleLost: 1
+    addedPeople: 0
+    addedScraps: 50

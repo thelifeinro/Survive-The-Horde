@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174c0f8915075a242a226794b30c7028, type: 3}
+  m_Name: ME_5
+  m_EditorClassIdentifier: 
+  EventQuestion: Commander, we found a supermarket. Maybe we'll find something worthwile.
+    The door says "DON'T DEAD OPEN INSIDE". Should we go in?
+  Outcomes:
+  - Text: Well there were tons of dead inside. We should've trusted the door sign.
+      Made a run for it and everyone is safe.
+    peopleLost: 0
+    addedPeople: 0
+    addedScraps: 0
+  - Text: The guy who opened the door got eaten instantly. The rest of us ran for
+      it.
+    peopleLost: 1
+    addedPeople: 0
+    addedScraps: 0
+  - Text: The guy who opened the door got eaten instantly. But we got rid of the dead
+      and managed to raid the supermarket.
+    peopleLost: 1
+    addedPeople: 0
+    addedScraps: 140

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174c0f8915075a242a226794b30c7028, type: 3}
+  m_Name: ME_4
+  m_EditorClassIdentifier: 
+  EventQuestion: Commander, a herd of the dead is coming for us in a junkyard full
+    of scraps. We could run for our lives and lose all the scraps. Should we try to
+    fight them and keep the scraps?
+  Outcomes:
+  - Text: Everyone fought very well and they're safe. Coming home with a crazy amount
+      of scraps!
+    peopleLost: 0
+    addedPeople: 0
+    addedScraps: 200
+  - Text: Tough luck! There were too many dead! Two of our people are gone. Salvaged
+      some of the scraps.
+    peopleLost: 2
+    addedPeople: 0
+    addedScraps: 75
