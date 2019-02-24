@@ -15,6 +15,9 @@ public class MissionEventDialog : DialogBox
 
     private void Start()
     {
+        //WTF HAPPENS IF U IN THE MIDDLE OF A SPECIAL ATTACK?
+
+        Time.timeScale = 0; //stopping time
         content.text = me.EventQuestion;
         ok.SetActive(false);
     }
@@ -25,7 +28,7 @@ public class MissionEventDialog : DialogBox
         yes.SetActive(false);
         no.SetActive(false);
         ok.SetActive(true);
-        content.text = mo.Text;
+        content.text = mo.Text+"\nLost People: "+mo.peopleLost+"\nNew People: "+ mo.addedPeople+"\nScraps Brought: "+mo.addedScraps;
         //Exit();
     }
 }

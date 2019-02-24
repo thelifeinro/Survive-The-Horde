@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCure: 1
   startMoney: 400
-  startPopulation: 70
+  startPopulation: 10
 --- !u!114 &8977618783301058254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,6 +512,7 @@ MonoBehaviour:
   HQMenu: {fileID: 2189262887515867458}
   NeededTimeText: {fileID: 4325935892535329031}
   RemainingPeopleText: {fileID: 5722554600606953395}
+  scrapsPerPerson: 0
   timebar: {fileID: 0}
   EventDialoguePrefab: {fileID: 4183938963478276529, guid: e7fdcf658034a1e4f9d64275416c269d,
     type: 3}

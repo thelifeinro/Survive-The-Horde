@@ -36,6 +36,11 @@ public class PlayerStats : MonoBehaviour {
         HealthyPopulation -= count;
     }
 
+    public void AddPeople(int count)
+    {
+        HealthyPopulation += count;
+    }
+
     public void Infect(int count)
     {
         HealthyPopulation -= count;

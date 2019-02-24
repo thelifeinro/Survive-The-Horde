@@ -15,10 +15,21 @@ public class Headquarter : MonoBehaviour
     public Text RemainingPeopleText;
     int remainingP = 0;
     int neededT = 0; //misssion time
+    //int scrapsToBeGained;
+    int selectedPeople;
+
+    int peopleOnMission;
+    float scrapsOnMission = 0.0f;
+
+    public int scrapsPerPerson;
     public Image timebar;
     public GameObject EventDialoguePrefab;
     public MissionEvent[] missionEvents;
-   
+
+    MissionEvent me;
+    MissionEvent.MissionOutcome mo;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,7 +59,8 @@ public class Headquarter : MonoBehaviour
     {
         remainingP = PlayerStats.HealthyPopulation - (int)menuSlider.value;
         neededT = MaxMissionTimeSeconds - TimeReducedByOnePerson * ((int)menuSlider.value - MinPeople);
-
+        selectedPeople = (int)menuSlider.value;
+        //scrapsToBeGained = scrapsPerPerson * selectedPeople;
     }
 
     
@@ -64,10 +76,39 @@ public class Headquarter : MonoBehaviour
     {
         //Check validity of input and show error message if incorrect
 
-        //otherwise, just start mission and reduce population accoringly
-        StartCoroutine(Mission());
-        Debug.Log("Started Mission");
-        Exit(); //TO DO!!! disabble option to open menu while mission under progress
+        //Check if enough available people
+        if (PlayerStats.HealthyPopulation - selectedPeople < 1)
+        {
+            Debug.Log("Not enough people");
+            //activate red text on ui element
+        }
+        else
+        {
+            //otherwise, just start mission and reduce population accoringly
+            //"Killing" leaving people
+            peopleOnMission = selectedPeople;
+            scrapsOnMission = 0.0f;
+            PlayerStats.instance.Kill(selectedPeople);
+
+            StartCoroutine(Mission());
+            Debug.Log("Started Mission");
+            Exit(); //TO DO!!! disabble option to open menu while mission under progress
+        }
+    }
+
+    public void EndMission()
+    {
+        //adding gains to PlayerStats
+        PlayerStats.instance.AddPeople(peopleOnMission);
+        PlayerStats.instance.AddMoney((int)scrapsOnMission);
+    }
+
+    public void EndEvent()
+    {
+        //adding event changes to mission stats
+        peopleOnMission -= mo.peopleLost;
+        peopleOnMission += mo.addedPeople;
+        scrapsOnMission = mo.addedScraps;
     }
 
 
@@ -77,9 +118,9 @@ public class Headquarter : MonoBehaviour
         float randomEventTime = Random.Range(0.0f, neededT);
 
         //get MissionEvent randomly
-        MissionEvent me = missionEvents[Random.Range(0, missionEvents.Length)];
+        me = missionEvents[Random.Range(0, missionEvents.Length)];
         //get MissionOutcome randomly
-        MissionEvent.MissionOutcome mo = me.Outcomes[Random.Range(0, me.Outcomes.Length)];
+        mo = me.Outcomes[Random.Range(0, me.Outcomes.Length)];
 
 
         Debug.Log("event time: "+ randomEventTime +"  neededTime:"+neededT);
@@ -89,6 +130,8 @@ public class Headquarter : MonoBehaviour
             normalizedTime += Time.deltaTime;
             yield return null;
         }
+
+        //Random Event HAPPENS HERE
         normalizedTime += Time.deltaTime;
         Debug.Log("reached event");
         //Instantiate dialogue box for event
@@ -96,15 +139,18 @@ public class Headquarter : MonoBehaviour
         MissionEventDialog dialogComponent = dialogbox.GetComponent<MissionEventDialog>();
         dialogComponent.me = me;
         dialogComponent.mo = mo;
-
         yield return null;
+        EndEvent();
 
+        // REST OF THE COUNTDOWN HAPPENS HERE
         while (normalizedTime <= neededT)
         {
             normalizedTime += Time.deltaTime;
             yield return null;
         }
+        // END OF MISSION IS HERE
         //at the end show the Mission Outcome
+        EndMission();
         Debug.Log("end mission");
         // Instantiate(fxPrefab, transform.position, Quaternion.identity);
         // Destroy(parent);
