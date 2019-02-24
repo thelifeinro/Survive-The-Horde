@@ -31,4 +31,10 @@ public class MissionEventDialog : DialogBox
         content.text = mo.Text+"\nLost People: "+mo.peopleLost+"\nNew People: "+ mo.addedPeople+"\nScraps Brought: "+mo.addedScraps;
         //Exit();
     }
+    public void OK()
+    {
+        //ending event
+        GameObject.FindGameObjectWithTag("GameMaster").GetComponent<Headquarter>().EndEvent();
+        Exit();
+    }
 }

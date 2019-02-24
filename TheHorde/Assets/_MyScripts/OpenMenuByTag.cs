@@ -13,15 +13,15 @@ public class OpenMenuByTag : MonoBehaviour
     {
         //!!! panel must be active in the editor to be found by its tag
         panel = GameObject.FindGameObjectWithTag(Tag);
-        panel.SetActive(false);
+        //panel.SetActive(false);
+        panel.GetComponent<CustomMenuController>().Hide();
     }
 
     void OnMouseDown()
     {
-        panel.SetActive(true);
-
-        //freeze time; make sure to unfreeze it when exitting the menu!!!
-        Time.timeScale = 0;
+        //panel.SetActive(true);
+        panel.GetComponent<CustomMenuController>().Show();
+        
     }
 
 }
