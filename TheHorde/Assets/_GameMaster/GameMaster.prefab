@@ -535,6 +535,8 @@ MonoBehaviour:
   scrapsText: {fileID: 1521021048715260586}
   peopleText: {fileID: 7438262791222805271}
   ErrorMessage: {fileID: 2836201340705142941}
+  FinishMessage: {fileID: 6725034322102264053, guid: 940ebd52dda21d0488377ab671090594,
+    type: 3}
   EventDialoguePrefab: {fileID: 4183938963478276529, guid: e7fdcf658034a1e4f9d64275416c269d,
     type: 3}
   missionEvents:
@@ -847,26 +849,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8977618783301058227}
     m_Modifications:
-    - target: {fileID: 8607753658336802265, guid: e825c9846434d174d9dde45e6dde2a41,
-        type: 3}
-      propertyPath: HQ
-      value: 
-      objectReference: {fileID: 2682939745151547703}
-    - target: {fileID: 8607753658336802265, guid: e825c9846434d174d9dde45e6dde2a41,
-        type: 3}
-      propertyPath: animation
-      value: 
-      objectReference: {fileID: 7259311199499193766}
-    - target: {fileID: 7993771057238577379, guid: e825c9846434d174d9dde45e6dde2a41,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 7993771057238577379, guid: e825c9846434d174d9dde45e6dde2a41,
-        type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 1444482396790528, guid: e825c9846434d174d9dde45e6dde2a41, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -997,6 +979,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: PEOPLE
       objectReference: {fileID: 0}
+    - target: {fileID: 8607753658336802265, guid: e825c9846434d174d9dde45e6dde2a41,
+        type: 3}
+      propertyPath: HQ
+      value: 
+      objectReference: {fileID: 2682939745151547703}
+    - target: {fileID: 8607753658336802265, guid: e825c9846434d174d9dde45e6dde2a41,
+        type: 3}
+      propertyPath: animation
+      value: 
+      objectReference: {fileID: 7259311199499193766}
     - target: {fileID: 6195483464163057488, guid: e825c9846434d174d9dde45e6dde2a41,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1021,6 +1013,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993771057238577379, guid: e825c9846434d174d9dde45e6dde2a41,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7993771057238577379, guid: e825c9846434d174d9dde45e6dde2a41,
+        type: 3}
+      propertyPath: m_FontData.m_Alignment
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 169992178, guid: e825c9846434d174d9dde45e6dde2a41, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1330,6 +1332,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8977618783301058227}
     m_Modifications:
+    - target: {fileID: 1870793177945896, guid: 84d2054a4e283f2488832607a1ddf7af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4804747094809098, guid: 84d2054a4e283f2488832607a1ddf7af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.1
@@ -1361,10 +1367,6 @@ PrefabInstance:
     - target: {fileID: 4804747094809098, guid: 84d2054a4e283f2488832607a1ddf7af, type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1870793177945896, guid: 84d2054a4e283f2488832607a1ddf7af, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114454090076553754, guid: 84d2054a4e283f2488832607a1ddf7af,
         type: 3}

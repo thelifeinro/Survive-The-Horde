@@ -1,0 +1,8 @@
+Procedure for creating new Enemy:
+
+Add model, capsule collider
+Copy NavMeshAgen values from existing
+Make Animator; add isAttacking boolean and attack - walk transitions
+Add HealthBar and link it to Enemy Component
+
+Give speed, weaknesses, and other custom attributes.

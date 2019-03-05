@@ -67,7 +67,7 @@ public class Archer : MonoBehaviour {
 
     void WaterPump()
     {
-        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime * 0.25f);
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime * 0.25f, BulletType.Water);
         targetEnemy.Slow(slowAmount);
 
         if (linerenderer.enabled == false)
@@ -93,10 +93,16 @@ public class Archer : MonoBehaviour {
 
     void Shoot()
     {
-        GameObject bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, Quaternion.Euler(0f, firePoint.rotation.y+90, 0f));
-        Bullet bullet = bulletGO.GetComponent<Bullet>();
-        if (bulletGO != null)
-            bullet.Seek(target);
+
+        GameObject bulletGO = null;
+        if (bulletPrefab != null)
+        {
+            bulletGO = (GameObject)Instantiate(bulletPrefab, firePoint.position, Quaternion.Euler(0f, firePoint.rotation.y + 90, 0f));
+            Bullet bullet = bulletGO.GetComponent<Bullet>();
+            if (bulletGO != null)
+                bullet.Seek(target);
+        }
+        
     }
 
     void UpdateTarget()

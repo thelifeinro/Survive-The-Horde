@@ -1,5 +1,32 @@
-TO DO LIST
+ACTIVITY LOG
 
 24/02/19
--> ui message of mission completion
+-> ui message of mission completion _ done 4.03
+-> pause mission ability _ done 4.03
+
+05/03/19
+-> add resistance factors to different attack types  _ done 5.03
+	Added Enemy Resistances: <1 -> more resistant; 0 = immune; >1 = weaker
+	
+-> create all enemy types
+(pre-existing: BasicZombie, Wolf)
+to be added:
+	- Giants(stronger in general) _ done 5.03
+	- Drones (immune to arrows) _ done 5.03
+	- Crawlers (undetectable by RocketLaunchers) _ done 5.03
+	- Military _ done 5.03
+	- Patients _ done 5.03
+
+-> create possibility for enemy to be undetectable by a specific archer type
+
+-> create the other 2 environments
+
+-> upgrade tree (no special building - just an ui button)
+
+-> book of enemies (- sort of catalog of all the enemy types, unlocked as you encounter them; tells you what weakness they have - accessibble as an ui button)
+
+DETAILS:
+
+-> ui animations for when player stats change values
+-> ui disappears during special attacks and is replaced with controls suggestions
 -> pause mission while special attack underway

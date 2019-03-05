@@ -32,6 +32,11 @@ public class Enemy : MonoBehaviour {
     private Victim victimComp;
     float elapsed = 0;
 
+    [Header("Enemy Resistances: <1 -> more resistant; 0 = immune; >1 = weak")]
+    public float arrowRes = 1;
+    public float rocketRes = 1;
+    public float waterRes = 1;
+
     void Start ()
     {
         Health = maxHealth;
@@ -157,9 +162,29 @@ public class Enemy : MonoBehaviour {
         }
     }
 
-    public void TakeDamage(float amount)
+    public void TakeDamage(float amount, BulletType type)
     {
         Debug.Log("taking damage  " + amount);
+            switch ((BulletType)type)
+            {
+
+                case BulletType.Arrow:
+                    amount *= arrowRes;
+                    break;
+
+                case BulletType.Rocket:
+                    amount *= rocketRes;
+                    break;
+
+                case BulletType.Water:
+                    amount *= waterRes;
+                    break;
+            }
+        TakeDamage(amount);
+    }
+
+    public void TakeDamage(float amount)
+    { 
         Health -= amount;
         if(Health <= 0)
         {
@@ -189,6 +214,7 @@ public class Enemy : MonoBehaviour {
     {
         var text = Instantiate(floatTextPrefab, transform.position, Quaternion.identity); 
         text.transform.GetChild(0).GetComponent<TextMesh>().text = "+" + Worth.ToString();
+        Destroy(text, 5);
     }
 
     void setDestination ()

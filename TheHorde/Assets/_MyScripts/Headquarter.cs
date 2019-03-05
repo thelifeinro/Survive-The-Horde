@@ -28,9 +28,11 @@ public class Headquarter : MonoBehaviour
     public Text scrapsText;
     public Text peopleText;
     public GameObject ErrorMessage;
-
+    public GameObject FinishMessage;
     public GameObject EventDialoguePrefab;
     public MissionEvent[] missionEvents;
+
+    public bool paused = false;
 
     MissionEvent me;
     MissionEvent.MissionOutcome mo;
@@ -125,6 +127,23 @@ public class Headquarter : MonoBehaviour
         peopleText.text = peopleOnMission.ToString();
     }
 
+    public void PauseMission()
+    {
+        if (IsInProgress())
+        {
+            paused = true;
+        }
+    }
+
+    public void ResumeMission()
+    {
+        if (IsInProgress())
+        {
+            paused = false;
+
+        }
+    }
+
     public void EndMission()
     {
         //adding gains to PlayerStats
@@ -132,6 +151,7 @@ public class Headquarter : MonoBehaviour
         PlayerStats.instance.AddMoney((int)scrapsSoFar);
         missionInfo.SetActive(false);
         inProgress = false;
+        Destroy(Instantiate(FinishMessage,GameObject.FindGameObjectWithTag("Canvas").transform), 5);
     }
 
     public void EndEvent()
@@ -157,30 +177,38 @@ public class Headquarter : MonoBehaviour
         Debug.Log("event time: "+ randomEventTime +"  neededTime:"+neededT);
         while (normalizedTime < randomEventTime)
         {
-            progressBar.fillAmount = normalizedTime / neededT;
-            UpdateMissionProgress();
-            normalizedTime += Time.deltaTime;
+            if (paused == false)
+            {
+                progressBar.fillAmount = normalizedTime / neededT;
+                UpdateMissionProgress();
+                normalizedTime += Time.deltaTime;
+            }
             yield return null;
         }
 
-        //Random Event HAPPENS HERE
-        normalizedTime += Time.deltaTime;
-        Debug.Log("reached event");
-        //Instantiate dialogue box for event
-        GameObject dialogbox = Instantiate(EventDialoguePrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
-        MissionEventDialog dialogComponent = dialogbox.GetComponent<MissionEventDialog>();
-        dialogComponent.me = me;
-        dialogComponent.mo = mo;
+        if (paused == false)
+        {
+            //Random Event HAPPENS HERE
+            normalizedTime += Time.deltaTime;
+            Debug.Log("reached event");
+            //Instantiate dialogue box for event
+            GameObject dialogbox = Instantiate(EventDialoguePrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
+            MissionEventDialog dialogComponent = dialogbox.GetComponent<MissionEventDialog>();
+            dialogComponent.me = me;
+            dialogComponent.mo = mo;
+        }
         
         yield return null;
         
         // REST OF THE COUNTDOWN HAPPENS HERE
         while (normalizedTime <= neededT)
         {
-            
-            normalizedTime += Time.deltaTime;
-            progressBar.fillAmount = normalizedTime / neededT;
-            UpdateMissionProgress();
+            if (paused == false)
+            {
+                normalizedTime += Time.deltaTime;
+                progressBar.fillAmount = normalizedTime / neededT;
+                UpdateMissionProgress();
+            }
             yield return null;
         }
         // END OF MISSION IS HERE

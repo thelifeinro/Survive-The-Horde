@@ -2,12 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum BulletType // your custom enumeration
+    {
+        Arrow,
+        Water,
+        Rocket
+    };
+
 public class Bullet : MonoBehaviour {
 
     private Transform Target;
     public float speed = 70f;
     public GameObject explosionPrefab;
     public int damage = 15;
+    public BulletType type;
 
     public void Seek(Transform _target)
     {
@@ -41,7 +49,7 @@ public class Bullet : MonoBehaviour {
     {
         Enemy enem = enemy.GetComponent<Enemy>();
         if(enem != null)
-            enem.TakeDamage(damage);
+            enem.TakeDamage(damage, type);
     }
 
     void HitTarget()

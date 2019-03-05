@@ -10189,6 +10189,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6195483464163057488}
     m_Modifications:
+    - target: {fileID: 8600265653214068937, guid: c04060413e389e1409c25c104e73d3db,
+        type: 3}
+      propertyPath: m_Name
+      value: WarningImgText
+      objectReference: {fileID: 0}
     - target: {fileID: 7182920660553554260, guid: c04060413e389e1409c25c104e73d3db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10294,11 +10299,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 8600265653214068937, guid: c04060413e389e1409c25c104e73d3db,
-        type: 3}
-      propertyPath: m_Name
-      value: WarningImgText
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c04060413e389e1409c25c104e73d3db, type: 3}
 --- !u!224 &5854848278293609544 stripped
@@ -10314,6 +10314,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6195483464163057488}
     m_Modifications:
+    - target: {fileID: 1350481808931174, guid: 5d8e5e0b46c1f6c4ea873c04612fa10e, type: 3}
+      propertyPath: m_Name
+      value: StartMissionBTN
+      objectReference: {fileID: 0}
     - target: {fileID: 224333901177235772, guid: 5d8e5e0b46c1f6c4ea873c04612fa10e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10418,10 +10422,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1350481808931174, guid: 5d8e5e0b46c1f6c4ea873c04612fa10e, type: 3}
-      propertyPath: m_Name
-      value: StartMissionBTN
       objectReference: {fileID: 0}
     - target: {fileID: 224676435581630674, guid: 5d8e5e0b46c1f6c4ea873c04612fa10e,
         type: 3}
@@ -10550,6 +10550,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4160472337918647800}
     m_Modifications:
+    - target: {fileID: 1709688170671532, guid: 55e5d0304f9539447aad6018c0aa6c48, type: 3}
+      propertyPath: m_Name
+      value: Circle With Image
+      objectReference: {fileID: 0}
     - target: {fileID: 224208737782345302, guid: 55e5d0304f9539447aad6018c0aa6c48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10675,10 +10679,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 15.72
       objectReference: {fileID: 0}
-    - target: {fileID: 1709688170671532, guid: 55e5d0304f9539447aad6018c0aa6c48, type: 3}
-      propertyPath: m_Name
-      value: Circle With Image
-      objectReference: {fileID: 0}
     - target: {fileID: 114420227808820090, guid: 55e5d0304f9539447aad6018c0aa6c48,
         type: 3}
       propertyPath: m_Color.r
@@ -10750,6 +10750,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6195483464163057488}
     m_Modifications:
+    - target: {fileID: 3623136217300692210, guid: 0242ea3026e7b2148bc73515dc3943a2,
+        type: 3}
+      propertyPath: m_Name
+      value: CountSlider
+      objectReference: {fileID: 0}
     - target: {fileID: 3557665012812060708, guid: 0242ea3026e7b2148bc73515dc3943a2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10854,11 +10859,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3623136217300692210, guid: 0242ea3026e7b2148bc73515dc3943a2,
-        type: 3}
-      propertyPath: m_Name
-      value: CountSlider
       objectReference: {fileID: 0}
     - target: {fileID: 3557103784507232386, guid: 0242ea3026e7b2148bc73515dc3943a2,
         type: 3}
