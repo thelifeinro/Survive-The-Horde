@@ -8,8 +8,8 @@ public class MoveOnGroundByMouse : MonoBehaviour {
     public Camera gameCamera;
 	// Use this for initialization
 	void Start () {
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {

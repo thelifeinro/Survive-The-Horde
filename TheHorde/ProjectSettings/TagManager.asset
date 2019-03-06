@@ -15,6 +15,7 @@ TagManager:
   - Upgrade
   - HQMenu
   - Canvas
+  - MainUI
   layers:
   - Default
   - TransparentFX

@@ -48,6 +48,9 @@ public class Sniper : SpecialAttack {
 
     public override void StartAttack()
     {
+        hq.PauseMission();
+        UIhiddener.HideUI();
+        GlobalVariables.objectsAreInteractible = false;
         Cursor.lockState = CursorLockMode.Locked;
         UI.GetComponent<UIManager>().Hide();
         running = true;
@@ -77,6 +80,7 @@ public class Sniper : SpecialAttack {
 
     void StopAttack()
     {
+        UIhiddener.ShowUI();
         running = false;
         SniperOverlay.SetActive(false);
         Cursor.lockState = CursorLockMode.None;
@@ -84,6 +88,8 @@ public class Sniper : SpecialAttack {
         MainCam.enabled = true;
         SniperPlayer.SetActive(false);
         UI.GetComponent<UIManager>().Show();
+        GlobalVariables.objectsAreInteractible = true;
+        hq.ResumeMission();
 
     }
 }

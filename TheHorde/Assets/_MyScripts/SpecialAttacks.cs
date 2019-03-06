@@ -36,7 +36,6 @@ public class SpecialAttacks : MonoBehaviour {
 
     public void MainAttack()
     {
-        Debug.Log("should launch main attack but nuj");
         if (PlayerStats.Money >= MainAtt.price)
         {
             PlayerStats.Money -= MainAtt.price;

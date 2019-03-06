@@ -46,6 +46,10 @@ public class Node : MonoBehaviour {
         {
             return;
         }
+        if(!GlobalVariables.objectsAreInteractible)
+        {
+            return;
+        }
         rend.material.color = hoverColor;
         if(turret!=null)
         {
@@ -77,6 +81,11 @@ public class Node : MonoBehaviour {
 
     private void OnMouseDown()
     {
+        if (!GlobalVariables.objectsAreInteractible)
+        {
+            return;
+        }
+
         if (EventSystem.current.IsPointerOverGameObject())
         {
             return;

@@ -24,7 +24,7 @@ public class BlockingObstacle : MonoBehaviour {
 	}
     private void OnMouseEnter()
     {
-        if (!enabled) return;
+        if (!enabled || !GlobalVariables.objectsAreInteractible ) return;
         hoverOutline.enabled = true;
     }
     private void OnMouseExit()
@@ -35,7 +35,7 @@ public class BlockingObstacle : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        if (!enabled) return;
+        if (!enabled || !GlobalVariables.objectsAreInteractible) return;
         Instantiate(particlePrefab, transform.position, Quaternion.identity);
         blockingObj.active = true;
         Destroy(nonblockingObj);

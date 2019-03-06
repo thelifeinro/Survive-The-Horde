@@ -8,9 +8,10 @@ public class Napalm : SpecialAttack {
     public GameObject AimEffect;
     public float HeightToDrop = 70;
     public bool activeAim = false;
+    public GameObject NapalmOverlay;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -27,15 +28,23 @@ public class Napalm : SpecialAttack {
 
     public override void StartAttack()
     {
+        hq.PauseMission();
+        NapalmOverlay.SetActive(true);
+        UIhiddener.HideUI();
+        GlobalVariables.objectsAreInteractible = false;
         activeAim = true;
         AimEffect.SetActive(true);
     } 
 
     public void StopAttack()
     {
+        NapalmOverlay.SetActive(false);
+        UIhiddener.ShowUI();
+        GlobalVariables.objectsAreInteractible = true;
         activeAim = false;
         AimEffect.SetActive(false);
-        
+        hq.ResumeMission();
+
     }
 
 }

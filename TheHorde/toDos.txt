@@ -1,9 +1,11 @@
 ACTIVITY LOG
 
+_______________________________________________________________________________	
 24/02/19
 -> ui message of mission completion _ done 4.03
 -> pause mission ability _ done 4.03
 
+_______________________________________________________________________________	
 05/03/19
 -> add resistance factors to different attack types  _ done 5.03
 	Added Enemy Resistances: <1 -> more resistant; 0 = immune; >1 = weaker
@@ -17,16 +19,36 @@ to be added:
 	- Military _ done 5.03
 	- Patients _ done 5.03
 
+_______________________________________________________________________________	
+06/03/19
+
+-> modularize GameMaster so it's just a matter of drag and drop and it will
+work in any scene _ done? 6.03
+
+-> disable clicking on map objects while in a special atatck _ done 6.03
+
+-> fix BladeAttack so wavepoints switch to active camera _ done 6.03
+
+-> ui disappears during special attacks and is replaced with controls suggestions _ done 6.03
+
+-> pause mission while special attack underway _ done 6.03
+_______________________________________________________________________________	
+
+
+-> Make AI that walks out of spawn point(house), can sit down and walk around randomly (way to replenish killed people)
+
+-> Decide what you do with the infected people
+
 -> create possibility for enemy to be undetectable by a specific archer type
 
 -> create the other 2 environments
 
 -> upgrade tree (no special building - just an ui button)
 
--> book of enemies (- sort of catalog of all the enemy types, unlocked as you encounter them; tells you what weakness they have - accessibble as an ui button)
+-> book of enemies (- sort of catalog of all the enemy types, unlocked as you
+encounter them; tells you what weakness they have - accessibble as an ui button)
 
 DETAILS:
 
 -> ui animations for when player stats change values
--> ui disappears during special attacks and is replaced with controls suggestions
--> pause mission while special attack underway
+

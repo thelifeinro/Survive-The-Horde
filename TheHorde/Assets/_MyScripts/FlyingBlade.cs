@@ -5,14 +5,23 @@ using UnityEngine.UI;
 
 public class FlyingBlade : SpecialAttack
 {
-    public Camera MainCam;
+    Camera MainCam;
     public Text eta;
     public GameObject BladeOverlay;
     public float duration;
     public GameObject bladePrefab;
     private GameObject instanceBlade;
+
+    public void Start()
+    {
+        MainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+    }
+
     public override void StartAttack()
     {
+        hq.PauseMission();
+        UIhiddener.HideUI();
+        GlobalVariables.objectsAreInteractible = false;
         BladeOverlay.SetActive(true);
         instanceBlade = Instantiate(bladePrefab, bladePrefab.transform.position, Quaternion.identity);
         StartCoroutine(Countdown());
@@ -36,7 +45,8 @@ public class FlyingBlade : SpecialAttack
 
     public void StopAttack()
     {
-        
+        UIhiddener.ShowUI();
+
         BladeOverlay.SetActive(false);
         Destroy(instanceBlade);
 
@@ -45,8 +55,10 @@ public class FlyingBlade : SpecialAttack
 
         MainCam.enabled = true;
         StopCoroutine(Countdown());
+        GlobalVariables.objectsAreInteractible = true;
+        hq.ResumeMission();
 
-}
+    }
     // Update is called once per frame
     void Update () {
 		

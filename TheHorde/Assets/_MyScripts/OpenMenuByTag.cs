@@ -20,6 +20,7 @@ public class OpenMenuByTag : MonoBehaviour
     void OnMouseDown()
     {
         //panel.SetActive(true);
+        if (!GlobalVariables.objectsAreInteractible) return;
         panel.GetComponent<CustomMenuController>().Show();
         
     }

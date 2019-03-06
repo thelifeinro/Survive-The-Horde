@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public abstract class SpecialAttack : MonoBehaviour
 {
-        public float timeBetweenEnables;
-        public int price;
-        public Button Button;
-        public abstract void StartAttack();
+    public Headquarter hq;
+    public SoloOnScreen UIhiddener;
+    public float timeBetweenEnables;
+    public int price;
+    public Button Button;
+    public abstract void StartAttack();
 }
 
