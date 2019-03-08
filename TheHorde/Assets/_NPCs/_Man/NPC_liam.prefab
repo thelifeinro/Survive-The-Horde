@@ -1066,7 +1066,7 @@ GameObject:
   - component: {fileID: 5895669502120113253}
   m_Layer: 0
   m_Name: NPC_liam
-  m_TagString: Untagged
+  m_TagString: Healthy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1129,6 +1129,7 @@ MonoBehaviour:
   animator: {fileID: 5895669502110615468}
   nav: {fileID: 5895669502120113251}
   patrol: {fileID: 0}
+  isInfected: 0
 --- !u!195 &5895669502120113251
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1139,7 +1140,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.57
-  m_Speed: 10
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1168,6 +1169,8 @@ MonoBehaviour:
   wp: {fileID: 0}
   wpMaster: {fileID: 0}
   arrived: 0
+  victim: {fileID: 0}
+  _navMeshAgent: {fileID: 0}
 --- !u!1 &5895669502120113254
 GameObject:
   m_ObjectHideFlags: 0

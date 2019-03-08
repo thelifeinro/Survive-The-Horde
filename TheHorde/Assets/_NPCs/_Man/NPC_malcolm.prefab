@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 268652708147993733}
   m_Layer: 0
   m_Name: NPC_malcolm
-  m_TagString: Untagged
+  m_TagString: Healthy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,6 +278,7 @@ MonoBehaviour:
   animator: {fileID: 268652708155289418}
   nav: {fileID: 268652708147993733}
   patrol: {fileID: 0}
+  isInfected: 0
 --- !u!114 &268652708147993735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,6 +296,8 @@ MonoBehaviour:
   wp: {fileID: 0}
   wpMaster: {fileID: 0}
   arrived: 0
+  victim: {fileID: 0}
+  _navMeshAgent: {fileID: 0}
 --- !u!195 &268652708147993733
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -305,7 +308,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.51
-  m_Speed: 10
+  m_Speed: 5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

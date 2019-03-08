@@ -11,16 +11,17 @@ public class Victim : MonoBehaviour {
     public NavMeshAgent nav;
     private Transform QuarantineDest;
     public Patrol patrol;
+    public bool isInfected = false;
 
 	// Use this for initialization
 	void Start () {
-        nav.isStopped = true;
+        //nav.isStopped = true;
         QuarantineDest = GameObject.FindGameObjectWithTag("Quarant").transform;
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if(nav.isStopped == false)
+		if(isInfected == true)
             //got to quarantine
             if (pathComplete())
                 Destroy(gameObject);
@@ -45,6 +46,7 @@ public class Victim : MonoBehaviour {
         // set animation to running
         nav.SetDestination(QuarantineDest.position);
         nav.isStopped = false;
+        isInfected = true;
         animator.SetBool("isInfected", true);
         //infected effect
         //run to quarantine

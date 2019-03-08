@@ -33,10 +33,14 @@ work in any scene _ done? 6.03
 
 -> pause mission while special attack underway _ done 6.03
 _______________________________________________________________________________	
+08/03/19
 
+-> Make AI for NPCS
+	- NPCs have 5 animations (walk, sit, lean, look around, injured run) _ done 8.03
+	- NPCs are infectable and they can run to Quarantine point _ done 8.03
+	- NPCs change course if a seat they were going towards got occupied _ done 8.03
 
--> Make AI that walks out of spawn point(house), can sit down and walk around randomly (way to replenish killed people)
-
+________________________
 -> Decide what you do with the infected people
 
 -> create possibility for enemy to be undetectable by a specific archer type

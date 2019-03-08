@@ -102,6 +102,10 @@ public class Enemy : MonoBehaviour {
         animator.SetBool("isAttacking", true);
         transform.LookAt(chosenTarget.transform);
         _navMeshAgent.isStopped = true;
+
+        //ATTENTION! stops victim
+        victimComp.nav.isStopped = true;
+
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length /*+ animator.GetCurrentAnimatorStateInfo(0).normalizedTime*/);
         Debug.Log("Attack has ended!");
         animator.SetBool("isAttacking", false);
