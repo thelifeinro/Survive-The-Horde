@@ -16,10 +16,10 @@ public class NpcWpMaster : MonoBehaviour
     //this returns a wayPoint different from the current one given as a paramater (wp)
     public GameObject GetRandomWayPoint(GameObject wp = null)
     {
-        int i = Random.Range(0, wayPoints.Length - 1);
+        int i = Random.Range(0, wayPoints.Length);
         while (wayPoints[i] == wp)
         {
-            i = Random.Range(0, wayPoints.Length - 1);
+            i = Random.Range(0, wayPoints.Length);
         }
         return wayPoints[i];
     }

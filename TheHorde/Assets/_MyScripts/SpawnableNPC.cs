@@ -11,12 +11,16 @@ public class SpawnableNPC : MonoBehaviour {
     public GameObject wp;
     private NPCWayPoint npcwp;
     public NpcWpMaster wpMaster;
-    private bool arrived;
-	// Use this for initialization
-	void Start () {
+    public bool arrived;
+
+    Vector3 currVel;
+    Vector3 prevPos;
+
+    // Use this for initialization
+    void Start () {
         //target = wayPoints[0];
         wpMaster = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<NpcWpMaster>();
-        GetNextWaypoint();
+        //GetNextWaypoint();
     }
 	
 	// Update is called once per frame
@@ -35,7 +39,7 @@ public class SpawnableNPC : MonoBehaviour {
             Quaternion lookRotation = Quaternion.LookRotation(dir);
             Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
             gameObject.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-            if (Vector3.Distance(transform.position, target.position) <= 0.4f)
+            if (Vector3.Distance(transform.position, target.position) <= 0.9f)
             {
                 arrived = true;
                 SetArriveAnimation(true);
@@ -58,6 +62,7 @@ public class SpawnableNPC : MonoBehaviour {
         }
 
 	}
+
 
     void SetArriveAnimation(bool value)
     {

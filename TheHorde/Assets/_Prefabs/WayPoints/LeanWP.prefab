@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4766751005225083166}
   - component: {fileID: 9017530273753620455}
   m_Layer: 0
-  m_Name: Lean
+  m_Name: LeanWP
   m_TagString: NPCWP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,4 +104,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ff11827cf1257246b657d660725f3dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
+  type: 1
