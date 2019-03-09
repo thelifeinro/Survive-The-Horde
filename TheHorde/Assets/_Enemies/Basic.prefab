@@ -1766,7 +1766,7 @@ GameObject:
   - component: {fileID: 195445358776345262}
   - component: {fileID: 136660820107199792}
   m_Layer: 0
-  m_Name: ZombieBasic
+  m_Name: Basic
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1866,10 +1866,10 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.37
   m_Speed: 2.85
-  m_Acceleration: 8
+  m_Acceleration: 110
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 6
+  m_AngularSpeed: 300
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 0
   m_AutoBraking: 1
   m_AutoRepath: 1

@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 8977618783301058251}
   - component: {fileID: 2682939745151547703}
   - component: {fileID: 4664515411766504904}
+  - component: {fileID: 6387971864120975819}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: GameMaster
@@ -665,6 +666,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7527cf79aee494680873f5b4fe9b20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6387971864120975819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8977618783301058229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e801d58c5055ca24aad145946b7e9701, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wayPoints: []
 --- !u!1 &8977618783404235339
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +992,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 559240961249594861, guid: 4c8b6106cf6dc78439a11713e528b2eb,
+        type: 3}
+      propertyPath: gameCamera
+      value: 
+      objectReference: {fileID: 156855231306623594}
     - target: {fileID: 559240961249594860, guid: 4c8b6106cf6dc78439a11713e528b2eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1033,11 +1052,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 559240961249594861, guid: 4c8b6106cf6dc78439a11713e528b2eb,
-        type: 3}
-      propertyPath: gameCamera
-      value: 
-      objectReference: {fileID: 156855231306623594}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c8b6106cf6dc78439a11713e528b2eb, type: 3}
 --- !u!1 &840196028075536275 stripped

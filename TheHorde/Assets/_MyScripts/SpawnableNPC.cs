@@ -37,25 +37,23 @@ public class SpawnableNPC : MonoBehaviour {
             return;
         }
 
-        if (npcwp.type == WayPointType.Sit)
+
+        if (npcwp.IsOccupied(gameObject))
         {
-            if (npcwp.IsOccupied(gameObject))
-            {
                 GetNextWaypoint();
                 //return;
-            }
         }
 
         if (!arrived)
         {
-            /*
-            Vector3 dir = target.position - transform.position;
-            transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
+                /*
+                Vector3 dir = target.position - transform.position;
+                transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
-            Quaternion lookRotation = Quaternion.LookRotation(dir);
-            Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
-            gameObject.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-            */
+                Quaternion lookRotation = Quaternion.LookRotation(dir);
+                Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
+                gameObject.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+                */
             if (Vector3.Distance(transform.position, target.position) <= 0.9f)
             {
                 if (npcwp.type == WayPointType.Lean || npcwp.type == WayPointType.Sit)
@@ -70,10 +68,7 @@ public class SpawnableNPC : MonoBehaviour {
                 arrived = true;
                 SetArriveAnimation(true);
                 //taking the seat
-                if (npcwp.type == WayPointType.Sit)
-                {
-                    npcwp.Occupy(gameObject);
-                }
+                npcwp.Occupy(gameObject);
             }
         }
         else 
