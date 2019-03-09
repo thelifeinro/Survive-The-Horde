@@ -51,19 +51,23 @@ _______________________________________________________________________________
 -> Implement NPC Manager to instantiate / destroy NPCs on map accordingly _ done 9.03
 	-BUG: Healthy person tagged 'Infected' before PlayerPrefs adjusts its numbers _ fixed 9.03
 	
+	-if Enemy gets killed before Causing Damage to targeted NPC, NPCs 'targeted' bool resets to false
+so other enemies can target it
+	
 _______________________________________________________________________________
+
 -> Decide what you do with the infected people
 
--> create possibility for enemy to be undetectable by a specific archer type
-
--> create the other 2 environments
-
--> upgrade tree (no special building - just an ui button)
+ -> upgrade tree (no special building - just an ui button)
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
 encounter them; tells you what weakness they have - accessibble as an ui button)
+
+-> create the other 2 environments
 
 DETAILS:
 
 -> ui animations for when player stats change values
 
+REJECTED:
+-> create possibility for enemy to be undetectable by a specific archer type

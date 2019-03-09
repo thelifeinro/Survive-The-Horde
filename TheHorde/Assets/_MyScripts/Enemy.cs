@@ -164,7 +164,7 @@ public class Enemy : MonoBehaviour {
             //chosen.tag = "Infected";
             chosenTarget = chosen;
             victimComp = chosen.GetComponent<Victim>();
-            victimComp.targetedByEnemy = true;
+            victimComp.Targeted();
             _navMeshAgent.SetDestination(chosen.transform.position);
             Debug.Log(gameObject.name + "   Chose " + chosen.name);
         }

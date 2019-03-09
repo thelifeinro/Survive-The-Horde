@@ -36,7 +36,27 @@ public class Victim : MonoBehaviour {
         
     }
 
-    public void Infected()
+    public void Targeted()
+    {
+        targetedByEnemy = true;
+        //start coroutine to return to untargeted after a while
+        StartCoroutine(ResetCountdown());
+    }
+
+    private IEnumerator ResetCountdown()
+    {
+        float normalizedTime = 0;
+        while (normalizedTime <= 12)
+        {
+            normalizedTime += Time.deltaTime;
+            yield return null;
+        }
+        //if in 12 seconds you don't get oinfected then the enemy targeting you died before getting to you!!
+        if(gameObject.tag!="Infected")
+            targetedByEnemy = false;
+    }
+
+        public void Infected()
     {
         // add to infected player stats
         if (patrol != null)
