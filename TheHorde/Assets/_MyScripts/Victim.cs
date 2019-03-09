@@ -12,6 +12,7 @@ public class Victim : MonoBehaviour {
     private Transform QuarantineDest;
     public Patrol patrol;
     public bool isInfected = false;
+    public bool targetedByEnemy = false;
 
 	// Use this for initialization
 	void Start () {
@@ -48,6 +49,9 @@ public class Victim : MonoBehaviour {
         nav.isStopped = false;
         isInfected = true;
         animator.SetBool("isInfected", true);
+
+        //set tag to infected
+        gameObject.tag = "Infected";
         //infected effect
         //run to quarantine
     }

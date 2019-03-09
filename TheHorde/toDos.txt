@@ -47,6 +47,9 @@ _______________________________________________________________________________
 	- NPCs work properly _ done 9.03
 
 -> Fix enemies' navmesh 'ice skating' syndrome _ done 9.03
+
+-> Implement NPC Manager to instantiate / destroy NPCs on map accordingly _ done 9.03
+	-BUG: Healthy person tagged 'Infected' before PlayerPrefs adjusts its numbers _ fixed 9.03
 	
 _______________________________________________________________________________
 -> Decide what you do with the infected people

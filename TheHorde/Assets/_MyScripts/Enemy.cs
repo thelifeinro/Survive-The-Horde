@@ -140,6 +140,9 @@ public class Enemy : MonoBehaviour {
         GameObject chosenVictim = null;
         foreach (GameObject victim in possibleVictims)
         {
+            Victim v = victim.GetComponent<Victim>();
+            if (v.targetedByEnemy == true)
+                continue;
             float dist = Vector3.Distance(transform.position, victim.transform.position);
             if(dist < minDist)
             {
@@ -158,9 +161,10 @@ public class Enemy : MonoBehaviour {
         }
         else
         {
-            chosen.tag = "Infected";
+            //chosen.tag = "Infected";
             chosenTarget = chosen;
             victimComp = chosen.GetComponent<Victim>();
+            victimComp.targetedByEnemy = true;
             _navMeshAgent.SetDestination(chosen.transform.position);
             Debug.Log(gameObject.name + "   Chose " + chosen.name);
         }
