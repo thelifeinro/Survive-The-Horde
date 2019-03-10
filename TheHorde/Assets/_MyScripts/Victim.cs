@@ -13,19 +13,25 @@ public class Victim : MonoBehaviour {
     public Patrol patrol;
     public bool isInfected = false;
     public bool targetedByEnemy = false;
+    public Quarantine quarantine;
 
 	// Use this for initialization
 	void Start () {
         //nav.isStopped = true;
         QuarantineDest = GameObject.FindGameObjectWithTag("Quarant").transform;
+        quarantine = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<Quarantine>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		if(isInfected == true)
+        if (isInfected == true)
             //got to quarantine
             if (pathComplete())
+            {
+                //it got to quarantine; checking in yay
+                quarantine.CheckIn();
                 Destroy(gameObject);
+            }
 	}
 
     public void Killed()
@@ -46,7 +52,7 @@ public class Victim : MonoBehaviour {
     private IEnumerator ResetCountdown()
     {
         float normalizedTime = 0;
-        while (normalizedTime <= 12)
+        while (normalizedTime <= 20)
         {
             normalizedTime += Time.deltaTime;
             yield return null;

@@ -36,6 +36,12 @@ public class PlayerStats : MonoBehaviour {
         HealthyPopulation -= count;
     }
 
+    public void KillOneInfected(int price)
+    {
+        InfectedPopulation--;
+        Money -= price;
+    }
+
     public int CountHealthyPpl()
     {
         return HealthyPopulation;
@@ -61,6 +67,7 @@ public class PlayerStats : MonoBehaviour {
     {
         Cure += amount;
     }
+
     public void CureOne()
     {
         if (Cure > 0)

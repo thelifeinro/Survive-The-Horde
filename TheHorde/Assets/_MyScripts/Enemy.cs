@@ -49,6 +49,13 @@ public class Enemy : MonoBehaviour {
         else
         {
             //giveRandomRadius();
+            if (attackMode == true)
+            {
+                FindNearestVictim();
+                Worth = (int)(0.25f * Worth);
+                _navMeshAgent.speed = attackSpeed;
+                return;
+            }
             setDestination();
             _navMeshAgent.speed = startSpeed;
         }

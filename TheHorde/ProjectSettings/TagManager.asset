@@ -17,6 +17,7 @@ TagManager:
   - Canvas
   - MainUI
   - NPCWP
+  - QuarantMenu
   layers:
   - Default
   - TransparentFX
