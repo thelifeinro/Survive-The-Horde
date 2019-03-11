@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/_Scenes/MainMenu.unity
+    guid: 175c1577dc88f01409b66132f637ddeb
+  - enabled: 1
     path: Assets/_Scenes/TheWoods_Terrain.unity
     guid: 0662a187309bb564b888907084541d4a
   m_configObjects: {}
