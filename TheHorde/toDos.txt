@@ -49,7 +49,7 @@ _______________________________________________________________________________
 -> Fix enemies' navmesh 'ice skating' syndrome _ done 9.03
 
 -> Implement NPC Manager to instantiate / destroy NPCs on map accordingly _ done 9.03
-	-BUG: Healthy person tagged 'Infected' before PlayerPrefs adjusts its numbers _ fixed 9.03
+	- BUG: Healthy person tagged 'Infected' before PlayerPrefs adjusts its numbers _ fixed 9.03
 	- if Enemy gets killed before Causing Damage to targeted NPC, NPCs 'targeted' bool resets to false
 so other enemies can target it _ done 9.03
 	
@@ -64,13 +64,22 @@ _______________________________________________________________________________
 	- a Zombie spawns at the end of countdown if action is not taken and it infects a healthy NPC 
 _______________________________________________________________________________
 
-
+11/03/19
+	- Fixed some aspect ratio problems with the ui
+	
+_______________________________________________________________________________
+	
 -> upgrade tree (no special building - just an ui button)
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
 encounter them; tells you what weakness they have - accessibble as an ui button)
 
 -> create the other 2 environments
+
+-> Main Menu
+
+-> Pause Menu with Exit to Main Menu
+
 
 DETAILS:
 

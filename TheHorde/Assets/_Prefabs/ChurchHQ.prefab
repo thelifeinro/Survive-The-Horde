@@ -2301,7 +2301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6144696888097230287}
   m_Layer: 0
-  m_Name: HEADQUARTERS
+  m_Name: ChurchHQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
