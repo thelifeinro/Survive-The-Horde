@@ -70,6 +70,12 @@ _______________________________________________________________________________
 	- created Logo for the game 
 	- created opening screen with animation
 _______________________________________________________________________________
+
+13/03/19
+-> Added main menu w/ keyboard navigation 
+-> made animations for menu buttons
+
+_______________________________________________________________________________
 	
 -> upgrade tree (no special building - just an ui button)
 
