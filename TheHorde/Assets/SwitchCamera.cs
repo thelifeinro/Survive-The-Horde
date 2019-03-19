@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SwitchCamera : MonoBehaviour {
 
@@ -10,6 +11,12 @@ public class SwitchCamera : MonoBehaviour {
     public float waitTimeBeforeExit;
     public FlyingBlade fbscript;
 
+    public int expAwarded = 0;
+    int enemiesHit = 0;
+
+    public Transform EffectDropzone;
+    public GameObject effectPrefab;
+
     // Use this for initialization
     void Start () {
         Cursor.lockState = CursorLockMode.Locked;
@@ -17,12 +24,35 @@ public class SwitchCamera : MonoBehaviour {
         followCam.enabled = true;
         mainCam.enabled = false;
         fbscript = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<FlyingBlade>();
+        EffectDropzone = GameObject.FindGameObjectWithTag("EXPZone").transform;
     }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+
+    void AwardEXP()
+    {
+        expAwarded++;
+        SpawnEffect("+" + expAwarded +" EXP");
+    }
+
+    void DoubleEXP()
+    {
+        Debug.Log("Doubling EXP");
+        expAwarded *= 2;
+        SpawnEffect("X 2");
+    }
+
+    void SpawnEffect(string content)
+    {
+        GameObject effect = Instantiate(effectPrefab, EffectDropzone);
+        effect.GetComponent<Text>().text = content;
+        Destroy(effect, 2);
+    }
+
     IEnumerator waiter()
     {
         //Wait for 4 seconds
@@ -50,6 +80,14 @@ public class SwitchCamera : MonoBehaviour {
         {
             Enemy e = collision.transform.GetComponent<Enemy>();
             e.Die();
+            enemiesHit++;
+            //Debug.Log("HitEnemy");
+            if (enemiesHit == 7)
+            {
+                DoubleEXP();
+                return;
+            }
+            AwardEXP();
         }
         
        

@@ -18,6 +18,7 @@ TagManager:
   - MainUI
   - NPCWP
   - QuarantMenu
+  - EXPZone
   layers:
   - Default
   - TransparentFX

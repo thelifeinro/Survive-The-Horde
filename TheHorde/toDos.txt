@@ -72,24 +72,42 @@ _______________________________________________________________________________
 _______________________________________________________________________________
 
 13/03/19
--> Added main menu w/ keyboard navigation 
+-> Added basic Main Menu w/ keyboard navigation 
 -> made animations for menu buttons
 
 _______________________________________________________________________________
+
+19/03/19
+
+-> Began work on EXP based Upgrade Unlock Milestone System
+	- Delegate and Event system implemented for unlocking upgrades based on exp;
+	- Created Milestone Scriptable Objects
+	- Mechanism for awarding EXPs: at the end of search mission + after special attacks - DONE;
+	
+_______________________________________________________________________________
+
+
+OBS: !! As game over progress does not get saved, if you unlock an upgrade during a level ending in game over, it will not be saved.
+
+	Still to come:
+	- Add Quarantine as a subscriber to MilestoneManager so it can change waiting times;
+	- Ui for EXP (trigger UI animation with the ammount of EXP added at OnEXPChange)
+
+_______________________________________________________________________________
+	
+-> Game Over and EXP at the end of successful mission
 	
 -> upgrade tree (no special building - just an ui button)
+
+-> create the other 2 environments
+
+-> Finish Main Menu functionalities; Pause Menu with Exit to Main Menu;
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
 encounter them; tells you what weakness they have - accessibble as an ui button)
 
--> create the other 2 environments
-
--> Main Menu
-
--> Pause Menu with Exit to Main Menu
-
-
 DETAILS:
+
 
 -> ui animations for when player stats change values
 

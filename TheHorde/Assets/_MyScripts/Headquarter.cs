@@ -32,6 +32,7 @@ public class Headquarter : MonoBehaviour
     public GameObject EventDialoguePrefab;
     public MissionEvent[] missionEvents;
 
+
     public bool paused = false;
 
     MissionEvent me;
@@ -149,9 +150,11 @@ public class Headquarter : MonoBehaviour
         //adding gains to PlayerStats
         PlayerStats.instance.AddPeople(peopleOnMission);
         PlayerStats.instance.AddMoney((int)scrapsSoFar);
+        PlayerStats.instance.AddEXP(peopleOnMission);
         missionInfo.SetActive(false);
         inProgress = false;
         Destroy(Instantiate(FinishMessage,GameObject.FindGameObjectWithTag("Canvas").transform), 5);
+
     }
 
     public void EndEvent()

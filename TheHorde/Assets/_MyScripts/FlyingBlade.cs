@@ -45,6 +45,7 @@ public class FlyingBlade : SpecialAttack
 
     public void StopAttack()
     {
+        PlayerStats.instance.AddEXP(instanceBlade.GetComponent<SwitchCamera>().expAwarded);
         UIhiddener.ShowUI();
 
         BladeOverlay.SetActive(false);

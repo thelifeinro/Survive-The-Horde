@@ -494,6 +494,9 @@ MonoBehaviour:
   rotatingBlade: {fileID: 1975249239088696}
   waitTimeBeforeExit: 0.71
   fbscript: {fileID: 0}
+  EffectDropzone: {fileID: 0}
+  effectPrefab: {fileID: 1754842503009415241, guid: b4a5965839c88564ca53db7a9a84d23d,
+    type: 3}
 --- !u!1 &1975249239088696
 GameObject:
   m_ObjectHideFlags: 0

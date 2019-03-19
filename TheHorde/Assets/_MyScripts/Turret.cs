@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Turret : MonoBehaviour {
+
+    public MilestoneType type;
     public string name;
     public int firstprice = 0;
     public int upgradeworth = 0;
@@ -32,11 +34,44 @@ public class Turret : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rate = men[0].GetComponent<Archer>().fireRate;
+        UnlockLevels(PlayerStats.instance.unlockedLevels[type]);
+
+        //subscribing to milestone manager events
+        MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked;
     }
 	
+    public void UpgradeUnlocked(EXPMilestone mst)
+    {
+        Debug.Log(gameObject.name + " upgrade event triggered");
+        if(type == mst.type)
+            UnlockLevel(mst.level);
+    }
+
 	// Update is called once per frame
 	void Update () { 
 	}
+
+    public void UnlockLevels(int i)
+    {
+        for(int k = 0; k<=i; k++)
+        {
+            UnlockLevel(k);
+        }
+        for(int k = i+1; k<levels.Length; k++)
+        {
+            LockLevel(k);
+        }
+    }
+
+    public void LockLevel(int i)
+    {
+        levels[i].locked = true;
+    }
+
+    public void UnlockLevel(int i)
+    {
+        levels[i].locked = false;
+    }
 
     public void UpgradeMen()
     {
