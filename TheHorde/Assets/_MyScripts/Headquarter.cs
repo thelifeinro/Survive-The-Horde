@@ -148,6 +148,7 @@ public class Headquarter : MonoBehaviour
     public void EndMission()
     {
         //adding gains to PlayerStats
+        PlayerStats.instance.AddEXP(peopleOnMission);
         PlayerStats.instance.AddPeople(peopleOnMission);
         PlayerStats.instance.AddMoney((int)scrapsSoFar);
         PlayerStats.instance.AddEXP(peopleOnMission);

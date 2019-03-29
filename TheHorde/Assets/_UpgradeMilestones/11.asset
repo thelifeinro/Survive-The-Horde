@@ -15,6 +15,6 @@ MonoBehaviour:
   title: Water Tower - Level 3
   description: Unlocked Level 3 Upgrade forWater Tower
   type: 2
-  milestoneEXP: 1500
+  milestoneEXP: 1690
   level: 3
   icon: {fileID: 0}

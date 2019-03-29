@@ -15,6 +15,6 @@ MonoBehaviour:
   title: Turn Time extended
   description: Infected people take longer to turn into Zombies
   type: 0
-  milestoneEXP: 250
+  milestoneEXP: 375
   level: 10
   icon: {fileID: 0}

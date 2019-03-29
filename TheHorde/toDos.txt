@@ -2,7 +2,7 @@ ACTIVITY LOG
 
 _______________________________________________________________________________	
 24/02/19
--> ui message of mission completion _ done 4.03
+-> ui message of supply mission completion _ done 4.03
 -> pause mission ability _ done 4.03
 
 _______________________________________________________________________________	
@@ -61,7 +61,7 @@ _______________________________________________________________________________
 	- UI is functinal;
 	- created Quarantine script that handles all the Quarantine countdowns
 	- Heal and Kill options for people in quarantine
-	- a Zombie spawns at the end of countdown if action is not taken and it infects a healthy NPC 
+	- a Zombie spawns at the end of countdown if action is not taken and it infects 1 healthy NPC 
 _______________________________________________________________________________
 
 11/03/19
@@ -85,20 +85,34 @@ _______________________________________________________________________________
 	- Mechanism for awarding EXPs: at the end of search mission + after special attacks - DONE;
 	
 _______________________________________________________________________________
+27/03/19
 
+- Add Quarantine as a subscriber to MilestoneManager so it can change waiting times;
+- STARTED UI progress bar for milestones (made icon with tooltip for milestones)
 
-OBS: !! As game over progress does not get saved, if you unlock an upgrade during a level ending in game over, it will not be saved.
+_______________________________________________________________________________
+29/03/19
 
-	Still to come:
-	- Add Quarantine as a subscriber to MilestoneManager so it can change waiting times;
-	- Ui for EXP (trigger UI animation with the ammount of EXP added at OnEXPChange)
+- UI progress bar for Milestones:
+						open / close menu;
+						automatic value update; 
+						milestones populate menu dynamically;
+						milestone icons get enabled automatically when milestone is unlocked;
+						- Ui for EXP (trigger UI animation with the ammount of EXP added at OnEXPChange)
+						
+- Award EXP at the end of level if game was successful based on number of survivors
+
+- Added Game Over mechanism
+
+- Made original jingle for game over and upgrade unlocked
+
+- Made image design for commanders ui element
+					
+Still to come:
+	- Save game 
 
 _______________________________________________________________________________
 	
--> Game Over and EXP at the end of successful mission
-	
--> upgrade tree (no special building - just an ui button)
-
 -> create the other 2 environments
 
 -> Finish Main Menu functionalities; Pause Menu with Exit to Main Menu;

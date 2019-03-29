@@ -15,5 +15,6 @@ MonoBehaviour:
   title: Grenade Thrower - Level 1
   description: Unlocked Level 1 Upgrade for Grenade Thrower
   type: 3
-  milestoneEXP: 100
+  milestoneEXP: 150
   level: 1
+  icon: {fileID: 0}

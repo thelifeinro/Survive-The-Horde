@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Quarantine : MonoBehaviour
 {
+    public int baseTimeToTurn;
     public int timeToTurnSeconds;
     public int count;
     public int killPrice;
@@ -17,15 +18,35 @@ public class Quarantine : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timeToTurnSeconds = baseTimeToTurn;
         count = 0;
         countText.text = count.ToString();
         zombieSpawnPoint = GameObject.FindGameObjectWithTag("Quarant").transform;
+        UnlockLevels(PlayerStats.instance.unlockedLevels[MilestoneType.turntime]); // adding unlocked upgrads to base turn time
+        MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked; // subscribing quarantine to milstone manager so it stays uptodate with the upgrades
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void UpgradeUnlocked(EXPMilestone mst)
+    {
+        Debug.Log(gameObject.name + " Quarantine upgrade event triggered");
+        if (mst.type == MilestoneType.turntime)
+            AddTurnTimeSeconds(mst.level);
+    }
+
+    public void UnlockLevels(int i)
+    {
+           AddTurnTimeSeconds(i);
+    }
+
+    public void AddTurnTimeSeconds(int k)
+    {
+        timeToTurnSeconds = baseTimeToTurn + k;
     }
 
     public void CheckIn()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour {
 
-    public enum SpawnState { SPAWNING, WAITING, COUNTING };
+    public enum SpawnState { SPAWNING, WAITING, COUNTING, DONE};
     [System.Serializable]
     public class Wave
     {
@@ -54,6 +54,10 @@ public class WaveSpawner : MonoBehaviour {
 
     private void Update()
     {
+        if(state == SpawnState.DONE)
+        {
+            return;
+        }
         if(state == SpawnState.WAITING)
         {
             //check if enemies are still alive
@@ -141,7 +145,10 @@ public class WaveSpawner : MonoBehaviour {
             GameObject instance = Instantiate(levelCompletePrefab, Vector3.zero, Quaternion.identity);
             //nextWave = 0;
             Debug.Log("All waves complete. Looping");
-            //TO DO: SHOW LEVEL COMPLETE MESSGE THEN DO NEXT LEVEL
+            //TO DO: SHOW LEVEL COMPLETE MESSAGE THEN DO NEXT LEVEL
+            state = SpawnState.DONE;
+            // let's calculate the awarded EXP
+            PlayerStats.instance.LevelComplete();
         }
         else
         {

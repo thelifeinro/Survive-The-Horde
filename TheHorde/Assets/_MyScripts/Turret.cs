@@ -34,7 +34,7 @@ public class Turret : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rate = men[0].GetComponent<Archer>().fireRate;
-        UnlockLevels(PlayerStats.instance.unlockedLevels[type]);
+        UnlockLevels(PlayerStats.instance.unlockedLevels[type]); 
 
         //subscribing to milestone manager events
         MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked;

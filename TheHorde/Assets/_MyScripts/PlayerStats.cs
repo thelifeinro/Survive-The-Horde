@@ -9,10 +9,13 @@ public class PlayerStats : MonoBehaviour {
     public static int HealthyPopulation;
     public static int InfectedPopulation;
     public static int Cure;
-    public static int EXP = 0;
+    public static int EXP = 500;
     public int startCure = 1;
     public int startMoney = 500;
     public int startPopulation = 500;
+    public int baseLevelEXP;
+    public int bonusThreshold;
+    public GameObject gameOverPrefab;
 
     public delegate void ExpEventHandler(int count);
     public static event ExpEventHandler OnEXPChange;
@@ -37,6 +40,42 @@ public class PlayerStats : MonoBehaviour {
         instance = this;
     }
 
+    void Update()
+    {
+    }
+
+    public void LevelComplete()
+    {
+        int awardedEXP = baseLevelEXP;
+        if(HealthyPopulation > bonusThreshold)
+        {
+            awardedEXP += 5 * (HealthyPopulation - bonusThreshold);
+        }
+        AddEXP(awardedEXP);
+        Save();
+        //unlock next level
+    }
+
+    public void IsGameOver()
+    {
+        if (HealthyPopulation + InfectedPopulation == 0)
+        {
+            GameOver();
+        }
+    }
+
+    public void GameOver()
+    {
+        Instantiate(gameOverPrefab, Vector3.zero, Quaternion.identity);
+        Time.timeScale = 0;
+        //instantiate animation;
+        Save(); //saving won exp during battle
+    }
+
+    public void Save()
+    {
+
+    }
 
     private void Start()
     {
@@ -56,12 +95,14 @@ public class PlayerStats : MonoBehaviour {
     public void Kill(int count)
     {
         HealthyPopulation -= count;
+        IsGameOver();
     }
 
     public void KillOneInfected(int price)
     {
         InfectedPopulation--;
         Money -= price;
+        IsGameOver();
     }
 
     public int CountHealthyPpl()

@@ -16,5 +16,5 @@ MonoBehaviour:
   description: Infected people now take longer to turn into Zombies
   type: 0
   milestoneEXP: 2250
-  level: 40
+  level: 80
   icon: {fileID: 0}

@@ -19,6 +19,7 @@ TagManager:
   - NPCWP
   - QuarantMenu
   - EXPZone
+  - MilestoneUI
   layers:
   - Default
   - TransparentFX
