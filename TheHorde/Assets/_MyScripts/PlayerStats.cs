@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour {
-
+    public int level;
     public static int Money;
     public static int HealthyPopulation;
     public static int InfectedPopulation;
     public static int Cure;
-    public static int EXP = 500;
+    public static int EXP = SaveManager.EXP;
     public int startCure = 1;
     public int startMoney = 500;
     public int startPopulation = 500;
@@ -52,8 +53,10 @@ public class PlayerStats : MonoBehaviour {
             awardedEXP += 5 * (HealthyPopulation - bonusThreshold);
         }
         AddEXP(awardedEXP);
-        Save();
+
         //unlock next level
+        Save();
+        
     }
 
     public void IsGameOver()
@@ -69,12 +72,15 @@ public class PlayerStats : MonoBehaviour {
         Instantiate(gameOverPrefab, Vector3.zero, Quaternion.identity);
         Time.timeScale = 0;
         //instantiate animation;
-        Save(); //saving won exp during battle
+        //saving won exp during battle
+        Save();
     }
 
     public void Save()
     {
-
+        // MARE ATENTIE! suprascrie highestLevel la cel al nivelului asta, daca faci replay la un nivel anterior
+        SaveManager.SaveGame(EXP,level);
+        Debug.Log("Saved game. EXP:" + SaveManager.LoadGame().EXP);
     }
 
     private void Start()

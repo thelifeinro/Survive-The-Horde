@@ -108,14 +108,29 @@ _______________________________________________________________________________
 
 - Made image design for commanders ui element
 					
-Still to come:
-	- Save game 
+_______________________________________________________________________________
+30/03/19
+
+	- Save game mechanism (a single save file; gets overwritten if played over)
+	- Continue button disabled if no save game
+	- Made Level Selector scene
+	
+	- Level button UI Prefab for selector ( a button with an image & a text title)
+	- LevelSO (Scriptable Object), ex: Title (Level 1 - The Forest); Scene; Image, etc;
+	- Level Controller that populates level selector (iterates LevelSOs, sets lock or unlock accordingly);
+	- Added loading screen when loading a level
+	- fixed the aspect ratio roblems
+	- Fixed event listener bug on level reload (OnDisable -> unsubscribe from event)
+	
+	Still to come:
+		- Back button for level selector
+		- Quit Button for MainMenu
+		- Unlocking logic for levels
 
 _______________________________________________________________________________
-	
--> create the other 2 environments
-
 -> Finish Main Menu functionalities; Pause Menu with Exit to Main Menu;
+
+-> create the other 2 environments
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
 encounter them; tells you what weakness they have - accessibble as an ui button)

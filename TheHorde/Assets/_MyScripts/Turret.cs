@@ -39,7 +39,12 @@ public class Turret : MonoBehaviour {
         //subscribing to milestone manager events
         MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked;
     }
-	
+    void OnDisable()
+    {
+        MilestoneManager.OnUpgradeUnlock -= UpgradeUnlocked;
+    }
+
+
     public void UpgradeUnlocked(EXPMilestone mst)
     {
         Debug.Log(gameObject.name + " upgrade event triggered");

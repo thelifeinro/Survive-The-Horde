@@ -11,10 +11,12 @@ public class StatsUI : MonoBehaviour {
     public Text healthyPopText;
     public Text infectedPopText;
     public Text cureText;
+
+    public Image commanderDashboard;
     // Use this for initialization
     void Start () {
-		
-	}
+		commanderDashboard.alphaHitTestMinimumThreshold = 1;
+    }
 	
 	// Update is called once per frame
 	void Update () {

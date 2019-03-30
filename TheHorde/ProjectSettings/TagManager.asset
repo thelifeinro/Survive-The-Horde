@@ -20,6 +20,7 @@ TagManager:
   - QuarantMenu
   - EXPZone
   - MilestoneUI
+  - LevelController
   layers:
   - Default
   - TransparentFX

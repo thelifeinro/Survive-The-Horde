@@ -8,11 +8,11 @@ public class EnterMainMenu : MonoBehaviour
 {
     public Animator camAnimator;
     public GameObject uiHelpText;
-    public Button contBtn;
+    public GameObject mainmenu;
     // Start is called before the first frame update
     void Start()
     {
-        contBtn.interactable = false;
+        mainmenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class EnterMainMenu : MonoBehaviour
             camAnimator.SetBool("Entered", true);
             this.enabled = false;
             uiHelpText.SetActive(false);
-            contBtn.interactable = true;
+            mainmenu.SetActive(true);
         }
     }
 

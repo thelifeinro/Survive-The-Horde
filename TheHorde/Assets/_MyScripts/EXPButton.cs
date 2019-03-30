@@ -13,12 +13,17 @@ public class EXPButton : MonoBehaviour
         PlayerStats.OnEXPChange += EXPChanged;
     }
 
-    // Update is called once per frame
+    void OnDisable()
+    {
+        PlayerStats.OnEXPChange -= EXPChanged;
+    }
+
     public void EXPChanged(int count)
     {
         value.text = PlayerStats.EXP.ToString()+"EXP";
     }
 
+    // Update is called once per frame
     void Update()
     {
         

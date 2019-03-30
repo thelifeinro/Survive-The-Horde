@@ -20,6 +20,11 @@ public class UIMilestonePoint : MonoBehaviour, IPointerEnterHandler, IPointerExi
         MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked;
     }
 
+    void OnDisable()
+    {
+        MilestoneManager.OnUpgradeUnlock -= UpgradeUnlocked;
+    }
+
     // Update is called once per frame
     void Update()
     {
