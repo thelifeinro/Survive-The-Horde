@@ -55,7 +55,7 @@ public class PlayerStats : MonoBehaviour {
         AddEXP(awardedEXP);
 
         //unlock next level
-        Save();
+        Save(true);
         
     }
 
@@ -73,13 +73,13 @@ public class PlayerStats : MonoBehaviour {
         Time.timeScale = 0;
         //instantiate animation;
         //saving won exp during battle
-        Save();
+        Save(false);
     }
 
-    public void Save()
+    public void Save(bool success)
     {
         // MARE ATENTIE! suprascrie highestLevel la cel al nivelului asta, daca faci replay la un nivel anterior
-        SaveManager.SaveGame(EXP,level);
+        SaveManager.SaveGame(EXP,level, success);
         Debug.Log("Saved game. EXP:" + SaveManager.LoadGame().EXP);
     }
 

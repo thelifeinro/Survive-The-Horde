@@ -15,6 +15,10 @@ public class LevelController : MonoBehaviour
     void Start()
     {
         Populate();
+
+        Cursor.lockState = CursorLockMode.None;
+        // Hide cursor when locking
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
@@ -25,11 +29,17 @@ public class LevelController : MonoBehaviour
 
     void Populate()
     {
+        Debug.Log("highestLevel: " + SaveManager.highestLevel);
         foreach(LevelInfo l in linfos)
         {
             GameObject ui = Instantiate(levelBtnPrefab, panel.transform);
             LevelButton lbtnUI = ui.GetComponent<LevelButton>();
             lbtnUI.SetButton(l);
+            //checking if it should be locked
+            if(l.scene.handle > SaveManager.highestLevel)
+            {
+                lbtnUI.btn.interactable = false;
+            }
         }
     }
 
@@ -52,5 +62,10 @@ public class LevelController : MonoBehaviour
             progBar.value = progress;
             yield return null;
         }
+    }
+
+    public void GoBack()
+    {
+        SceneManager.LoadScene(0);
     }
 }

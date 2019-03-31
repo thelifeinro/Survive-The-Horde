@@ -122,18 +122,25 @@ _______________________________________________________________________________
 	- fixed the aspect ratio roblems
 	- Fixed event listener bug on level reload (OnDisable -> unsubscribe from event)
 	
-	Still to come:
-		- Back button for level selector
-		- Quit Button for MainMenu
-		- Unlocking logic for levels
 
 _______________________________________________________________________________
--> Finish Main Menu functionalities; Pause Menu with Exit to Main Menu;
+30/03/19
+	To DOs:
+	- Quit Button _ start 10:40  _ done 10:46
+	- Back Button for Level Selector started 10:30 _ done 10:40
+	- Level locker in Level Selector _ start 12:00 _ done 12:09
+	-> When a level is completed successfuly unlock next level (if it is locked); _ start 12:10 _ done 12:15
+
+	!! BUGS ON SPECIAL ATTACKS - I haven't fixed all listeners' unsubscriptions on level reload (OnDisable -> unsubscribe from event)
+_______________________________________________________________________________
+-> Pause Menu with Exit to Main Menu;
 
 -> create the other 2 environments
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
 encounter them; tells you what weakness they have - accessibble as an ui button)
+
+-> Options in main menu
 
 DETAILS:
 

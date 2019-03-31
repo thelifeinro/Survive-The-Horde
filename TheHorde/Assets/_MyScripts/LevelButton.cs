@@ -9,6 +9,7 @@ public class LevelButton : MonoBehaviour
     public LevelInfo lvl;
     public Text titleUI;
     public Text noUI;
+    public Button btn;
     LevelController levelController;
     // Start is called before the first frame update
     void Start()

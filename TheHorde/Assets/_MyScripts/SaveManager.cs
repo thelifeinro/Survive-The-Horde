@@ -7,13 +7,19 @@ public static class SaveManager
     public static int EXP = 0;
     public static int highestLevel = 1;
 
-    public static void SaveGame(int EXP, int level)
+    public static void SaveGame(int EXP, int level, bool success)
     {
+        if (success)
+        {
+            //unlock next level if locked
+            if (highestLevel == level)
+                highestLevel = level+1;
+        }
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/savegame";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        GameData data = new GameData(EXP, level);
+        GameData data = new GameData(EXP, highestLevel);
 
         formatter.Serialize(stream, data);
         stream.Close();

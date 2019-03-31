@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
 
-        SaveManager.SaveGame(0,1); //overwrites the save file and sets exp back to zero and leveel to 1
+        SaveManager.SaveGame(0, 1, false); //overwrites the save file and sets exp back to zero and leveel to 1
     }
 
 
@@ -40,5 +40,10 @@ public class MainMenu : MonoBehaviour
         SaveManager.LoadGame();
         //provizoriu: aici o sa incarce level selector
         SceneManager.LoadScene("LevelSelector", LoadSceneMode.Single);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
