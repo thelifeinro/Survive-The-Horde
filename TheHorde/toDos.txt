@@ -132,8 +132,12 @@ _______________________________________________________________________________
 	-> When a level is completed successfuly unlock next level (if it is locked); _ start 12:10 _ done 12:15
 
 	!! BUGS ON SPECIAL ATTACKS - I haven't fixed all listeners' unsubscriptions on level reload (OnDisable -> unsubscribe from event)
+	- fixed(?) 05.04.2019
 _______________________________________________________________________________
+05/04/19
 -> Pause Menu with Exit to Main Menu;
+-> Fixed bugs regarding EXP awarding 
+_______________________________________________________________________________
 
 -> create the other 2 environments
 

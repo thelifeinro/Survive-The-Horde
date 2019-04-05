@@ -11,6 +11,7 @@ public class FlyingBlade : SpecialAttack
     public float duration;
     public GameObject bladePrefab;
     private GameObject instanceBlade;
+    public int awardedExp = 0;
 
     public void Start()
     {
@@ -45,8 +46,9 @@ public class FlyingBlade : SpecialAttack
 
     public void StopAttack()
     {
-        PlayerStats.instance.AddEXP(instanceBlade.GetComponent<SwitchCamera>().expAwarded);
         UIhiddener.ShowUI();
+        PlayerStats.instance.AddEXP(awardedExp);
+       
 
         BladeOverlay.SetActive(false);
         Destroy(instanceBlade);

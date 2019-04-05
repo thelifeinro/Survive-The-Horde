@@ -39,6 +39,9 @@ public class MilestoneManager : MonoBehaviour
         PlayerStats.OnEXPChange -= EXPChanged;
     }
 
+
+
+
     /// <summary>
     ///Manager is subscribed to EXP changes;
     ///On each exp change it checks if nextMilestone to be reached has been reached

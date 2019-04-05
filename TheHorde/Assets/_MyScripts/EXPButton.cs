@@ -10,7 +10,6 @@ public class EXPButton : MonoBehaviour
     void Start()
     {
         value.text = PlayerStats.EXP.ToString() + "EXP";
-        PlayerStats.OnEXPChange += EXPChanged;
     }
 
     void OnDisable()
@@ -18,8 +17,14 @@ public class EXPButton : MonoBehaviour
         PlayerStats.OnEXPChange -= EXPChanged;
     }
 
+    void OnEnable()
+    {
+        PlayerStats.OnEXPChange += EXPChanged;
+    }
+
     public void EXPChanged(int count)
     {
+        Debug.Log("EXP BUTTON CHANGED");
         value.text = PlayerStats.EXP.ToString()+"EXP";
     }
 

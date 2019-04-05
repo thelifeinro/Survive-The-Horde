@@ -39,6 +39,7 @@ public class PlayerStats : MonoBehaviour {
             Debug.Log("More than one PlayerStats in this scene!");
         }
         instance = this;
+        EXP = SaveManager.EXP;
     }
 
     void Update()
@@ -95,7 +96,8 @@ public class PlayerStats : MonoBehaviour {
     public void AddEXP(int count)
     {
         EXP += count;
-        OnEXPChange(count);
+        if(OnEXPChange!=null)
+            OnEXPChange(count);
     }
 
     public void Kill(int count)

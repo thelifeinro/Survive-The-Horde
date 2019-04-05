@@ -31,6 +31,14 @@ public class Quarantine : MonoBehaviour
     {
         
     }
+    public void OnEnable()
+    {
+        MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked;
+    }
+    public void OnDisable()
+    {
+        MilestoneManager.OnUpgradeUnlock -= UpgradeUnlocked;
+    }
 
     public void UpgradeUnlocked(EXPMilestone mst)
     {

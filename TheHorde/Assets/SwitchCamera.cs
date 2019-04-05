@@ -36,6 +36,7 @@ public class SwitchCamera : MonoBehaviour {
     void AwardEXP()
     {
         expAwarded++;
+        fbscript.awardedExp++;
         SpawnEffect("+" + expAwarded +" EXP");
     }
 
@@ -43,6 +44,7 @@ public class SwitchCamera : MonoBehaviour {
     {
         Debug.Log("Doubling EXP");
         expAwarded *= 2;
+        fbscript.awardedExp *= 2;
         SpawnEffect("X 2");
     }
 

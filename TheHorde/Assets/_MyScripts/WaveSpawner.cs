@@ -46,7 +46,9 @@ public class WaveSpawner : MonoBehaviour {
         Wave upcoming = waves[nextWave];
         foreach (var wavepoint in upcoming.wavePoints)
         {
-            GameObject timer = Instantiate(timerUIprefab, new Vector3(0,0,0), Quaternion.identity);
+            GameObject timer = Instantiate(timerUIprefab, this.transform);
+            int index = timer.transform.GetSiblingIndex();
+           timer.transform.SetSiblingIndex(index - 5);
             timer.transform.GetChild(0).GetComponent<FixedScaleUI>().point = wavepoint.spawnPoint;
             Destroy(timer, timeBetweenWaves + 0.5f);
         }
