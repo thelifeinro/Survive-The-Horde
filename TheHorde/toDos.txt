@@ -139,6 +139,11 @@ _______________________________________________________________________________
 -> Fixed bugs regarding EXP awarding 
 _______________________________________________________________________________
 
+09/04/19
+-> Started Environmen Design for Memorial Park Hospital
+
+TO DO: !! add tombstones to park
+_______________________________________________________________________________
 -> create the other 2 environments
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
