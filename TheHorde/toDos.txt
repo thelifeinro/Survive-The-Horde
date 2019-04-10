@@ -140,10 +140,13 @@ _______________________________________________________________________________
 _______________________________________________________________________________
 
 09/04/19
--> Started Environmen Design for Memorial Park Hospital
-
-TO DO: !! add tombstones to park
+-> Started Environment Design for Memorial Park Hospital (8h)
 _______________________________________________________________________________
+
+10/04/19
+-> Finished Environment Design for Memorial Park Hospital (6h)
+
+______________________________________________________________________________
 -> create the other 2 environments
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you

@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: f33ae5b59fb7bf94ea737e9175b1f8a8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: 25_Mesh1_0_0_000
+    100002: 25_Mesh3_0_0_000
+    100004: 25_Mesh4_0_0_000
+    100006: 25_Mesh5_0_0_000
+    100008: 25_Mesh6_0_0_000
+    100010: 25_Mesh7_0_0_000
+    100012: bld02c4x5
+    100014: BLD02c4x5_1
+    100016: bld02c4x5_1
+    100018: BLD02c4x5_15
+    100020: BLD02c4x5_15_2
+    100022: BLD02c4x5_1_2
+    100024: BLD02c4x5_23
+    100026: BLD02c4x5_23_2
+    100028: BLD02c4x5_32
+    100030: BLD02c4x5_32_2
+    100032: BLD02c4x5_33
+    100034: BLD02c4x5_33_2
+    100036: BLD02c4x5_5
+    100038: BLD02c4x5_5_2
+    100040: BLD02c4x5Railing_28
+    100042: BLD02c4x5Railing_28_2
+    100044: bld08valks
+    100046: BLD08Valks_15
+    100048: BLD08Valks_15_2
+    100050: bld08valks_2
+    100052: BLD08Valks_24
+    100054: BLD08Valks_24_2
+    100056: BLD08Valks_34
+    100058: BLD08Valks_34_2
+    100060: BLD08Valks_42
+    100062: BLD08Valks_42_2
+    100064: BLD08Valks_5
+    100066: BLD08Valks_5_2
+    100068: BLD08Valks_69
+    100070: BLD08Valks_69_2
+    100072: BLD08Valks_74
+    100074: BLD08Valks_74_1
+    100076: BLD08Valks_74_2
+    100078: BLD08Valks_74_3
+    100080: CINEMA_4D_Editor
+    100082: Classical
+    100084: ClassicBldcMall01_0
+    100086: ClassicBldcMall01_1
+    100088: ClassicBldcMall01_2
+    100090: ClassicBldcMall01_3
+    100092: ClassicBldcMall01_4
+    100094: ClassicBldcMall01_6
+    100096: ClassicBldcOval01_0
+    100098: ClassicBldcOval01_1
+    100100: ClassicBldcOval01_2
+    100102: ClassicBldcOval01_3
+    100104: ClassicBldcOval01_4
+    100106: ClassicBldcOval01_6
+    100108: Door
+    100110: Door_1
+    100112: Door_2
+    100114: Door_2_2
+    100116: //RootNode
+    100118: Hotel
+    100120: Mall
+    100122: Null
+    100124: Null_2
+    100126: Offices
+    100128: Station_Central
+    400000: 25_Mesh1_0_0_000
+    400002: 25_Mesh3_0_0_000
+    400004: 25_Mesh4_0_0_000
+    400006: 25_Mesh5_0_0_000
+    400008: 25_Mesh6_0_0_000
+    400010: 25_Mesh7_0_0_000
+    400012: bld02c4x5
+    400014: BLD02c4x5_1
+    400016: bld02c4x5_1
+    400018: BLD02c4x5_15
+    400020: BLD02c4x5_15_2
+    400022: BLD02c4x5_1_2
+    400024: BLD02c4x5_23
+    400026: BLD02c4x5_23_2
+    400028: BLD02c4x5_32
+    400030: BLD02c4x5_32_2
+    400032: BLD02c4x5_33
+    400034: BLD02c4x5_33_2
+    400036: BLD02c4x5_5
+    400038: BLD02c4x5_5_2
+    400040: BLD02c4x5Railing_28
+    400042: BLD02c4x5Railing_28_2
+    400044: bld08valks
+    400046: BLD08Valks_15
+    400048: BLD08Valks_15_2
+    400050: bld08valks_2
+    400052: BLD08Valks_24
+    400054: BLD08Valks_24_2
+    400056: BLD08Valks_34
+    400058: BLD08Valks_34_2
+    400060: BLD08Valks_42
+    400062: BLD08Valks_42_2
+    400064: BLD08Valks_5
+    400066: BLD08Valks_5_2
+    400068: BLD08Valks_69
+    400070: BLD08Valks_69_2
+    400072: BLD08Valks_74
+    400074: BLD08Valks_74_1
+    400076: BLD08Valks_74_2
+    400078: BLD08Valks_74_3
+    400080: CINEMA_4D_Editor
+    400082: Classical
+    400084: ClassicBldcMall01_0
+    400086: ClassicBldcMall01_1
+    400088: ClassicBldcMall01_2
+    400090: ClassicBldcMall01_3
+    400092: ClassicBldcMall01_4
+    400094: ClassicBldcMall01_6
+    400096: ClassicBldcOval01_0
+    400098: ClassicBldcOval01_1
+    400100: ClassicBldcOval01_2
+    400102: ClassicBldcOval01_3
+    400104: ClassicBldcOval01_4
+    400106: ClassicBldcOval01_6
+    400108: Door
+    400110: Door_1
+    400112: Door_2
+    400114: Door_2_2
+    400116: //RootNode
+    400118: Hotel
+    400120: Mall
+    400122: Null
+    400124: Null_2
+    400126: Offices
+    400128: Station_Central
+    2000000: CINEMA_4D_Editor
+    2100000: Material__95
+    2100002: Material__59
+    2100004: Material__61
+    2100006: Material__60
+    2100008: Material__63
+    2100010: Material__93
+    2100012: Material__92
+    2100014: Material__149
+    2100016: Material__31
+    2100018: Material__30
+    2100020: Material__27
+    2100022: Material__29
+    2100024: Material__25
+    2100026: Material__28
+    2100028: Material__151
+    2100030: Material__152
+    2100032: Material__150
+    2100034: Material__147
+    2300000: 25_Mesh1_0_0_000
+    2300002: 25_Mesh3_0_0_000
+    2300004: 25_Mesh4_0_0_000
+    2300006: 25_Mesh5_0_0_000
+    2300008: 25_Mesh6_0_0_000
+    2300010: 25_Mesh7_0_0_000
+    2300012: BLD02c4x5_1
+    2300014: BLD02c4x5_15
+    2300016: BLD02c4x5_15_2
+    2300018: BLD02c4x5_1_2
+    2300020: BLD02c4x5_23
+    2300022: BLD02c4x5_23_2
+    2300024: BLD02c4x5_32
+    2300026: BLD02c4x5_32_2
+    2300028: BLD02c4x5_33
+    2300030: BLD02c4x5_33_2
+    2300032: BLD02c4x5_5
+    2300034: BLD02c4x5_5_2
+    2300036: BLD02c4x5Railing_28
+    2300038: BLD02c4x5Railing_28_2
+    2300040: BLD08Valks_15
+    2300042: BLD08Valks_15_2
+    2300044: BLD08Valks_24
+    2300046: BLD08Valks_24_2
+    2300048: BLD08Valks_34
+    2300050: BLD08Valks_34_2
+    2300052: BLD08Valks_42
+    2300054: BLD08Valks_42_2
+    2300056: BLD08Valks_5
+    2300058: BLD08Valks_5_2
+    2300060: BLD08Valks_69
+    2300062: BLD08Valks_69_2
+    2300064: BLD08Valks_74
+    2300066: BLD08Valks_74_1
+    2300068: BLD08Valks_74_2
+    2300070: BLD08Valks_74_3
+    2300072: ClassicBldcMall01_0
+    2300074: ClassicBldcMall01_1
+    2300076: ClassicBldcMall01_2
+    2300078: ClassicBldcMall01_3
+    2300080: ClassicBldcMall01_4
+    2300082: ClassicBldcMall01_6
+    2300084: ClassicBldcOval01_0
+    2300086: ClassicBldcOval01_1
+    2300088: ClassicBldcOval01_2
+    2300090: ClassicBldcOval01_3
+    2300092: ClassicBldcOval01_4
+    2300094: ClassicBldcOval01_6
+    2300096: Door
+    2300098: Door_1
+    2300100: Door_2
+    2300102: Door_2_2
+    3300000: 25_Mesh1_0_0_000
+    3300002: 25_Mesh3_0_0_000
+    3300004: 25_Mesh4_0_0_000
+    3300006: 25_Mesh5_0_0_000
+    3300008: 25_Mesh6_0_0_000
+    3300010: 25_Mesh7_0_0_000
+    3300012: BLD02c4x5_1
+    3300014: BLD02c4x5_15
+    3300016: BLD02c4x5_15_2
+    3300018: BLD02c4x5_1_2
+    3300020: BLD02c4x5_23
+    3300022: BLD02c4x5_23_2
+    3300024: BLD02c4x5_32
+    3300026: BLD02c4x5_32_2
+    3300028: BLD02c4x5_33
+    3300030: BLD02c4x5_33_2
+    3300032: BLD02c4x5_5
+    3300034: BLD02c4x5_5_2
+    3300036: BLD02c4x5Railing_28
+    3300038: BLD02c4x5Railing_28_2
+    3300040: BLD08Valks_15
+    3300042: BLD08Valks_15_2
+    3300044: BLD08Valks_24
+    3300046: BLD08Valks_24_2
+    3300048: BLD08Valks_34
+    3300050: BLD08Valks_34_2
+    3300052: BLD08Valks_42
+    3300054: BLD08Valks_42_2
+    3300056: BLD08Valks_5
+    3300058: BLD08Valks_5_2
+    3300060: BLD08Valks_69
+    3300062: BLD08Valks_69_2
+    3300064: BLD08Valks_74
+    3300066: BLD08Valks_74_1
+    3300068: BLD08Valks_74_2
+    3300070: BLD08Valks_74_3
+    3300072: ClassicBldcMall01_0
+    3300074: ClassicBldcMall01_1
+    3300076: ClassicBldcMall01_2
+    3300078: ClassicBldcMall01_3
+    3300080: ClassicBldcMall01_4
+    3300082: ClassicBldcMall01_6
+    3300084: ClassicBldcOval01_0
+    3300086: ClassicBldcOval01_1
+    3300088: ClassicBldcOval01_2
+    3300090: ClassicBldcOval01_3
+    3300092: ClassicBldcOval01_4
+    3300094: ClassicBldcOval01_6
+    3300096: Door
+    3300098: Door_1
+    3300100: Door_2
+    3300102: Door_2_2
+    4300000: BLD08Valks_74_1
+    4300002: BLD08Valks_74
+    4300004: BLD08Valks_5
+    4300006: BLD08Valks_15
+    4300008: BLD08Valks_74_2
+    4300010: BLD08Valks_69
+    4300012: BLD08Valks_24
+    4300014: BLD08Valks_42
+    4300016: BLD08Valks_34
+    4300018: BLD08Valks_5_2
+    4300020: BLD08Valks_15_2
+    4300022: BLD08Valks_74_3
+    4300024: BLD08Valks_69_2
+    4300026: BLD08Valks_24_2
+    4300028: BLD08Valks_42_2
+    4300030: BLD08Valks_34_2
+    4300032: Door_2
+    4300034: Door_1
+    4300036: Door
+    4300038: Door_2_2
+    4300040: BLD02c4x5Railing_28
+    4300042: BLD02c4x5_33
+    4300044: BLD02c4x5_15
+    4300046: BLD02c4x5_32
+    4300048: BLD02c4x5_1
+    4300050: BLD02c4x5_23
+    4300052: BLD02c4x5_5
+    4300054: BLD02c4x5Railing_28_2
+    4300056: BLD02c4x5_33_2
+    4300058: BLD02c4x5_15_2
+    4300060: BLD02c4x5_32_2
+    4300062: BLD02c4x5_1_2
+    4300064: BLD02c4x5_23_2
+    4300066: BLD02c4x5_5_2
+    4300068: ClassicBldcMall01_4
+    4300070: ClassicBldcMall01_6
+    4300072: ClassicBldcMall01_3
+    4300074: ClassicBldcMall01_0
+    4300076: ClassicBldcMall01_2
+    4300078: ClassicBldcMall01_1
+    4300080: 25_Mesh7_0_0_000
+    4300082: 25_Mesh6_0_0_000
+    4300084: 25_Mesh5_0_0_000
+    4300086: 25_Mesh4_0_0_000
+    4300088: 25_Mesh3_0_0_000
+    4300090: 25_Mesh1_0_0_000
+    4300092: ClassicBldcOval01_6
+    4300094: ClassicBldcOval01_4
+    4300096: ClassicBldcOval01_0
+    4300098: ClassicBldcOval01_3
+    4300100: ClassicBldcOval01_2
+    4300102: ClassicBldcOval01_1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__147
+    second: {fileID: 2100000, guid: 1a76597d6458a284e8bda206d175df1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__149
+    second: {fileID: 2100000, guid: 554c56799c51fa8498cfb92e7a819e06, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__150
+    second: {fileID: 2100000, guid: cf9911542d7e7614782f4b8b8f1f84c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__151
+    second: {fileID: 2100000, guid: 62b3e0a12e95c3545bbb67890c0b2a91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__152
+    second: {fileID: 2100000, guid: 14e12b45f9b35cb4cb4726b93d8eb9a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__25
+    second: {fileID: 2100000, guid: 2d2e72d3b80a8b4469555937c7853e45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__27
+    second: {fileID: 2100000, guid: 6e0710f947002ce4ab371e32716467b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__28
+    second: {fileID: 2100000, guid: 5b03f2155eeda994b999d673b921cd2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__29
+    second: {fileID: 2100000, guid: 265461e582467824f95be9cf255132c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__30
+    second: {fileID: 2100000, guid: aceb2dc6a0ef00346aad3b1da38c1714, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__31
+    second: {fileID: 2100000, guid: f92193e99d87ba545924e6497df102d4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__59
+    second: {fileID: 2100000, guid: cdb6b0a2b13a3eb49a54221b2308f58b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__60
+    second: {fileID: 2100000, guid: 41207a175cb660b419e4fa1b407ee06b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__61
+    second: {fileID: 2100000, guid: 74b379f7e90745c49bc27448f0a0d685, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__63
+    second: {fileID: 2100000, guid: a2b8a4d786373204680a6958751d8bd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__92
+    second: {fileID: 2100000, guid: 451b73e01ec3d444086ac23b682e6f66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__93
+    second: {fileID: 2100000, guid: 0a4ff2df3f2103742946497502745bea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__95
+    second: {fileID: 2100000, guid: fa4e33222d30c2749b4d64bc1c16ddcf, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bricks01
+    second: {fileID: 2800000, guid: 92538e1195f3d08428950a12b55b2820, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bricks01_n
+    second: {fileID: 2800000, guid: bb61b9fd1696e754993e00e8d977c3ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concretemetalquad01
+    second: {fileID: 2800000, guid: 083d7e8a0fc320944adc2d9c7db8c4e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concretemetalquad01_n
+    second: {fileID: 2800000, guid: 8775fe812c7479145ae01ceb3b56f379, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concretequad01
+    second: {fileID: 2800000, guid: 04ba4895285735447a94391b790ab601, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: concretequad01_n
+    second: {fileID: 2800000, guid: 3b09bfb7468bbb64fb87f7cc28a77d37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: crackdecal03
+    second: {fileID: 2800000, guid: 476f8c12d659b4748a25fd1e730c8dca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: crackdecal03_a
+    second: {fileID: 2800000, guid: e487780c97a1a8d4da126e53d384af29, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: crackdecal03_n
+    second: {fileID: 2800000, guid: 09bdbd23b3a33434d868aae2ceadcb1e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: edgetrim01
+    second: {fileID: 2800000, guid: 09f2c82b49e34fa4abf87cb438d97b2e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: edgetrim01_a
+    second: {fileID: 2800000, guid: 15eb1252966b4184e87db598ecad8c5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: edgetrim01_n
+    second: {fileID: 2800000, guid: c9d13d1e054f096468f0166f2a1dc4b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hoteldoor01
+    second: {fileID: 2800000, guid: 090205e3686b56b489060e2827433d58, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hoteldoor01_a
+    second: {fileID: 2800000, guid: 53827b66103f26847a8d8fdcbef90fd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hoteldoor01_n
+    second: {fileID: 2800000, guid: 82c64e2629cb9dd4591903933050b710, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hotelwall01
+    second: {fileID: 2800000, guid: 54dd60218e70fbb489eb98216aacfe65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hotelwall01_n
+    second: {fileID: 2800000, guid: 13e494e48ea00e048aff72e8aa1b1299, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hotelwall02
+    second: {fileID: 2800000, guid: 2d51df46501ffff46a472d5c332bce70, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hotelwall02_a
+    second: {fileID: 2800000, guid: 36c44f07fe62653458bf062194f6267e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: hotelwall02_n
+    second: {fileID: 2800000, guid: f8ae92970271b1c48be7ed3c7777ca4a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalworkquad01
+    second: {fileID: 2800000, guid: 9c4985b0c70a8304b93ddd685203659e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalworkquad01_a
+    second: {fileID: 2800000, guid: 7c15d9dfcdc009d4ebed3cf1c508dba3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metalworkquad01_n
+    second: {fileID: 2800000, guid: 7f88370fe122bc54c9a009e22cc248e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rubblepile05
+    second: {fileID: 2800000, guid: d915a760851093144b476ddb14203b89, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rubblepile05_n
+    second: {fileID: 2800000, guid: 9b7fb86deaa227f46bd7aa1f65ee5e65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sidewalkquad01
+    second: {fileID: 2800000, guid: ef9445dcde63bee4a8c2a68a5457532a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sidewalkquad01_a
+    second: {fileID: 2800000, guid: 95c593dd15a3aea4eac0677631ec5e33, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sidewalkquad01_n
+    second: {fileID: 2800000, guid: 5e10e401b516bcc4aaa0a87e91003efe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontquad01
+    second: {fileID: 2800000, guid: 10c439420f3df6c45980b9227664fd45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontquad01_a
+    second: {fileID: 2800000, guid: 799bce8bb27a57e4c96631455912bfbb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: storefrontquad01_n
+    second: {fileID: 2800000, guid: 85fdda900f04c2847a29c928f5d455de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: valkbuild
+    second: {fileID: 2800000, guid: aa1b5f8ae10a9a94da8ef7dd4f9d5b2c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: valkbuild_a
+    second: {fileID: 2800000, guid: 564746cbb93ec6d46b8e57d3225036e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: valkbuild_n
+    second: {fileID: 2800000, guid: f362174fa9ca41e42b5cd707de5e61a9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windowsquad01
+    second: {fileID: 2800000, guid: 782f90f9f3897ec419994fadde0bdf79, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windowsquad01_a
+    second: {fileID: 2800000, guid: 06379b288476ab34ca87ad71ae43c981, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: windowsquad01_n
+    second: {fileID: 2800000, guid: 139f76f787f085444bed44b4f6ef9980, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
