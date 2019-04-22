@@ -147,6 +147,14 @@ _______________________________________________________________________________
 -> Finished Environment Design for Memorial Park Hospital (6h)
 
 ______________________________________________________________________________
+
+09/04/19
+-> Started Environment Design for Military Base (2h)
+
+
+
+
+_______________________________________________________________________________
 -> create the other 2 environments
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
