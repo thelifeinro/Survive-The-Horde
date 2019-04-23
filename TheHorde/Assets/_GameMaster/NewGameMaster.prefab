@@ -13417,7 +13417,7 @@ MonoBehaviour:
   nextWave: 0
   timeBetweenWaves: 5
   waveCountdown: 0
-  levelCompletePrefab: {fileID: 1679707664678988, guid: 067959de68c0ec342b7994598305b7c4,
+  levelCompletePrefab: {fileID: 1679707664678988, guid: 1464711ee64209542b1e1ee4f0dd411f,
     type: 3}
   waveCompletePrefab: {fileID: 1126595613884630, guid: 6be8bea049daa244c9f000d251cdfc09,
     type: 3}
@@ -13450,7 +13450,7 @@ MonoBehaviour:
   level: 0
   startCure: 1
   startMoney: 400
-  startPopulation: 1
+  startPopulation: 10
   baseLevelEXP: 0
   bonusThreshold: 0
   gameOverPrefab: {fileID: 1679707664678988, guid: 2950da1c124109042a9f36b970e202dc,

@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/TheWoods_Terrain.unity
     guid: 0662a187309bb564b888907084541d4a
   - enabled: 1
+    path: Assets/_Scenes/Military.unity
+    guid: f43fc670400bafc448ead73bc5cd1bba
+  - enabled: 1
     path: Assets/_Scenes/LevelSelector.unity
     guid: be66de2ddbe8e7347b34e756febd7638
   m_configObjects: {}
