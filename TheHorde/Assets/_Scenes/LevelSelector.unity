@@ -412,6 +412,7 @@ MonoBehaviour:
   linfos:
   - {fileID: 11400000, guid: 2889e996a5ebf9a428f50db30e1cc854, type: 2}
   - {fileID: 11400000, guid: 5f9a97f3d858c994f866c72a369deeaa, type: 2}
+  - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
   levelBtnPrefab: {fileID: 2603766621640929405, guid: 93f82803e2d8bec439d7fe4902343055,
     type: 3}
   panel: {fileID: 712384585}
