@@ -8,7 +8,7 @@ public class Quarantine : MonoBehaviour
     public int baseTimeToTurn;
     public int timeToTurnSeconds;
     public int count;
-    public int killPrice;
+    private int killPrice = 0;
     public GameObject containerList;
     public GameObject elementPrefab;
     public GameObject zombiePrefab;
@@ -29,7 +29,7 @@ public class Quarantine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void OnEnable()
     {
@@ -49,7 +49,7 @@ public class Quarantine : MonoBehaviour
 
     public void UnlockLevels(int i)
     {
-           AddTurnTimeSeconds(i);
+        AddTurnTimeSeconds(i);
     }
 
     public void AddTurnTimeSeconds(int k)
@@ -59,7 +59,7 @@ public class Quarantine : MonoBehaviour
 
     public void CheckIn()
     {
-       StartCoroutine(InfectedPersonTurning());
+        StartCoroutine(InfectedPersonTurning());
         count++;
         countText.text = count.ToString();
     }
@@ -70,7 +70,8 @@ public class Quarantine : MonoBehaviour
         countText.text = count.ToString();
     }
 
-    public void SpawnZombie() {
+    public void SpawnZombie()
+    {
         PlayerStats.instance.KillOneInfected(killPrice);
         CheckOut();
         Debug.Log("QUARANTINE: Should be spawning a zombie");
@@ -78,7 +79,7 @@ public class Quarantine : MonoBehaviour
         Instantiate(zombiePrefab, zombieSpawnPoint.transform.position, zombieSpawnPoint.transform.rotation);
         //TO DO: maybe show a notification on screen
     }
-    
+
     IEnumerator InfectedPersonTurning()
     {
         GameObject element = Instantiate(elementPrefab, containerList.transform);
@@ -88,7 +89,8 @@ public class Quarantine : MonoBehaviour
         {
             qi.progressBar.fillAmount = normalizedTime / timeToTurnSeconds;
             normalizedTime += Time.deltaTime;
-            if (qi.heal == true || qi.kill == true) {
+            if (qi.heal == true || qi.kill == true)
+            {
                 //destroying element from list
                 Destroy(element);
                 yield break;
@@ -99,5 +101,9 @@ public class Quarantine : MonoBehaviour
         SpawnZombie();
         Destroy(element);
     }
-    
+
+    public int GetKillPrice()
+    {
+        return killPrice;
+    }
 }

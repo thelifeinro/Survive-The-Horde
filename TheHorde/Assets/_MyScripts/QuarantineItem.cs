@@ -11,20 +11,22 @@ public class QuarantineItem : MonoBehaviour
     public Button healBtn;
     public Button killBtn;
     public Text killPriceText;
+    int killPrice;
     Quarantine quarantine;
 
     // Start is called before the first frame update
     void Start()
     {
         quarantine = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<Quarantine>();
-        killPriceText.text = quarantine.killPrice.ToString();
+        killPrice = quarantine.GetKillPrice();
+        killPriceText.text = killPrice.ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
         //check if you can afford the scraps to kill person; if not: button stays disabled
-        if(PlayerStats.Money < quarantine.killPrice)
+        if (PlayerStats.Money < killPrice)
         {
             killBtn.interactable = false;
         }
@@ -46,7 +48,7 @@ public class QuarantineItem : MonoBehaviour
     public void KillInfected()
     {
         kill = true;
-        PlayerStats.instance.KillOneInfected(quarantine.killPrice);
+        PlayerStats.instance.KillOneInfected(killPrice);
         quarantine.CheckOut();
     }
 

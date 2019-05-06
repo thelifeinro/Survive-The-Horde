@@ -151,15 +151,20 @@ ______________________________________________________________________________
 22/04/19
 -> Made Environment Design for Military Base (4h)
 
-
 ______________________________________________________________________________
 
 23/04/19
 -> Finished Environment Design for Military Base
 -> Made Level 2 Design
+______________________________________________________________________________
 
-_______________________________________________________________________________
--> create the other 2 environments
+06/05/19
+	-> remove price from killing people in quarantine _ done 11:40
+	-> made skill tree design
+	-> added listeners on skill tree buttons
+	
+
+_____________________________________________________________________________
 
 -> book of enemies (- sort of catalog of all the enemy types, unlocked as you
 encounter them; tells you what weakness they have - accessibble as an ui button)

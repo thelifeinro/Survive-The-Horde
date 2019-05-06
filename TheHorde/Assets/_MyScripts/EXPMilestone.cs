@@ -14,7 +14,7 @@ public class EXPMilestone : ScriptableObject
     public string title;
     public string description;
     public MilestoneType type;
-    public int milestoneEXP;
+    public int milestoneEXP; //price
     public int level;
     public Image icon;
 }
