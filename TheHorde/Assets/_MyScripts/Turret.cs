@@ -37,11 +37,11 @@ public class Turret : MonoBehaviour {
         UnlockLevels(PlayerStats.instance.unlockedLevels[type]); 
 
         //subscribing to milestone manager events
-        MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked;
+       PlayerStats.OnUpgradeUnlock += UpgradeUnlocked;
     }
     void OnDisable()
     {
-        MilestoneManager.OnUpgradeUnlock -= UpgradeUnlocked;
+        PlayerStats.OnUpgradeUnlock -= UpgradeUnlocked;
     }
 
 

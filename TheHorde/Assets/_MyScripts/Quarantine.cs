@@ -23,7 +23,7 @@ public class Quarantine : MonoBehaviour
         countText.text = count.ToString();
         zombieSpawnPoint = GameObject.FindGameObjectWithTag("Quarant").transform;
         UnlockLevels(PlayerStats.instance.unlockedLevels[MilestoneType.turntime]); // adding unlocked upgrads to base turn time
-        MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked; // subscribing quarantine to milstone manager so it stays uptodate with the upgrades
+        PlayerStats.OnUpgradeUnlock += UpgradeUnlocked; // subscribing quarantine to milstone manager so it stays uptodate with the upgrades
     }
 
     // Update is called once per frame
@@ -33,16 +33,16 @@ public class Quarantine : MonoBehaviour
     }
     public void OnEnable()
     {
-        MilestoneManager.OnUpgradeUnlock += UpgradeUnlocked;
+        PlayerStats.OnUpgradeUnlock += UpgradeUnlocked;
     }
     public void OnDisable()
     {
-        MilestoneManager.OnUpgradeUnlock -= UpgradeUnlocked;
+        PlayerStats.OnUpgradeUnlock -= UpgradeUnlocked;
     }
 
     public void UpgradeUnlocked(EXPMilestone mst)
     {
-        Debug.Log(gameObject.name + " Quarantine upgrade event triggered");
+        //Debug.Log(gameObject.name + " Quarantine upgrade event triggered");
         if (mst.type == MilestoneType.turntime)
             AddTurnTimeSeconds(mst.level);
     }

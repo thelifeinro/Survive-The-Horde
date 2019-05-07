@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour
     public void NewGame()
     {
 
-        SaveManager.SaveGame(0, 1, false); //overwrites the save file and sets exp back to zero and leveel to 1
+        SaveManager.SaveGame(0, 1, false, 0, 0,0 ,0); //overwrites the save file and sets exp back to zero and leveel to 1
     }
 
 

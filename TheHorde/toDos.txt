@@ -158,11 +158,16 @@ ______________________________________________________________________________
 -> Made Level 2 Design
 ______________________________________________________________________________
 
-06/05/19
+06/05/19 _ all day (8hrs)
 	-> remove price from killing people in quarantine _ done 11:40
 	-> made skill tree design
 	-> added listeners on skill tree buttons
-	
+______________________________________________________________________________
+
+07/05/19 _ all day (10hrs)
+	-> Skill Tree UI completed
+	-> Unlocking skills and buying skills 
+	-> Saving and Loading skills
 
 _____________________________________________________________________________
 

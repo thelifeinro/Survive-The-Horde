@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6614a24efef8a046b571a258f227c6d, type: 3}
-  m_Name: 4
+  m_Name: W3
   m_EditorClassIdentifier: 
-  title: Turn Time extended
-  description: Infected people take longer to turn into Zombies
-  type: 0
-  milestoneEXP: 375
-  level: 10
-  icon: {fileID: 0}
+  title: Water Tower - Level 3
+  description: Unlocked Level 3 Upgrade forWater Tower
+  type: 2
+  milestoneEXP: 200
+  level: 3
+  icon: {fileID: 21300000, guid: 5c6343bb8e5e3e040a1c80d95810d3c7, type: 3}

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6614a24efef8a046b571a258f227c6d, type: 3}
-  m_Name: 10
+  m_Name: R5
   m_EditorClassIdentifier: 
-  title: Archer Tower - Level 3
-  description: Unlocked Level 3 Upgrade for Archer Turret
-  type: 1
-  milestoneEXP: 1460
-  level: 3
-  icon: {fileID: 0}
+  title: Grenade Thrower - Level 5
+  description: Unlocked Level 5 Upgrade for Grenade Thrower
+  type: 3
+  milestoneEXP: 450
+  level: 5
+  icon: {fileID: 21300000, guid: ff02b16d33b586948b7b45ab592f666a, type: 3}

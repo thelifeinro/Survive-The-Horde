@@ -21,6 +21,9 @@ public class PlayerStats : MonoBehaviour {
     public delegate void ExpEventHandler(int count);
     public static event ExpEventHandler OnEXPChange;
 
+    public delegate void UnlockEventHandler(EXPMilestone ms);
+    public static event UnlockEventHandler OnUpgradeUnlock;
+
     public Dictionary<MilestoneType, int> unlockedLevels = new Dictionary<MilestoneType, int>()
 {
       {MilestoneType.arrow, 0},
@@ -40,10 +43,48 @@ public class PlayerStats : MonoBehaviour {
         }
         instance = this;
         EXP = SaveManager.EXP;
+        unlockedLevels[MilestoneType.arrow] = SaveManager.aLev;
+        unlockedLevels[MilestoneType.rocket] = SaveManager.rLev;
+        unlockedLevels[MilestoneType.water] = SaveManager.wLev;
+        unlockedLevels[MilestoneType.turntime] = SaveManager.tLev;
+        InitialActivateUpgrades();
     }
 
     void Update()
     {
+    }
+
+    public void InitialActivateUpgrades()
+    {
+        if (SkillManager.Instance == null)
+            Debug.Log("Null Skill Manager");
+        foreach(SkillManager.Skill sk in SkillManager.Instance.skills)
+        {
+            if(sk.content.level <= unlockedLevels[sk.content.type])
+            {
+                sk.locked = false;
+                sk.equipped = true;
+                if (OnUpgradeUnlock != null)
+                {
+                    //letting subscribers know an upgrade has been unlocked
+                    OnUpgradeUnlock(sk.content);
+                }
+            }
+        }
+    }
+
+    //unlocks new upgrade selected from skill tree
+    public void UnlockUpgrade(EXPMilestone mst)
+    {
+        if (OnUpgradeUnlock != null)
+        {
+            //letting subscribers know an upgrade has been unlocked
+            OnUpgradeUnlock(mst);
+        }
+        //changing value of specific dictionary entry
+        unlockedLevels[mst.type] = mst.level;
+        //subtracting from exp
+        AddEXP(-mst.milestoneEXP);
     }
 
     public void LevelComplete()
@@ -80,7 +121,7 @@ public class PlayerStats : MonoBehaviour {
     public void Save(bool success)
     {
         // MARE ATENTIE! suprascrie highestLevel la cel al nivelului asta, daca faci replay la un nivel anterior
-        SaveManager.SaveGame(EXP,level, success);
+        SaveManager.SaveGame(EXP,level, success, unlockedLevels[MilestoneType.arrow], unlockedLevels[MilestoneType.rocket], unlockedLevels[MilestoneType.water], unlockedLevels[MilestoneType.turntime]);
         Debug.Log("Saved game. EXP:" + SaveManager.LoadGame().EXP);
     }
 

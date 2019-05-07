@@ -6,8 +6,12 @@ public static class SaveManager
 {
     public static int EXP = 0;
     public static int highestLevel = 1;
+    public static int aLev = 0;
+    public static int rLev = 0;
+    public static int wLev = 0;
+    public static int tLev = 0;
 
-    public static void SaveGame(int EXP, int level, bool success)
+    public static void SaveGame(int EXP, int level, bool success, int aLev, int rLev, int wLev, int tLev)
     {
         if (success)
         {
@@ -19,7 +23,7 @@ public static class SaveManager
         string path = Application.persistentDataPath + "/savegame";
         FileStream stream = new FileStream(path, FileMode.Create);
 
-        GameData data = new GameData(EXP, highestLevel);
+        GameData data = new GameData(EXP, highestLevel, aLev, rLev, wLev, tLev);
 
         formatter.Serialize(stream, data);
         stream.Close();
@@ -36,6 +40,11 @@ public static class SaveManager
 
             EXP = data.EXP;
             highestLevel = data.level;
+            aLev = data.aLev;
+            rLev = data.rLev;
+            wLev = data.wLev;
+            tLev = data.tLev;
+
             return data;
         }
         else
