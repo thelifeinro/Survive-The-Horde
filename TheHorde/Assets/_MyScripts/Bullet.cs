@@ -34,7 +34,7 @@ public class Bullet : MonoBehaviour {
         Vector3 dir = Target.position - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
-        if (dir.magnitude <= distanceThisFrame)
+        if (dir.magnitude <= distanceThisFrame + 0.2) // the +0.1 is to fix the drone which hovers up and douwn and is never hit by bullet
         {
             HitTarget();
             return;

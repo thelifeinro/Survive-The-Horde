@@ -168,18 +168,23 @@ ______________________________________________________________________________
 	-> Skill Tree UI completed
 	-> Unlocking skills and buying skills 
 	-> Saving and Loading skills
+______________________________________________________________________________
 
-_____________________________________________________________________________
-
--> book of enemies (- sort of catalog of all the enemy types, unlocked as you
-encounter them; tells you what weakness they have - accessibble as an ui button)
+08/05/19 _ started 10:20
+	-> Remove milestone manager from environments & add skill tree; test if it works _done: 11:50
+	-> Fixed grenades not hitting Drones
+	-> Fixed Napalm attack - projectile now explodes when it hits terrain
+_______________________________________________________________________________
 
 -> Options in main menu
 
 DETAILS:
 
 
--> ui animations for when player stats change values
+
 
 REJECTED:
+-> book of enemies (- sort of catalog of all the enemy types, unlocked as you
+encounter them; tells you what weakness they have - accessibble as an ui button)
+-> ui animations for when player stats change values
 -> create possibility for enemy to be undetectable by a specific archer type

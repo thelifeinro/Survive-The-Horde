@@ -25,13 +25,17 @@ public class NapalmProjectile : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         Vector3 dir = targetPosition - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
         transform.Translate(dir.normalized * distanceThisFrame, Space.World);
         Quaternion rotation = Quaternion.LookRotation(dir);
         transform.rotation = rotation;
+        /*if (dir.magnitude <= distanceThisFrame ) // the +0.1 is to fix the drone which hovers up and douwn and is never hit by bullet
+        {
+            HitSth();
+        }*/
     }
 
     void AwardEXP()

@@ -6486,7 +6486,7 @@ MonoBehaviour:
   useWater: 0
   linerenderer: {fileID: 120032273794477720}
   impactParticles: {fileID: 0}
-  bulletPrefab: {fileID: 100000, guid: cd376236560723844b0e80cd90b4eee8, type: 3}
+  bulletPrefab: {fileID: 100000, guid: af4e9117b4db3154a9d54d19bb14a430, type: 3}
   firePoint: {fileID: 4393079084333578}
 --- !u!120 &120032273794477720
 LineRenderer:
