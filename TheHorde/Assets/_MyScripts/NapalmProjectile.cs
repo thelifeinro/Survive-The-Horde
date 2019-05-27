@@ -16,16 +16,18 @@ public class NapalmProjectile : MonoBehaviour {
 
     public Transform EffectDropzone;
     public GameObject effectPrefab;
-
+    private MoveCamera mc;
 
     // Use this for initialization
     void Start () {
         targetPosition = new Vector3(transform.position.x, 0, transform.position.z);
         EffectDropzone = GameObject.FindGameObjectWithTag("EXPZone").transform;
+        mc = Camera.main.GetComponent<MoveCamera>();
     }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+
         Vector3 dir = targetPosition - transform.position;
         float distanceThisFrame = speed * Time.deltaTime;
 
@@ -36,7 +38,10 @@ public class NapalmProjectile : MonoBehaviour {
         {
             HitSth();
         }*/
+
+       
     }
+
 
     void AwardEXP()
     {
@@ -58,6 +63,8 @@ public class NapalmProjectile : MonoBehaviour {
 
     void HitSth()
     {
+        if(mc!=null)
+            mc.Shake();
         // iterate all enemies and damage the ones in range
         if (explosionPrefab != null)
         {

@@ -8,6 +8,10 @@ public class MainMenu : MonoBehaviour
 {
     public Button continueButton;
     public Text continueText;
+    public AudioSource continueSound;
+    bool LoadingInitiated = false;
+    public GameObject btnPressPrefab;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -37,13 +41,28 @@ public class MainMenu : MonoBehaviour
 
     public void Continue()
     {
-        SaveManager.LoadGame();
-        //provizoriu: aici o sa incarce level selector
-        SceneManager.LoadScene("LevelSelector", LoadSceneMode.Single);
+        if (!LoadingInitiated)
+        {
+            StartCoroutine(DelayedContinue());
+            LoadingInitiated = true;
+        }
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    IEnumerator DelayedContinue()
+    {
+        continueSound.Play();
+        Instantiate(btnPressPrefab);
+        //Wait until clip finish playing
+        yield return new WaitForSeconds(continueSound.clip.length/3);
+
+        //Load scene here
+        SaveManager.LoadGame();
+        SceneManager.LoadScene("LevelSelector", LoadSceneMode.Single);
+
     }
 }

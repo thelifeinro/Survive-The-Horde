@@ -15,10 +15,15 @@ public class Sniper : SpecialAttack {
     public GameObject UI;
     public Transform EffectDropzone;
     public GameObject effectPrefab;
+    public AudioSource audioSource;
 
     private int enemiesHit;
     private int expAwarded;
-    
+    float shake_decay;
+    float shake_intensity;
+    Vector3 originPosition;
+    Quaternion originRotation;
+
     // Use this for initialization
     void Start () {
 		
@@ -33,12 +38,31 @@ public class Sniper : SpecialAttack {
             {
                 Debug.Log("pressed");
                 Shoot();
+                Shake();
+            }
+
+            //tryiong some camera shake
+            if (shake_intensity > 0)
+            {
+                sniperCam.transform.position = originPosition + Random.insideUnitSphere * shake_intensity;
+                sniperCam.transform.rotation = new Quaternion(
+                                originRotation.x + Random.Range(-shake_intensity, shake_intensity) * 0.2f,
+                                originRotation.y + Random.Range(-shake_intensity, shake_intensity) * 0.2f,
+                                originRotation.z + Random.Range(-shake_intensity, shake_intensity) * 0.2f,
+                                originRotation.w + Random.Range(-shake_intensity, shake_intensity) * 0.2f);
+                shake_intensity -= shake_decay;
             }
         }
 	}
 
     void Shoot()
     {
+        
+
+        if (audioSource != null)
+        {
+            audioSource.Play();
+        }
         RaycastHit hit;
         if(Physics.Raycast(sniperCam.transform.position, sniperCam.transform.forward, out hit))
         {
@@ -56,6 +80,14 @@ public class Sniper : SpecialAttack {
                 AwardEXP();
             }
         }
+    }
+
+    public void Shake()
+    {
+        originPosition = sniperCam.transform.position;
+        originRotation = sniperCam.transform.rotation;
+        shake_intensity = 0.06f;
+        shake_decay = 0.01f;
     }
 
     void AwardEXP()

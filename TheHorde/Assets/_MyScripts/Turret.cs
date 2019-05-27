@@ -15,6 +15,7 @@ public class Turret : MonoBehaviour {
     public int Level = 0;
     public int menCount = 1;
     public GameObject[] men;
+    public AudioSource upgradeAudio;
 
     [System.Serializable]
     public class TurretLevel
@@ -118,6 +119,7 @@ public class Turret : MonoBehaviour {
 
                 Level++;
                 nextLevel++;
+                upgradeAudio.Play();
             }
             
         }

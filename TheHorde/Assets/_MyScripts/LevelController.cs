@@ -11,6 +11,8 @@ public class LevelController : MonoBehaviour
     public GameObject panel;
     public GameObject LoadingScreen;
     public Slider progBar;
+    public AudioSource btnPressSound;
+    public GameObject btnPressEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +49,8 @@ public class LevelController : MonoBehaviour
     {
         //make loading screen
         Debug.Log("Should be laoding scene " + index);
+        btnPressSound.Play();
+        Instantiate(btnPressEffect);
         StartCoroutine(LoadAsync(index));
     }
 

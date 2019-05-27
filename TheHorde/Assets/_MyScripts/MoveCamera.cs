@@ -28,6 +28,12 @@ public class MoveCamera : MonoBehaviour
 
     private float lastFrameTime;
 
+
+    float shake_decay;
+    float shake_intensity;
+    Vector3 originPosition;
+    Quaternion originRotation;
+
     private void Start()
     {
         lastFrameTime = Time.realtimeSinceStartup;
@@ -35,11 +41,33 @@ public class MoveCamera : MonoBehaviour
     //
     // UPDATE
     //
+    public void Shake()
+    {
+        originPosition = Camera.main.transform.position;
+        originRotation = Camera.main.transform.rotation;
+        shake_intensity = 0.16f;
+        shake_decay = 0.01f;
+    }
 
     void Update()
     {
+        
+        
         var myDeltaTime = Time.realtimeSinceStartup - lastFrameTime;
         lastFrameTime = Time.realtimeSinceStartup;
+        //shaking
+        if (shake_intensity > 0)
+        {
+            Debug.Log("Shake intensity:" + shake_intensity);
+            Camera.main.transform.position = originPosition + Random.insideUnitSphere * shake_intensity;
+            Camera.main.transform.rotation = new Quaternion(
+                            originRotation.x + Random.Range(-shake_intensity, shake_intensity) * 0.2f,
+                            originRotation.y + Random.Range(-shake_intensity, shake_intensity) * 0.2f,
+                            originRotation.z + Random.Range(-shake_intensity, shake_intensity) * 0.2f,
+                            originRotation.w + Random.Range(-shake_intensity, shake_intensity) * 0.2f);
+            shake_intensity -= shake_decay;
+        }
+
 
         // Get the left mouse button
         if (Input.GetMouseButtonDown(1))

@@ -176,6 +176,34 @@ ______________________________________________________________________________
 	-> Fixed Napalm attack - projectile now explodes when it hits terrain
 _______________________________________________________________________________
 
+--- examene, finalizare proiecte + prezentari IDP+PW+ECOM ---
+______________________________________________________________________________
+
+27/05/19 _ started 12:10
+	
+	FIXES:
+	-> removed conflicting Cure Button functionality from Main Commander's UI dashboard;
+	-> Make 'Press any button' appear after animation stopped playing in GameOver and GameWon screens
+	-> Fixed Special Attack prices;
+	-> Improved ground textures and added level decor
+	-> Exiting to menu from special attack => no visible cursor - FIXED
+	-> FadeToBlack canvas not size of screen - FIXED
+	
+	NEW IMPLEMENTATIONS:
+	-> Added Camera Shake + Sound Effect to Sniper Attack (immersion++);
+	-> Added Camera Shake to Napalm Attack (immersion++); 
+	-> Add sound effects to buttons and events (immersion++)
+	-> Added blinking light functionality to street lamps for ambient immersion;
+	
+______________________________________________________________________________
+	
+
+	TO DO:
+	-> Add patient count notification in Quarantine Bar (usability++);
+	
+	BUGS:
+	-> When choosing 'Continue', first time a level is loaded all stats are zero for some reason
+
 -> Options in main menu
 
 DETAILS:

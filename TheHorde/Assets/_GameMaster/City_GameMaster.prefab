@@ -13740,7 +13740,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4956289360463108490}
-        m_MethodName: CureOne
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -30108,6 +30108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4956289358646223332}
+  - component: {fileID: 7840399350893390072}
   m_Layer: 0
   m_Name: Sniper
   m_TagString: Untagged
@@ -30131,6 +30132,102 @@ Transform:
   m_Father: {fileID: 4956289360463108488}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7840399350893390072
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4956289358646223333}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0856ef1b8aff2e340ad3f9f9e74ee6cd, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4956289358861276224
 GameObject:
   m_ObjectHideFlags: 0
@@ -30786,7 +30883,7 @@ MonoBehaviour:
   hq: {fileID: 2118126849043455500}
   UIhiddener: {fileID: 8711402398235904755}
   timeBetweenEnables: 50
-  price: 0
+  price: 50
   Button: {fileID: 3289742690427492726}
   SniperOverlay: {fileID: 3289742690864014411}
   SniperPlayer: {fileID: 4956289358646223333}
@@ -30799,6 +30896,7 @@ MonoBehaviour:
   EffectDropzone: {fileID: 1309806687968788919}
   effectPrefab: {fileID: 1754842503009415241, guid: b4a5965839c88564ca53db7a9a84d23d,
     type: 3}
+  audioSource: {fileID: 7840399350893390072}
 --- !u!114 &4956289360463108596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30836,7 +30934,7 @@ MonoBehaviour:
   hq: {fileID: 2118126849043455500}
   UIhiddener: {fileID: 8711402398235904755}
   timeBetweenEnables: 180
-  price: 50
+  price: 0
   Button: {fileID: 3289742690678972930}
   eta: {fileID: 3289742690328197019}
   BladeOverlay: {fileID: 3289742690841128206}
