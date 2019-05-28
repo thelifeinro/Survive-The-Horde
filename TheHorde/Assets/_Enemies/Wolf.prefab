@@ -1818,6 +1818,7 @@ MonoBehaviour:
   animator: {fileID: 95596720454541646}
   floatTextPrefab: {fileID: 1339339518082966, guid: 9167200bcd2747a42af2652d9d23d763,
     type: 3}
+  Name: Wolf
   startSpeed: 11
   attackSpeed: 20
   maxHealth: 35

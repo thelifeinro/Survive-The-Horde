@@ -179,7 +179,7 @@ _______________________________________________________________________________
 --- examene, finalizare proiecte + prezentari IDP+PW+ECOM ---
 ______________________________________________________________________________
 
-27/05/19 _ started 12:10
+27/05/19 _ started 12:10 (12hrs)
 	
 	FIXES:
 	-> removed conflicting Cure Button functionality from Main Commander's UI dashboard;
@@ -196,15 +196,29 @@ ______________________________________________________________________________
 	-> Added blinking light functionality to street lamps for ambient immersion;
 	
 ______________________________________________________________________________
-	
 
-	TO DO:
-	-> Add patient count notification in Quarantine Bar (usability++);
+28/05/19 _ started 11:25
+
+	NEW IMPLEMENTATION:
+	-> Added Book of Enemies; clicking on an Enemy during battle will show info about said enemy(Backstory, weaknesses etc)
+	-> Add 'new patient' warning (notification) to Quarantine Bar (usability++);
 	
+	-> Fixed Special Attack inactive times for levels 2 and 3
+	-> Made TreeObstacle into a prefab + Added Sound
+	-> Added sound to acquiring Cure	
+	
+	BUGS:
+	-> Clicking on enemies during special attacks will pop up EnemyInfo window from Book of Enemies _ FIXED
+	-> New Game doesn't remove unlocked levels _ FIXED
+	-> Bad NPC wayPoints in City Environment _ FIXED
+______________________________________________________________________________	
+	TO DO:
+	-> Implement EnemyBook in all environments
 	BUGS:
 	-> When choosing 'Continue', first time a level is loaded all stats are zero for some reason
 
--> Options in main menu
+
+
 
 DETAILS:
 
@@ -212,7 +226,6 @@ DETAILS:
 
 
 REJECTED:
--> book of enemies (- sort of catalog of all the enemy types, unlocked as you
-encounter them; tells you what weakness they have - accessibble as an ui button)
+-> Options in main menu
 -> ui animations for when player stats change values
 -> create possibility for enemy to be undetectable by a specific archer type

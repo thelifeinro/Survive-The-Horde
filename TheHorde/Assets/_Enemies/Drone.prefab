@@ -186,6 +186,7 @@ MonoBehaviour:
   animator: {fileID: 1170450487738964731}
   floatTextPrefab: {fileID: 1339339518082966, guid: 9167200bcd2747a42af2652d9d23d763,
     type: 3}
+  Name: Drone
   startSpeed: 2.85
   attackSpeed: 30.6
   maxHealth: 200
@@ -196,7 +197,7 @@ MonoBehaviour:
   chosenTarget: {fileID: 0}
   arrowRes: 0
   rocketRes: 1
-  waterRes: 3
+  waterRes: 5.89
 --- !u!195 &1170450487738964725
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -50,7 +50,7 @@ public class LevelController : MonoBehaviour
         //make loading screen
         Debug.Log("Should be laoding scene " + index);
         btnPressSound.Play();
-        Instantiate(btnPressEffect);
+        //Instantiate(btnPressEffect);
         StartCoroutine(LoadAsync(index));
     }
 

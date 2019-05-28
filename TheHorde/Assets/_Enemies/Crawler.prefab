@@ -950,7 +950,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f5bce72b51ea0174f920c3f545ad6929, type: 3}
+  - {fileID: 2100000, guid: 1401b8ce62bd8c847aec26641dd3deb3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1662,6 +1662,7 @@ MonoBehaviour:
   animator: {fileID: 5365349725819067180}
   floatTextPrefab: {fileID: 1339339518082966, guid: 9167200bcd2747a42af2652d9d23d763,
     type: 3}
+  Name: Crawler
   startSpeed: 2.5
   attackSpeed: 30.6
   maxHealth: 100

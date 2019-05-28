@@ -21,6 +21,7 @@ TagManager:
   - EXPZone
   - MilestoneUI
   - LevelController
+  - EnemyBook
   layers:
   - Default
   - TransparentFX

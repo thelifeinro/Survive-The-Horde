@@ -29,6 +29,21 @@ public static class SaveManager
         stream.Close();
     }
 
+    public static void NewGame()
+    {
+        highestLevel = 1;
+        EXP = 0;
+        BinaryFormatter formatter = new BinaryFormatter();
+        string path = Application.persistentDataPath + "/savegame";
+        FileStream stream = new FileStream(path, FileMode.Create);
+
+        GameData data = new GameData(EXP, highestLevel, 0, 0,0, 0);
+
+        formatter.Serialize(stream, data);
+        stream.Close();
+
+    }
+
     public static GameData LoadGame() {
         string path = Application.persistentDataPath + "/savegame";
         if (File.Exists(path))

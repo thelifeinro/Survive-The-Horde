@@ -2286,6 +2286,7 @@ MonoBehaviour:
   animator: {fileID: 4450056354934276083}
   floatTextPrefab: {fileID: 1339339518082966, guid: 9167200bcd2747a42af2652d9d23d763,
     type: 3}
+  Name: Military
   startSpeed: 2.85
   attackSpeed: 30.6
   maxHealth: 100

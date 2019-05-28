@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &484831443026416750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7618206652433802848}
+  - component: {fileID: 4896825651781050968}
+  m_Layer: 0
+  m_Name: EnemyBook
+  m_TagString: EnemyBook
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7618206652433802848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484831443026416750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4896825651781050968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484831443026416750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b968b469c351a754d9679b480c4180da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pages:
+  - {fileID: 11400000, guid: 0d8a68e5e3e42c6469c338c47d13d0ef, type: 2}
+  - {fileID: 11400000, guid: 702f072c5ee83a341a0b0a715006622f, type: 2}
+  - {fileID: 11400000, guid: 0ac1c704b6b68e44c88047c16a27acc7, type: 2}
+  - {fileID: 11400000, guid: 1afacf3f52dd596488544e14df51e099, type: 2}
+  - {fileID: 11400000, guid: ebad81caeed944843b914bfdac9f8efc, type: 2}
+  - {fileID: 11400000, guid: 56f41ef392047eb42a1ff4fbc8104021, type: 2}
+  - {fileID: 11400000, guid: fd7577610922a824abdb5d461074727e, type: 2}
+  windowPrefab: {fileID: 1073438462850808580, guid: 0aa184a70c72f5443b183c12ae616162,
+    type: 3}

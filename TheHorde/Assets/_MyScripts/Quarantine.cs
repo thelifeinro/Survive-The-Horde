@@ -14,7 +14,8 @@ public class Quarantine : MonoBehaviour
     public GameObject zombiePrefab;
     Transform zombieSpawnPoint;
     public Text countText;
-
+    public GameObject Warning;
+    private bool isWarningUp = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,6 +60,8 @@ public class Quarantine : MonoBehaviour
 
     public void CheckIn()
     {
+        if (!isWarningUp)
+            ShowWarning();
         StartCoroutine(InfectedPersonTurning());
         count++;
         countText.text = count.ToString();
@@ -67,9 +70,22 @@ public class Quarantine : MonoBehaviour
     public void CheckOut()
     {
         count--;
+        if (count == 0)
+            HideWarning();
         countText.text = count.ToString();
     }
+    
+    public void ShowWarning()
+    {
+        Warning.SetActive(true);
+        isWarningUp = true;
+    }
 
+    public void HideWarning()
+    {
+        Warning.SetActive(false);
+        isWarningUp = false;
+    }
     public void SpawnZombie()
     {
         PlayerStats.instance.KillOneInfected(killPrice);

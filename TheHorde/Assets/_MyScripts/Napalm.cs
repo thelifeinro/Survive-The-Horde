@@ -28,6 +28,8 @@ public class Napalm : SpecialAttack {
 
     public override void StartAttack()
     {
+        //tell BookOfEnemies it's special attack time so it doesn't show up info about enemies; do this for all special attacks
+        GameObject.FindGameObjectWithTag("EnemyBook").GetComponent<EnemyBook>().specialAttack = true;
         hq.PauseMission();
         NapalmOverlay.SetActive(true);
         UIhiddener.HideUI();
@@ -44,6 +46,7 @@ public class Napalm : SpecialAttack {
         activeAim = false;
         AimEffect.SetActive(false);
         hq.ResumeMission();
+        GameObject.FindGameObjectWithTag("EnemyBook").GetComponent<EnemyBook>().specialAttack = false;
 
     }
 

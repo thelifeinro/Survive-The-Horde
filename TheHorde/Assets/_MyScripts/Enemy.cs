@@ -13,8 +13,10 @@ public class Enemy : MonoBehaviour {
     public GameObject deathparticlesPrefab;
     public Animator animator;
     public GameObject floatTextPrefab;
+    private EnemyBook enemyBook;
 
     [Header("Enemy Stats")]
+    public string Name;
     public float startSpeed;
     float speed;
     public float attackSpeed;
@@ -39,6 +41,9 @@ public class Enemy : MonoBehaviour {
 
     void Start ()
     {
+        //look for enemyBook
+        enemyBook = GameObject.FindGameObjectWithTag("EnemyBook").GetComponent<EnemyBook>();
+
         Health = maxHealth;
         _navMeshAgent = this.GetComponent<NavMeshAgent>();
         _destination = GameObject.FindGameObjectWithTag("Destination").transform;
@@ -272,6 +277,12 @@ public class Enemy : MonoBehaviour {
             }
         }
         return false;
+    }
+
+    void OnMouseDown()
+    {
+        Debug.Log("Pressed on enemy");
+        enemyBook.ShowEnemyStats(this.Name);
     }
 }
 

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a69cd9ac801c2489566962b168ab39, type: 3}
+  m_Name: Patient
+  m_EditorClassIdentifier: 
+  Name: Patient
+  icon: {fileID: 21300000, guid: 04b8653d6be6e0f4097ec45fc0511531, type: 3}
+  desc: Let's say the first attempts at a cure weren't very good. Patients in medical
+    facilities who didn't succumb to the virus, succumbed to treatment.
+  weakness: N/A
+  resistance: N/A

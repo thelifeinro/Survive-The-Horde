@@ -112,6 +112,8 @@ public class Sniper : SpecialAttack {
 
     public override void StartAttack()
     {
+        GameObject.FindGameObjectWithTag("EnemyBook").GetComponent<EnemyBook>().specialAttack = true;
+
         enemiesHit = 0;
         expAwarded = 0;
         hq.PauseMission();
@@ -158,5 +160,6 @@ public class Sniper : SpecialAttack {
         GlobalVariables.objectsAreInteractible = true;
         hq.ResumeMission();
         PlayerStats.instance.AddEXP(expAwarded);
+        GameObject.FindGameObjectWithTag("EnemyBook").GetComponent<EnemyBook>().specialAttack = false ;
     }
 }
