@@ -202,7 +202,7 @@ ______________________________________________________________________________
 	NEW IMPLEMENTATION:
 	-> Added Book of Enemies; clicking on an Enemy during battle will show info about said enemy(Backstory, weaknesses etc)
 	-> Add 'new patient' warning (notification) to Quarantine Bar (usability++);
-	
+	-> Implement EnemyBook in all environments
 	-> Fixed Special Attack inactive times for levels 2 and 3
 	-> Made TreeObstacle into a prefab + Added Sound
 	-> Added sound to acquiring Cure	
@@ -212,18 +212,26 @@ ______________________________________________________________________________
 	-> New Game doesn't remove unlocked levels _ FIXED
 	-> Bad NPC wayPoints in City Environment _ FIXED
 ______________________________________________________________________________	
-	TO DO:
-	-> Implement EnemyBook in all environments
-	BUGS:
-	-> When choosing 'Continue', first time a level is loaded all stats are zero for some reason
+29/05/19 _ STARTED 11:00
 
+	MAJOR BUG (FIXED 13:40)
+	-> When choosing 'Continue' first time a level is loaded, all stats are zero for some reason;
+		NullReferenceException: Object reference not set to an instance of an object
+		  at PlayerStats.InitialActivateUpgrades () [0x00000] in <filename unknown>:0 
+		  at PlayerStats.Awake () [0x00000] in <filename unknown>:0 
 
-
-
-DETAILS:
-
-
-
+		Attempt 1: exception catching -> leads to new peoblem: unlocked skills are not set to white in UI
+		Attempt 2: added rule to Script execution order -> FIXED
+	
+	NEW IMPLEMENTATIONS:
+		-> Background Music controller used for Soundtrack
+		-> Made UI element: SlideShow - to be used for Tutorial (slideshow of informational images)
+		-> Made skippable Tutorial UI window on the first level
+		-> Finished Tutorial content
+		
+	IMPROVEMENTS:
+		-> Fixed Special mission text size so it fits better		
+			
 
 REJECTED:
 -> Options in main menu

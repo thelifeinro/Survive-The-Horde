@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerStats : MonoBehaviour {
     public int level;
@@ -37,6 +38,10 @@ public class PlayerStats : MonoBehaviour {
 
     private void Awake()
     {
+        //telling Soundtrack to play levelTrack
+        Soundtrack st = GameObject.FindObjectOfType<Soundtrack>();
+        st.PlayLevelTrack(true);
+
         if (instance != null)
         {
             Debug.Log("More than one PlayerStats in this scene!");
@@ -56,20 +61,28 @@ public class PlayerStats : MonoBehaviour {
 
     public void InitialActivateUpgrades()
     {
-        if (SkillManager.Instance == null)
-            Debug.Log("Null Skill Manager");
-        foreach(SkillManager.Skill sk in SkillManager.Instance.skills)
+        //if (SkillManager.Instance == null)
+        //    Debug.Log("Null Skill Manager");
+        try
         {
-            if(sk.content.level <= unlockedLevels[sk.content.type])
+            foreach (SkillManager.Skill sk in SkillManager.Instance.skills)
             {
-                sk.locked = false;
-                sk.equipped = true;
-                if (OnUpgradeUnlock != null)
+                if (sk.content.level <= unlockedLevels[sk.content.type])
                 {
-                    //letting subscribers know an upgrade has been unlocked
-                    OnUpgradeUnlock(sk.content);
+                    sk.locked = false;
+                    sk.equipped = true;
+                    if (OnUpgradeUnlock != null)
+                    {
+                        //letting subscribers know an upgrade has been unlocked
+                        OnUpgradeUnlock(sk.content);
+                    }
                 }
             }
+            
+        }
+        catch (Exception e)
+        {
+            Debug.LogException(e, this);
         }
     }
 
@@ -89,6 +102,10 @@ public class PlayerStats : MonoBehaviour {
 
     public void LevelComplete()
     {
+        //telling Soundtrack to play menuTrack
+        Soundtrack st = GameObject.FindObjectOfType<Soundtrack>();
+        st.PlayLevelTrack(false);
+
         int awardedEXP = baseLevelEXP;
         if(HealthyPopulation > bonusThreshold)
         {
@@ -111,6 +128,10 @@ public class PlayerStats : MonoBehaviour {
 
     public void GameOver()
     {
+        //telling Soundtrack to play menuTrack
+        Soundtrack st = GameObject.FindObjectOfType<Soundtrack>();
+        st.PlayLevelTrack(false);
+
         Instantiate(gameOverPrefab, Vector3.zero, Quaternion.identity);
         Time.timeScale = 0;
         //instantiate animation;

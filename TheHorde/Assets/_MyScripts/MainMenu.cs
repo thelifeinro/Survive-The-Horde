@@ -15,7 +15,11 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        if(!SaveManager.IsSaveFile()){
+        //telling Soundtrack to play menuTrack
+        Soundtrack st = GameObject.FindObjectOfType<Soundtrack>();
+        st.PlayLevelTrack(false);
+
+        if (!SaveManager.IsSaveFile()){
             continueButton.interactable = false;
             Debug.Log("Disabling continue button");
         }
