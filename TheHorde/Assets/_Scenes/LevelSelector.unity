@@ -414,6 +414,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2889e996a5ebf9a428f50db30e1cc854, type: 2}
   - {fileID: 11400000, guid: 5f9a97f3d858c994f866c72a369deeaa, type: 2}
   - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
+  - {fileID: 11400000, guid: 3ea86a2fc1c3f9d41b551715a53e5274, type: 2}
+  - {fileID: 11400000, guid: e3c37bb77ea7fd14fab9adf5cb51137e, type: 2}
+  - {fileID: 11400000, guid: e3c37bb77ea7fd14fab9adf5cb51137e, type: 2}
+  - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
+  - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
+  - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
   levelBtnPrefab: {fileID: 2603766621640929405, guid: 93f82803e2d8bec439d7fe4902343055,
     type: 3}
   panel: {fileID: 712384585}
@@ -1144,7 +1150,7 @@ PrefabInstance:
     - target: {fileID: 7728614314706127469, guid: 604001eccf521054b888b62ae793112b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -14.700043
+      value: -14.700058
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 604001eccf521054b888b62ae793112b, type: 3}

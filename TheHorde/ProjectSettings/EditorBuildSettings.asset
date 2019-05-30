@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/_Scenes/CityHospital1.unity
     guid: bb752e2462642cb44a7caaa45cb18668
   - enabled: 1
+    path: Assets/_Scenes/L4_TheWoods.unity
+    guid: 20bd0d565fbfb554292ee562370a837a
+  - enabled: 1
+    path: Assets/_Scenes/L8_Military.unity
+    guid: 3a86d04131119db4199ead2415190a10
+  - enabled: 1
+    path: Assets/_Scenes/L5_Military.unity
+    guid: 99d9a0d5c56e56f4ca6bdc1632e8ea20
+  - enabled: 1
+    path: Assets/_Scenes/L7_TheWoods.unity
+    guid: 266a232cd9a4c134099ac0dd8511f998
+  - enabled: 1
     path: Assets/_Scenes/LevelSelector.unity
     guid: be66de2ddbe8e7347b34e756febd7638
   m_configObjects: {}

@@ -3,7 +3,7 @@ ACTIVITY LOG
 _______________________________________________________________________________	
 24/02/19
 -> ui message of supply mission completion _ done 4.03
--> pause mission ability _ done 4.03
+-> pause supply mission ability _ done 4.03
 
 _______________________________________________________________________________	
 05/03/19
@@ -79,7 +79,7 @@ _______________________________________________________________________________
 
 19/03/19
 
--> Began work on EXP based Upgrade Unlock Milestone System
+-> Began work on EXP based Upgrade Unlock Milestone System (RETIRED may 5th and REPLACED with skill tree)
 	- Delegate and Event system implemented for unlocking upgrades based on exp;
 	- Created Milestone Scriptable Objects
 	- Mechanism for awarding EXPs: at the end of search mission + after special attacks - DONE;
@@ -232,6 +232,34 @@ ______________________________________________________________________________
 	IMPROVEMENTS:
 		-> Fixed Special mission text size so it fits better		
 			
+______________________________________________________________________________	
+30/05/19 _ STARTED 10:20
+	NEW IMPLEMENTATION:
+	-> Added Deadly Obstacles (Traps) mechanism (zombies walk inside and die);
+	
+	NEW LEVEL DESIGNS:
+	->Level 4: The Woods II -> Add Crawlers; _DONE
+	->Level 5: The Military II -> Add drones _DONE
+	->Level 7: The Woods III -> Add Crawlers and Drones _ DONE
+	->Level 8: The Military III -> Add Giants to everything _DONE
+	
+______________________________________________________________________________	
+
+
+6 MORE LEVELS:
+		->Level 4: The Woods II -> Add Crawlers; _DONE
+		->Level 5: The Military II -> Add drones _DONE
+		->Level 6: The City II -> Add Crawlers and drones
+		->Level 7: The Woods III -> Add Crawlers and Drones _ DONE
+		->Level 8: The Military III -> Add Giants to everything _DONE
+		->Level 9: The City III -> Add a fire pit somewhere
+		
+
+BUGS:
+		-> Soundtrack object gets duplicated when returning from a Level;
+		-> Skill tree: wrong icon for time upgrades;
+		-> Fully upgraded turret says FULL for price text instead of upper-right corner (where it shows the next level although it does not exist)
+
 
 REJECTED:
 -> Options in main menu
