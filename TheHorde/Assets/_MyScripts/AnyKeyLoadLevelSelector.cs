@@ -28,7 +28,16 @@ public class AnyKeyLoadLevelSelector : MonoBehaviour
 
     private IEnumerator waitUp()
     {
-        yield return new WaitForSeconds(2f);
+        yield return StartCoroutine(WaitForRealSeconds(2));
         waitIsOver = true;
+    }
+
+    public static IEnumerator WaitForRealSeconds(float time)
+    {
+        float start = Time.realtimeSinceStartup;
+        while (Time.realtimeSinceStartup < start + time)
+        {
+            yield return null;
+        }
     }
 }

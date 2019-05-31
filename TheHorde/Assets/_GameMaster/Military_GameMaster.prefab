@@ -31461,7 +31461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 097505ae6aea4e14fae0b741b07a245d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedMultiplier: 1.09
+  speedMultiplier: 1.06
 --- !u!114 &2647650769485336132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31482,7 +31482,7 @@ MonoBehaviour:
   ValueText: {fileID: 8161109691220141770}
   NeededTimeText: {fileID: 4435237376625751668}
   RemainingPeopleText: {fileID: 5687894821898426560}
-  scrapsRate: 0.4
+  scrapsRate: 0.7
   progressBar: {fileID: 1017865688129607766}
   missionInfo: {fileID: 2170731172977189048}
   scrapsText: {fileID: 1485677388551341529}
@@ -31564,7 +31564,7 @@ MonoBehaviour:
   - {fileID: 268652708147993734, guid: ac851a08001bbb74a9851d19a7eb4264, type: 3}
   - {fileID: 1971719695263903131, guid: 82ea9375f14cf1741a1b77cd3d01b5b1, type: 3}
   spawnLocation: {fileID: 7373957216466454821}
-  maxOnMap: 4
+  maxOnMap: 6
 --- !u!114 &1204002799162347758
 MonoBehaviour:
   m_ObjectHideFlags: 0

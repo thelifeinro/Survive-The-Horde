@@ -237,31 +237,35 @@ ______________________________________________________________________________
 	NEW IMPLEMENTATION:
 	-> Added Deadly Obstacles (Traps) mechanism (zombies walk inside and die);
 	
-	NEW LEVEL DESIGNS:
+	NEW LEVEL MAPS:
 	->Level 4: The Woods II -> Add Crawlers; _DONE
 	->Level 5: The Military II -> Add drones _DONE
 	->Level 7: The Woods III -> Add Crawlers and Drones _ DONE
 	->Level 8: The Military III -> Add Giants to everything _DONE
+______________________________________________________________________________	
+31/05/19 _ STARTED 10:00
 	
+	BUGS:
+		-> GAME OVER screen is stuck because timescale is 0; _FIXED 
+	
+	NEW LEVEL MAPS:
+		->Level 6: The City II -> Add Crawlers and drones _ DONE 11:08
+		->Level 9: The City III _DONE 12:05
+		
+	SET UP WAVES and initial stats for all levels _ DONE 20:00
+	
+	build started 20:02- dome 20:19 => 17 mins
 ______________________________________________________________________________	
 
 
-6 MORE LEVELS:
-		->Level 4: The Woods II -> Add Crawlers; _DONE
-		->Level 5: The Military II -> Add drones _DONE
-		->Level 6: The City II -> Add Crawlers and drones
-		->Level 7: The Woods III -> Add Crawlers and Drones _ DONE
-		->Level 8: The Military III -> Add Giants to everything _DONE
-		->Level 9: The City III -> Add a fire pit somewhere
-		
-
-BUGS:
+	BUGS:
 		-> Soundtrack object gets duplicated when returning from a Level;
 		-> Skill tree: wrong icon for time upgrades;
 		-> Fully upgraded turret says FULL for price text instead of upper-right corner (where it shows the next level although it does not exist)
 
-
+ 
 REJECTED:
+->Levels 10, 11, 12
 -> Options in main menu
 -> ui animations for when player stats change values
 -> create possibility for enemy to be undetectable by a specific archer type

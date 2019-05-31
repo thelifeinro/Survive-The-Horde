@@ -1665,10 +1665,10 @@ MonoBehaviour:
   Name: Crawler
   startSpeed: 2.5
   attackSpeed: 30.6
-  maxHealth: 100
-  Worth: 30
+  maxHealth: 110
+  Worth: 50
   doesKill: 0
-  infect_count: 3
+  infect_count: 2
   attackMode: 0
   chosenTarget: {fileID: 0}
   arrowRes: 1

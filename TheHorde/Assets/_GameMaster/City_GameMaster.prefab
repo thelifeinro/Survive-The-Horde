@@ -30977,7 +30977,7 @@ MonoBehaviour:
   ValueText: {fileID: 5231308628365538946}
   NeededTimeText: {fileID: 312544531328624188}
   RemainingPeopleText: {fileID: 8589551176596277384}
-  scrapsRate: 0.4
+  scrapsRate: 0.7
   progressBar: {fileID: 4033938898118985758}
   missionInfo: {fileID: 2865624159288389872}
   scrapsText: {fileID: 3262135327240459665}

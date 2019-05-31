@@ -13597,7 +13597,7 @@ MonoBehaviour:
   ValueText: {fileID: 7400357542800172879}
   NeededTimeText: {fileID: 3061444006496974833}
   RemainingPeopleText: {fileID: 6421633666079398213}
-  scrapsRate: 0.4
+  scrapsRate: 0.7
   progressBar: {fileID: 1860374279541365203}
   missionInfo: {fileID: 715706751382200637}
   scrapsText: {fileID: 247522371181659228}
@@ -13679,7 +13679,7 @@ MonoBehaviour:
   - {fileID: 268652708147993734, guid: ac851a08001bbb74a9851d19a7eb4264, type: 3}
   - {fileID: 1971719695263903131, guid: 82ea9375f14cf1741a1b77cd3d01b5b1, type: 3}
   spawnLocation: {fileID: 8188882208333318304}
-  maxOnMap: 4
+  maxOnMap: 6
 --- !u!114 &523602645961003371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16620,11 +16620,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 559240961249594861, guid: 4c8b6106cf6dc78439a11713e528b2eb,
-        type: 3}
-      propertyPath: gameCamera
-      value: 
-      objectReference: {fileID: 1466453690932993180}
     - target: {fileID: 559240961249594860, guid: 4c8b6106cf6dc78439a11713e528b2eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16680,6 +16675,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 559240961249594861, guid: 4c8b6106cf6dc78439a11713e528b2eb,
+        type: 3}
+      propertyPath: gameCamera
+      value: 
+      objectReference: {fileID: 1466453690932993180}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c8b6106cf6dc78439a11713e528b2eb, type: 3}
 --- !u!4 &2151692624875788647 stripped

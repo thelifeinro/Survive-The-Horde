@@ -416,10 +416,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
   - {fileID: 11400000, guid: 3ea86a2fc1c3f9d41b551715a53e5274, type: 2}
   - {fileID: 11400000, guid: e3c37bb77ea7fd14fab9adf5cb51137e, type: 2}
-  - {fileID: 11400000, guid: e3c37bb77ea7fd14fab9adf5cb51137e, type: 2}
-  - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
-  - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
-  - {fileID: 11400000, guid: 185f6c15f81aea645b1fb1f6be2037d6, type: 2}
+  - {fileID: 11400000, guid: 6103093aecf570b40aae1e081803aa8b, type: 2}
+  - {fileID: 11400000, guid: e107be1caa67c6d4b9eb96e0246e20b9, type: 2}
+  - {fileID: 11400000, guid: 22707e2a7fe741b44b0028ca8ba66a64, type: 2}
+  - {fileID: 11400000, guid: 0981cfbe0180b3440a8b376370d73467, type: 2}
   levelBtnPrefab: {fileID: 2603766621640929405, guid: 93f82803e2d8bec439d7fe4902343055,
     type: 3}
   panel: {fileID: 712384585}
