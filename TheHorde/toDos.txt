@@ -256,13 +256,14 @@ ______________________________________________________________________________
 	
 	build started 20:02- dome 20:19 => 17 mins
 ______________________________________________________________________________	
-
-
+01/06/19
 	BUGS:
-		-> Soundtrack object gets duplicated when returning from a Level;
-		-> Skill tree: wrong icon for time upgrades;
-		-> Fully upgraded turret says FULL for price text instead of upper-right corner (where it shows the next level although it does not exist)
+		-> Soundtrack object gets duplicated when returning from a Level; _FIXED
+		-> Skill tree: wrong icon for time upgrades; _FIXED
 
+NOT VERY IMP. PROBLEMS:		
+-> Fully upgraded turret says FULL for price text instead of upper-right corner (where it shows the next level although it does not exist)
+-> Cure not clickable if it falls inside Fire trap
  
 REJECTED:
 ->Levels 10, 11, 12

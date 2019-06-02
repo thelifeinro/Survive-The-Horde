@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Soundtrack : MonoBehaviour
 {
-    private Soundtrack instance;
+    private static Soundtrack instance;
     public AudioClip menuTrack;
     public AudioClip levelTrack;
     public AudioSource audioS;
