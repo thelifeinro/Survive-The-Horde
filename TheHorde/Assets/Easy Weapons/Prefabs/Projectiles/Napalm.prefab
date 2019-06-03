@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 114481028607107150}
   - component: {fileID: 54278380563422548}
   - component: {fileID: 114085525108779786}
+  - component: {fileID: 7999575491044438603}
   m_Layer: 0
   m_Name: Napalm
   m_TagString: Untagged
@@ -81,12 +82,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 100
   explosionPrefab: {fileID: 100002, guid: afaf375eaf07ae1418d96ba144d3144c, type: 3}
-  maxDamage: 180
-  range: 10
+  maxDamage: 250
+  range: 9
   expAwarded: 0
   EffectDropzone: {fileID: 0}
   effectPrefab: {fileID: 1754842503009415241, guid: b4a5965839c88564ca53db7a9a84d23d,
     type: 3}
+--- !u!136 &7999575491044438603
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.08
+  m_Height: 0.66
+  m_Direction: 2
+  m_Center: {x: -0.02, y: -0.02, z: 0.03}
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,6 +16,7 @@ public class Bullet : MonoBehaviour {
     public GameObject explosionPrefab;
     public int damage = 15;
     public BulletType type;
+    public float range = 5;
 
     public void Seek(Transform _target)
     {
@@ -50,6 +51,24 @@ public class Bullet : MonoBehaviour {
         Enemy enem = enemy.GetComponent<Enemy>();
         if(enem != null)
             enem.TakeDamage(damage, type);
+
+        //rocket inflicts damage in a radius
+        if (type == BulletType.Rocket)
+        {
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject en in enemies)
+            {
+                if (en != enemy)
+                {
+                    float dst = Vector3.Distance(transform.position, en.transform.position);
+                    if (dst <= range)
+                    {
+                        int collateralDamage = (int)((dst / range) * damage);
+                        en.GetComponent<Enemy>().TakeDamage(collateralDamage, type);
+                    }
+                }
+            }
+        }
     }
 
     void HitTarget()

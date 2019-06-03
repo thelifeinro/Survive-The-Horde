@@ -261,6 +261,16 @@ ______________________________________________________________________________
 		-> Soundtrack object gets duplicated when returning from a Level; _FIXED
 		-> Skill tree: wrong icon for time upgrades; _FIXED
 
+______________________________________________________________________________	
+03/06/19
+	NEW IMPLEMENTATION:
+	-> Grenade Launchers inflict proportional damage inside a range, instead of a single enemy
+	
+	BUG:
+	-> Napalm Special Attack falling through high terrain _ Fixed (added collider to projectile)
+______________________________________________________________________________	
+	
+	
 NOT VERY IMP. PROBLEMS:		
 -> Fully upgraded turret says FULL for price text instead of upper-right corner (where it shows the next level although it does not exist)
 -> Cure not clickable if it falls inside Fire trap
