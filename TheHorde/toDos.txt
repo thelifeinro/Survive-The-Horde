@@ -265,6 +265,7 @@ ______________________________________________________________________________
 03/06/19
 	NEW IMPLEMENTATION:
 	-> Grenade Launchers inflict proportional damage inside a range, instead of a single enemy
+	-> Changed MainMenu look 
 	
 	BUG:
 	-> Napalm Special Attack falling through high terrain _ Fixed (added collider to projectile)

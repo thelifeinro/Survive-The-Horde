@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour {
     [SerializeField]
     Transform _destination;
     NavMeshAgent _navMeshAgent;
-    public float yOffsetForShooting = 0f;
+    private float yOffsetForShooting = 0f;
     public Image healthBar;
     public GameObject deathparticlesPrefab;
     public Animator animator;
@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour {
     private Victim victimComp;
     float elapsed = 0;
 
-    [Header("Enemy Resistances: <1 -> more resistant; 0 = immune; >1 = weak")]
+    [Header("Resistances: <1 = more resistant; 0 = immune; >1 = weak")]
     public float arrowRes = 1;
     public float rocketRes = 1;
     public float waterRes = 1;
@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour {
         _destination = GameObject.FindGameObjectWithTag("Destination").transform;
         if(_navMeshAgent == null)
         {
-            Debug.LogError("NavMesh is not attached to " + gameObject.name);
+            //Debug.LogError("NavMesh is not attached to " + gameObject.name);
         }
         else
         {
@@ -69,29 +69,23 @@ public class Enemy : MonoBehaviour {
     {
         if(AttackDone())
         {
-            Debug.Log("victims: " + victim_count.ToString() + "  toinfect:" + infect_count.ToString());
             Die();
         }
         if (pathComplete() && !attackMode)
         {
             //Arrived at Community
             Worth = (int)(0.25f * Worth);
-            //PlayerStats.instance.Kill(kills_count);
-            //PlayerStats.instance.Infect(infect_count);
             _navMeshAgent.speed = attackSpeed;
             FindNearestVictim();
             attackMode = true;
-            //Destroy(gameObject);
         }
 
-        //Arrived at victim
+        
         if (pathComplete() && attackMode)
         {
+            //Arrived at victim
             if(!isAttacking)
-                StartCoroutine(AttackAnim());
-            ///victim_count++;
-            //next victim
-            //FindNearestVictim();
+                StartCoroutine(AttackAnim()); //lansează acţiunea de atac a victimei
         }
         
         elapsed += Time.deltaTime;
@@ -119,7 +113,7 @@ public class Enemy : MonoBehaviour {
         victimComp.nav.isStopped = true;
 
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length /*+ animator.GetCurrentAnimatorStateInfo(0).normalizedTime*/);
-        Debug.Log("Attack has ended!");
+        //Debug.Log("Attack has ended!");
         animator.SetBool("isAttacking", false);
         isAttacking = false;
         _navMeshAgent.isStopped = false;
@@ -178,13 +172,13 @@ public class Enemy : MonoBehaviour {
             victimComp = chosen.GetComponent<Victim>();
             victimComp.Targeted();
             _navMeshAgent.SetDestination(chosen.transform.position);
-            Debug.Log(gameObject.name + "   Chose " + chosen.name);
+            //Debug.Log(gameObject.name + "   Chose " + chosen.name);
         }
     }
 
     public void TakeDamage(float amount, BulletType type)
     {
-        Debug.Log("taking damage  " + amount);
+        //Debug.Log("taking damage  " + amount);
             switch ((BulletType)type)
             {
 
@@ -255,17 +249,6 @@ public class Enemy : MonoBehaviour {
 
     protected bool pathComplete()
     {
-        //Debug.Log("distance: " + Vector3.Distance(_navMeshAgent.destination, _navMeshAgent.transform.position));
-        // if (Vector3.Distance(_navMeshAgent.destination, _navMeshAgent.transform.position) - 1 <= _navMeshAgent.stoppingDistance)
-        //{
-        /*if (!_navMeshAgent.hasPath || _navMeshAgent.velocity.sqrMagnitude == 0f)
-        {
-            return true;
-        }*/
-        //      return true;
-        // }
-        //
-        //  return false;
         if (!_navMeshAgent.pathPending)
         {
             if (_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
@@ -281,7 +264,7 @@ public class Enemy : MonoBehaviour {
 
     void OnMouseDown()
     {
-        Debug.Log("Pressed on enemy");
+        //Debug.Log("Pressed on enemy");
         enemyBook.ShowEnemyStats(this.Name);
     }
 }

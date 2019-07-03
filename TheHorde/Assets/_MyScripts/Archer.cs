@@ -14,17 +14,18 @@ public class Archer : MonoBehaviour {
     public GameObject tower;
     public string enemyTag = "Enemy";
     public float turnSpeed = 10f;
+    public GameObject bulletPrefab;
+    public Transform firePoint;
 
     [Header("Use Water")]
+    public bool useWater = false;
     public float damageOverTime = 10f;
     public float slowAmount = 0.4f;
-    public bool useWater = false;
     public LineRenderer linerenderer;
     public ParticleSystem impactParticles;
 
 
-    public GameObject bulletPrefab;
-    public Transform firePoint;
+
     
 	// Use this for initialization
 	void Start () {
@@ -36,7 +37,6 @@ public class Archer : MonoBehaviour {
 	void Update () {
         if (target == null)
         {
-            
             if (useWater)
             {
                 if (linerenderer.enabled)
@@ -48,8 +48,7 @@ public class Archer : MonoBehaviour {
             return;
         }
            
-
-        LockOnTarget();
+        LockOnTarget(); //rotirea privirii archerului înspre inamic 
 
         if (useWater)
         {

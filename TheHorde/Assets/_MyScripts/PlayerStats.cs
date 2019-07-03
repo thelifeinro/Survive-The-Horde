@@ -44,7 +44,7 @@ public class PlayerStats : MonoBehaviour {
 
         if (instance != null)
         {
-            Debug.Log("More than one PlayerStats in this scene!");
+           //Debug.Log("More than one PlayerStats in this scene!");
         }
         instance = this;
         EXP = SaveManager.EXP;
@@ -82,7 +82,7 @@ public class PlayerStats : MonoBehaviour {
         }
         catch (Exception e)
         {
-            Debug.LogException(e, this);
+            //Debug.LogException(e, this);
         }
     }
 

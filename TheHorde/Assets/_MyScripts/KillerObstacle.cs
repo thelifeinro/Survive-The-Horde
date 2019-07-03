@@ -18,7 +18,7 @@ public class KillerObstacle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Enemy Entered");
+        //Debug.Log("Enemy Entered");
         if (other.transform.tag == "Enemy")
         {
             

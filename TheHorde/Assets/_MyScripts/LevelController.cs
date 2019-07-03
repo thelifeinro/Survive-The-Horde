@@ -31,7 +31,7 @@ public class LevelController : MonoBehaviour
 
     void Populate()
     {
-        Debug.Log("highestLevel: " + SaveManager.highestLevel);
+        //Debug.Log("highestLevel: " + SaveManager.highestLevel);
         foreach(LevelInfo l in linfos)
         {
             GameObject ui = Instantiate(levelBtnPrefab, panel.transform);
@@ -48,7 +48,7 @@ public class LevelController : MonoBehaviour
     public void LoadLevel(int index)
     {
         //make loading screen
-        Debug.Log("Should be laoding scene " + index);
+        //Debug.Log("Should be laoding scene " + index);
         btnPressSound.Play();
         //Instantiate(btnPressEffect);
         StartCoroutine(LoadAsync(index));

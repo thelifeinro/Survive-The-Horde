@@ -92,7 +92,6 @@ public class NapalmProjectile : MonoBehaviour {
         AwardEXP();
         PlayerStats.instance.AddEXP(expAwarded);
         Destroy(gameObject);
-        Debug.Log("we hit sth");
     }
 
     void Damage(GameObject enemy, int amount)

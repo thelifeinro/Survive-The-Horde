@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SpecialAttacks">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAQAEAAIACAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SpecialAttacks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecialAttack">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAAAAAAAAAAAAAAECAMAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SpecialAttacInterf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sniper" Collapsed="true">
+    <Position X="3.5" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAIAADAABAIAQAAUAAkAIAgAUQUAEFgAAABAEAg=</HashCode>
+      <FileName>Assets\_MyScripts\Sniper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Napalm" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AASAAQAAECAAAAAAAABAAAAAIAAAAAIAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Napalm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyingBlade" Collapsed="true">
+    <Position X="2" Y="4" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAIAACAAAAAAAAAQAQAAIAAAAAAAgEgAAABAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\FlyingBlade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveSpawner">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="WaveSpawner.SpawnState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\WaveSpawner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="WaveSpawner.Wave" Collapsed="true">
+        <Compartments>
+          <Compartment Name="Nested Types" Collapsed="false" />
+        </Compartments>
+        <NestedTypes>
+          <Struct Name="WaveSpawner.Wave.wavePoint">
+            <TypeIdentifier>
+              <NewMemberFileName>Assets\_MyScripts\WaveSpawner.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Struct>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\WaveSpawner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>kARAAAAAACQAAAEAAAAAAIAAACACAAAERgBAAAAAAAE=</HashCode>
+      <FileName>Assets\_MyScripts\WaveSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerStats">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Method Name="Awake" Hidden="true" />
+      <Field Name="baseLevelEXP" Hidden="true" />
+      <Field Name="bonusThreshold" Hidden="true" />
+      <Field Name="gameOverPrefab" Hidden="true" />
+      <Method Name="IsGameOver" Hidden="true" />
+      <Method Name="KillOneInfected" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="PlayerStats.ExpEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\PlayerStats.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="PlayerStats.UnlockEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\PlayerStats.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQwgIKgAGEAgIAABAACAAAAABfBAQAASRAAAASAEMQ=</HashCode>
+      <FileName>Assets\_MyScripts\PlayerStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildManager">
+    <Position X="7.5" Y="4" Width="1.75" />
+    <Members>
+      <Method Name="Awake" Hidden="true" />
+      <Field Name="buildEffect" Hidden="true" />
+      <Field Name="sellEffect" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAigAEAAAAAAAAAAAAAFAAAAAAAEAAAIFAEA=</HashCode>
+      <FileName>Assets\_MyScripts\BuildManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StatsUI" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAACAAAAAAAAAABAAAIIAQAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\StatsUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quarantine">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="AddTurnTimeSeconds" Hidden="true" />
+      <Field Name="baseTimeToTurn" Hidden="true" />
+      <Field Name="containerList" Hidden="true" />
+      <Field Name="countText" Hidden="true" />
+      <Field Name="elementPrefab" Hidden="true" />
+      <Method Name="HideWarning" Hidden="true" />
+      <Method Name="InfectedPersonTurning" Hidden="true" />
+      <Field Name="isWarningUp" Hidden="true" />
+      <Field Name="killPrice" Hidden="true" />
+      <Method Name="OnDisable" Hidden="true" />
+      <Method Name="OnEnable" Hidden="true" />
+      <Method Name="ShowWarning" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="UnlockLevels" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="Warning" Hidden="true" />
+      <Field Name="zombiePrefab" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AASEAAAIACABBAgABAIEGBAgAADAAAAIQAAAAGQACAA=</HashCode>
+      <FileName>Assets\_MyScripts\Quarantine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Headquarter">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="ErrorMessage" Hidden="true" />
+      <Field Name="EventDialoguePrefab" Hidden="true" />
+      <Field Name="NeededTimeText" Hidden="true" />
+      <Field Name="peopleText" Hidden="true" />
+      <Field Name="progressBar" Hidden="true" />
+      <Field Name="RemainingPeopleText" Hidden="true" />
+      <Field Name="scrapsSoFar" Hidden="true" />
+      <Field Name="scrapsText" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="ValueText" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ETSIAABUBDCACABSAgCABQVAEAAAAAAAIANAQAARIAE=</HashCode>
+      <FileName>Assets\_MyScripts\Headquarter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MissionEvent" Collapsed="true">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="MissionEvent.MissionOutcome" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\MissionEvent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\MissionEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoveCamera">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="lastFrameTime" Hidden="true" />
+      <Field Name="maxBack" Hidden="true" />
+      <Field Name="maxFront" Hidden="true" />
+      <Field Name="maxHeight" Hidden="true" />
+      <Field Name="maxLeft" Hidden="true" />
+      <Field Name="maxRight" Hidden="true" />
+      <Field Name="minHeight" Hidden="true" />
+      <Field Name="mouseOrigin" Hidden="true" />
+      <Field Name="originPosition" Hidden="true" />
+      <Field Name="originRotation" Hidden="true" />
+      <Field Name="panSpeed" Hidden="true" />
+      <Field Name="shake_decay" Hidden="true" />
+      <Field Name="shake_intensity" Hidden="true" />
+      <Field Name="turnSpeed" Hidden="true" />
+      <Field Name="zoomSpeed" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAUQAAAIACSAAAIAACQAAQgIAAAAAQQAEAAEIAAAAAg=</HashCode>
+      <FileName>Assets\_MyScripts\MoveCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkillManager">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <Members>
+      <Method Name="Awake" Hidden="true" />
+      <Method Name="HideCnvs" Hidden="true" />
+      <Method Name="MakeDetailCard" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="UnlockSkills" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="SkillManager.Skill" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\SkillManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IA4AABAEACAAAAAAASCgAACJIAAAAAAAQAAAAAAAEEA=</HashCode>
+      <FileName>Assets\_MyScripts\SkillManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseGame">
+    <Position X="2.25" Y="6" Width="1.25" />
+    <Members>
+      <Method Name="HideMenu" Hidden="true" />
+      <Method Name="ShowMenu" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAEAAAAAAAIAQAAAAIAAAAAAAAAgBAAA=</HashCode>
+      <FileName>Assets\_MyScripts\PauseGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <Members>
+      <Field Name="_destination" Hidden="true" />
+      <Field Name="_navMeshAgent" Hidden="true" />
+      <Field Name="animator" Hidden="true" />
+      <Method Name="AttackAnim" Hidden="true" />
+      <Field Name="attackMode" Hidden="true" />
+      <Field Name="attackSpeed" Hidden="true" />
+      <Field Name="deathparticlesPrefab" Hidden="true" />
+      <Field Name="elapsed" Hidden="true" />
+      <Method Name="FindNearestVictim" Hidden="true" />
+      <Field Name="floatTextPrefab" Hidden="true" />
+      <Method Name="giveRandomRadius" Hidden="true" />
+      <Field Name="healthBar" Hidden="true" />
+      <Field Name="maxHealth" Hidden="true" />
+      <Method Name="OnMouseDown" Hidden="true" />
+      <Method Name="pathComplete" Hidden="true" />
+      <Method Name="setDestination" Hidden="true" />
+      <Method Name="ShowFloatingText" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="victimComp" Hidden="true" />
+      <Field Name="yOffsetForShooting" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BKxDCCIJICACECAoAAQAAAQgAABFCQAAoAABgBAQBBA=</HashCode>
+      <FileName>Assets\_MyScripts\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyBook">
+    <Position X="9.75" Y="5.5" Width="1.5" />
+    <Members>
+      <Method Name="Start" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="EnemyBook.ExpEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\EnemyBook.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQIAAAACCkAAAAAAAAhAABAAAAwAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\EnemyBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NPCManager">
+    <Position X="9.75" Y="1.25" Width="1.5" />
+    <Members>
+      <Method Name="GetRandomToSpawn" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAACAAAQAAAgCAAAAAAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\_MyScripts\NPCManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpawnableNPC">
+    <Position X="9.75" Y="3.5" Width="1.5" />
+    <Members>
+      <Method Name="SetArriveAnimation" Hidden="true" />
+      <Method Name="Start" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAQAABAADCAAACAAIAAAAAAAAAAAgQAEAAAACBEAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SpawnableNPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

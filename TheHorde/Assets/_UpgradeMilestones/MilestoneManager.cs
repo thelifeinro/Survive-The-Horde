@@ -95,7 +95,7 @@ public class MilestoneManager : MonoBehaviour
 
     public void EXPChanged(int count)
     {
-        Debug.Log(gameObject.name + "EXPchange event triggered");
+        //Debug.Log(gameObject.name + "EXPchange event triggered");
         //trying to unlock next milestone
         while(nextMs < milestones.Length && milestones[nextMs].milestoneEXP <= PlayerStats.EXP)
             UnlockMilestone(milestones[nextMs]);

@@ -12,13 +12,13 @@ public class SoloOnScreen : MonoBehaviour
     }
     public void HideUI()
     {
-        Debug.Log("Hiding UI");
+        //Debug.Log("Hiding UI");
         mainUI.SetActive(false);
     }
 
     public void ShowUI()
     {
-        Debug.Log("Showing UI");
+       // Debug.Log("Showing UI");
         mainUI.SetActive(true);
     }
 }

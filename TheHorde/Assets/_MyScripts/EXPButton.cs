@@ -24,7 +24,7 @@ public class EXPButton : MonoBehaviour
 
     public void EXPChanged(int count)
     {
-        Debug.Log("EXP BUTTON CHANGED");
+        //Debug.Log("EXP BUTTON CHANGED");
         value.text = PlayerStats.EXP.ToString()+"EXP";
     }
 

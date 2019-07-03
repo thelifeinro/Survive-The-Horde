@@ -18,7 +18,7 @@ public class Cure : MonoBehaviour {
 
     private void OnMouseDown()
     {
-        Debug.Log("hey");
+        //Debug.Log("hey");
         //Reward its worth
         PlayerStats.instance.AddCure(Worth);
         //play effect maybe

@@ -6,9 +6,6 @@ using System.Collections;
 
 public class MoveCamera : MonoBehaviour
 {
-    //
-    // VARIABLES
-    //
 
     public float turnSpeed = 4.0f;      // Speed of camera turning when mouse moves in along an axis
     public float panSpeed = 100.0f;       // Speed of the camera when being panned
@@ -38,9 +35,7 @@ public class MoveCamera : MonoBehaviour
     {
         lastFrameTime = Time.realtimeSinceStartup;
     }
-    //
-    // UPDATE
-    //
+
     public void Shake()
     {
         originPosition = Camera.main.transform.position;
@@ -51,14 +46,12 @@ public class MoveCamera : MonoBehaviour
 
     void Update()
     {
-        
-        
         var myDeltaTime = Time.realtimeSinceStartup - lastFrameTime;
         lastFrameTime = Time.realtimeSinceStartup;
         //shaking
         if (shake_intensity > 0)
         {
-            Debug.Log("Shake intensity:" + shake_intensity);
+           // Debug.Log("Shake intensity:" + shake_intensity);
             Camera.main.transform.position = originPosition + Random.insideUnitSphere * shake_intensity;
             Camera.main.transform.rotation = new Quaternion(
                             originRotation.x + Random.Range(-shake_intensity, shake_intensity) * 0.2f,
@@ -76,15 +69,6 @@ public class MoveCamera : MonoBehaviour
             mouseOrigin = Input.mousePosition;
             isRotating = true;
         }
-
-        // Get the right mouse button
-        /*
-        if (Input.GetMouseButtonDown(1))
-        {
-            // Get mouse origin
-            mouseOrigin = Input.mousePosition;
-            isPanning = true;
-        }*/
 
         // Get the middle mouse button
         if (Input.GetMouseButtonDown(2))
@@ -108,15 +92,6 @@ public class MoveCamera : MonoBehaviour
             transform.RotateAround(transform.position, Vector3.up, pos.x * turnSpeed);
         }
 
-        // Moving camera across XZ
-        /*if (Input.mousePosition.y >= Screen.height * 0.95 || Input.mousePosition.x >= Screen.width * 0.95
-            || Input.mousePosition.y <= Screen.height * 0.05 || Input.mousePosition.x <= Screen.width * 0.05)
-        {
-            Vector3 pos1 = Camera.main.ScreenToViewportPoint(Input.mousePosition - mouseOrigin);
-
-            Vector3 move2 = new Vector3(pos1.x * panSpeed, 0, pos1.y * panSpeed);
-            transform.Translate(move2, Space.World);
-        }*/
         if (Input.GetKey(KeyCode.W))
         {
             Vector3 pos = transform.position;
@@ -159,7 +134,6 @@ public class MoveCamera : MonoBehaviour
         if (isZooming)
         {
             Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - mouseOrigin);
-
             Vector3 move = pos.y * zoomSpeed * transform.forward;
             transform.Translate(move, Space.World);
         }

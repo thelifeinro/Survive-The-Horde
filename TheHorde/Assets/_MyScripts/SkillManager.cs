@@ -44,7 +44,7 @@ public class SkillManager : MonoBehaviour
             if (sk.content.level == PlayerStats.instance.unlockedLevels[sk.content.type] + 1)
             {
                 sk.locked = false;
-                Debug.Log("Unlocked " + sk.content.name);
+                //Debug.Log("Unlocked " + sk.content.name);
             }
             if (sk.locked) {
                 GiveLockedLook(sk);
@@ -105,7 +105,7 @@ public class SkillManager : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        Debug.Log("selected " + i);
+       // Debug.Log("selected " + i);
         //instantiating detail cards
         GameObject detailsCard = MakeDetailCard();
         SkillCard sc = detailsCard.GetComponent<SkillCard>();
@@ -125,7 +125,7 @@ public class SkillManager : MonoBehaviour
 
     public void UnlockSkill(Skill sk)
     {
-        Debug.Log("unlocking");
+        //Debug.Log("unlocking");
         if (sk != null)
         {
             sk.locked = false;
@@ -134,7 +134,7 @@ public class SkillManager : MonoBehaviour
     }
 
     public static void BuySkill(Skill sk) {
-        Debug.Log("buying");
+        //Debug.Log("buying");
         sk.equipped = true;
 
 

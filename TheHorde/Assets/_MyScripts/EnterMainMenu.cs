@@ -31,7 +31,7 @@ public class EnterMainMenu : MonoBehaviour
 
     public void Debugg()
     {
-        Debug.Log("pressed");
+       // Debug.Log("pressed");
     }
 
     //PROVIZORIU

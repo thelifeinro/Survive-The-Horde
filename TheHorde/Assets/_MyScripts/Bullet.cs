@@ -79,6 +79,5 @@ public class Bullet : MonoBehaviour {
         }
         Damage(Target);
         Destroy(gameObject);
-        Debug.Log("we hit sth");
     }
 }

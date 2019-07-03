@@ -66,7 +66,7 @@ public class Headquarter : MonoBehaviour
 
     public void UpdateValues()
     {
-        Debug.Log("Value is" + menuSlider.value);
+        //Debug.Log("Value is" + menuSlider.value);
         CalculateValues();
         ValueText.text = menuSlider.value.ToString();
         RemainingPeopleText.text = remainingP.ToString();
@@ -75,7 +75,7 @@ public class Headquarter : MonoBehaviour
 
     void CalculateValues()
     {
-        Debug.Log("healthy pop: " + PlayerStats.HealthyPopulation);
+       // Debug.Log("healthy pop: " + PlayerStats.HealthyPopulation);
         remainingP = PlayerStats.HealthyPopulation - (int)menuSlider.value;
         neededT = MaxMissionTimeSeconds - TimeReducedByOnePerson * ((int)menuSlider.value - MinPeople);
         selectedPeople = (int)menuSlider.value;
@@ -96,7 +96,7 @@ public class Headquarter : MonoBehaviour
         //Check if enough available people
         if (PlayerStats.HealthyPopulation - selectedPeople < 1)
         {
-            Debug.Log("Not enough people");
+           // Debug.Log("Not enough people");
             ErrorMessage.SetActive(true);
             //activate red text on ui element
         }
@@ -113,7 +113,7 @@ public class Headquarter : MonoBehaviour
             missionInfo.SetActive(true);
 
             StartCoroutine(Mission());
-            Debug.Log("Started Mission");
+            //Debug.Log("Started Mission");
             ErrorMessage.SetActive(false);
             Exit();
             //disabble option to open menu while mission under progress
@@ -178,7 +178,7 @@ public class Headquarter : MonoBehaviour
         mo = me.Outcomes[Random.Range(0, me.Outcomes.Length)];
 
 
-        Debug.Log("event time: "+ randomEventTime +"  neededTime:"+neededT);
+       // Debug.Log("event time: "+ randomEventTime +"  neededTime:"+neededT);
         while (normalizedTime < randomEventTime)
         {
             if (paused == false)
@@ -194,7 +194,7 @@ public class Headquarter : MonoBehaviour
         {
             //Random Event HAPPENS HERE
             normalizedTime += Time.deltaTime;
-            Debug.Log("reached event");
+            //Debug.Log("reached event");
             //Instantiate dialogue box for event
             GameObject dialogbox = Instantiate(EventDialoguePrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
             MissionEventDialog dialogComponent = dialogbox.GetComponent<MissionEventDialog>();
@@ -218,7 +218,7 @@ public class Headquarter : MonoBehaviour
         // END OF MISSION IS HERE
         //at the end show the Mission Outcome
         EndMission();
-        Debug.Log("end mission");
+        //Debug.Log("end mission");
         // Instantiate(fxPrefab, transform.position, Quaternion.identity);
         // Destroy(parent);
     }

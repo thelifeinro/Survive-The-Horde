@@ -90,7 +90,7 @@ public class Quarantine : MonoBehaviour
     {
         PlayerStats.instance.KillOneInfected(killPrice);
         CheckOut();
-        Debug.Log("QUARANTINE: Should be spawning a zombie");
+        //Debug.Log("QUARANTINE: Should be spawning a zombie");
         //instantiate at zombie spawn point
         Instantiate(zombiePrefab, zombieSpawnPoint.transform.position, zombieSpawnPoint.transform.rotation);
         //TO DO: maybe show a notification on screen

@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="AnyKeyLoadLevelSelector" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAACAAAAAABAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\AnyKeyLoadLevelSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Archer" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAUQAAAIACIABAAgIAIACAAIAAAAEAAAAgAgECAGAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Archer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoDestructObst" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAABAAAAQAAAAAAAAAAAAAFAAAAAACAA=</HashCode>
+      <FileName>Assets\_MyScripts\AutoDestructObst.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BlockingObstacle" Collapsed="true">
+    <Position X="22.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYABAAAACAAAAAAACBAAAAAEEAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\BlockingObstacle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildManager">
+    <Position X="6.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAigAEAAAAAAAAAAAAAFAAAAAAAEAAAIFAEA=</HashCode>
+      <FileName>Assets\_MyScripts\BuildManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bullet" Collapsed="true">
+    <Position X="25.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACIAAAAgAAACAAAACAAAAABAQAAAAAAAMAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Cure" Collapsed="true">
+    <Position X="27.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAACAAAAAAAAAAAAAAAAAAEAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Cure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CureSpawner" Collapsed="true">
+    <Position X="29.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAACAEAAAAAAAQABAAAAAIAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\CureSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CustomMenuController" Collapsed="true">
+    <Position X="31" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAEAAAAIAAAAAEAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\CustomMenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Destination" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Destination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DialogBox" Collapsed="true">
+    <Position X="0.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\DialogBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Enemy" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BKxDCCIJICACECAoAAQAAAQgAABFCQAAoAABgBAQBBA=</HashCode>
+      <FileName>Assets\_MyScripts\Enemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyBook" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAACCkAAAAAAAAhAABAAAAwAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\EnemyBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyBookPage" Collapsed="true">
+    <Position X="22.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAQAAAAgAABAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\EnemyBookPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyPageUI" Collapsed="true">
+    <Position X="24" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EARAAAAAACAAAAgAQAAAAAAAAAAAAAAAAQAAAAAACAE=</HashCode>
+      <FileName>Assets\_MyScripts\EnemyPageUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnterMainMenu" Collapsed="true">
+    <Position X="25.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAICAEAIAAAAAAAABAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\EnterMainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EXPButton" Collapsed="true">
+    <Position X="27.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAACAIAAAAAAgACAA=</HashCode>
+      <FileName>Assets\_MyScripts\EXPButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EXPMilestone" Collapsed="true">
+    <Position X="29.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAIAAAAAAQAAEBAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\EXPMilestone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireLight" Collapsed="true">
+    <Position X="31" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAIAAAAIAAAAAAAAAAAAIAAAQAAAIAEAABA=</HashCode>
+      <FileName>Assets\_MyScripts\FireLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FixedScaleUI" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\FixedScaleUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlashingLight" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAIAAAAIAAAAAAAAAAAAIAAAQAAAIAEAABA=</HashCode>
+      <FileName>Assets\_MyScripts\FlashingLight.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FloatingText" Collapsed="true">
+    <Position X="20.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\FloatingText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyingBlade" Collapsed="true">
+    <Position X="11.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAIAACAAAAAAAAAQAQAAIAAAAAAAgEgAAABAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\FlyingBlade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameData" Collapsed="true">
+    <Position X="22.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAQAAAAAAAAQAAEEgAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\GameData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GlobalVariables" Collapsed="true">
+    <Position X="24" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\GlobalVariables.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Headquarter" Collapsed="true">
+    <Position X="25.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ETSIAABUBDCACABSAgCABQVAEAAAAAAAIANAQAARIAE=</HashCode>
+      <FileName>Assets\_MyScripts\Headquarter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KillerObstacle" Collapsed="true">
+    <Position X="27.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\KillerObstacle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelButton" Collapsed="true">
+    <Position X="29.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAAAAACAAAACAAAAAAAAEAAAAAAAIEAAAAAQAAAE=</HashCode>
+      <FileName>Assets\_MyScripts\LevelButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelController" Collapsed="true">
+    <Position X="31" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAhgCAAAACAAAAAAAAEIAAEAAEQAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\LevelController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelInfo" Collapsed="true">
+    <Position X="17" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAIAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Assets\_MyScripts\LevelInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu" Collapsed="true">
+    <Position X="18.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACQABAAAAAKAAAAAAAIAABAAAAAAAAAAAAAAMAEA=</HashCode>
+      <FileName>Assets\_MyScripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MissionEvent" Collapsed="true">
+    <Position X="20.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\MissionEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MissionEventDialog" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAQAAAAEAAAJQAAAAAAAAAAAAABAAAAAQA=</HashCode>
+      <FileName>Assets\_MyScripts\MissionEventDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoveCamera" Collapsed="true">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAUQAAAIACSAAAIAACQAAQgIAAAAAQQAEAAEIAAAAAg=</HashCode>
+      <FileName>Assets\_MyScripts\MoveCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MoveOnGroundByMouse" Collapsed="true">
+    <Position X="24" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAIACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\MoveOnGroundByMouse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Napalm" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAQAAECAAAAAAAABAAAAAIAAAAAIAAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Napalm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NapalmProjectile" Collapsed="true">
+    <Position X="25.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAFACIAjAAAIIAAAAAAAkAAAAAQQAIABAAAIAAQAA=</HashCode>
+      <FileName>Assets\_MyScripts\NapalmProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Node" Collapsed="true">
+    <Position X="27.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQAqAAACAAECAABCBAAQAAGABAIAEAIAAQBEMAACA=</HashCode>
+      <FileName>Assets\_MyScripts\Node.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NPCManager" Collapsed="true">
+    <Position X="29.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAACAAAQAAAgCAAAAAAAAAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Assets\_MyScripts\NPCManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NPCWayPoint" Collapsed="true">
+    <Position X="31" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAACAAAgAAAAABAAAIAAAABAAAAAI=</HashCode>
+      <FileName>Assets\_MyScripts\NPCWayPoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NpcWpMaster" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Assets\_MyScripts\NpcWpMaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OpenMenuByTag" Collapsed="true">
+    <Position X="18.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAAAAAAAAAAAAAAAIAAAAQAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\OpenMenuByTag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OutlineOnHover" Collapsed="true">
+    <Position X="20.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAABAAAAAEEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\OutlineOnHover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Patrol" Collapsed="true">
+    <Position X="22.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAABAABCIAAAAAIAAAAgAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Patrol.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseGame" Collapsed="true">
+    <Position X="24" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAEAAAAAAAIAQAAAAIAAAAAAAAAgBAAA=</HashCode>
+      <FileName>Assets\_MyScripts\PauseGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerStats">
+    <Position X="3.5" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="PlayerStats.ExpEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\PlayerStats.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="PlayerStats.UnlockEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\PlayerStats.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQwgIKgAGEAgIAABAACAAAAABfBAQAASRAAAASAEMQ=</HashCode>
+      <FileName>Assets\_MyScripts\PlayerStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Quarantine" Collapsed="true">
+    <Position X="27.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASEAAAIACABBAgABAIEGBAgAADAAAAIQAAAAGQACAA=</HashCode>
+      <FileName>Assets\_MyScripts\Quarantine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuarantineItem" Collapsed="true">
+    <Position X="29.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQAKAAgIBAgAAAAAAAAAABAAAAAAAEAEAACAA=</HashCode>
+      <FileName>Assets\_MyScripts\QuarantineItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuarantineUIController" Collapsed="true">
+    <Position X="31" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\QuarantineUIController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReverseNormals" Collapsed="true">
+    <Position X="17" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\ReverseNormals.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SaveManager" Collapsed="true">
+    <Position X="18.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACQgAQAAAAAAAAQBAAAgAAAIAAAAAIAAAE=</HashCode>
+      <FileName>Assets\_MyScripts\SaveManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShopScript" Collapsed="true">
+    <Position X="20.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAQACACQAAACACAAYAAAAUAAQBAhAAAAAIBAAA=</HashCode>
+      <FileName>Assets\_MyScripts\ShopScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkillCard" Collapsed="true">
+    <Position X="22.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQDABAAQCAAEBAAgAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SkillCard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SkillManager" Collapsed="true">
+    <Position X="24" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IA4AABAEACAAAAAAASCgAACJIAAAAAAAQAAAAAAAEEA=</HashCode>
+      <FileName>Assets\_MyScripts\SkillManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SliderValueToText" Collapsed="true">
+    <Position X="25.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAACAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SliderValueToText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SlideShow" Collapsed="true">
+    <Position X="27.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAACAQGAAAIAAAAAAAAAAAAAAAIQAEAACAIEA=</HashCode>
+      <FileName>Assets\_MyScripts\SlideShow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SmoothZoom" Collapsed="true">
+    <Position X="29.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAACAAAAAAAAAAIBoACAAAEAAAAAAAAAAAABA=</HashCode>
+      <FileName>Assets\_MyScripts\SmoothZoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sniper" Collapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAIAADAABAIAQAAUAAkAIAgAUQUAEFgAAABAEAg=</HashCode>
+      <FileName>Assets\_MyScripts\Sniper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SniperCam" Collapsed="true">
+    <Position X="31" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUABAAAACCAAAAAACAAAQgAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SniperCam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoloOnScreen" Collapsed="true">
+    <Position X="17" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgAAAAAAAAAAAAAAAAgAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SoloOnScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Soundtrack" Collapsed="true">
+    <Position X="18.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAACAABAAAAAAAAAABAABAAAAAAAAAAAAEAEA=</HashCode>
+      <FileName>Assets\_MyScripts\Soundtrack.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpawnableNPC" Collapsed="true">
+    <Position X="20.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAABAADCAAACAAIAAAAAAAAAAAgQAEAAAACBEAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SpawnableNPC.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpawnPointTimer" Collapsed="true">
+    <Position X="22.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAAAACAAAAAAAABAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SpawnPointTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecialAttack">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEABAAAAAAAAAAAAAAAAAECAMAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SpecialAttacInterf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpecialAttacks">
+    <Position X="9.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAQAEAAIACAAAAAAAAAAAAAACAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\SpecialAttacks.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StatsUI" Collapsed="true">
+    <Position X="25.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAEAACAAAAAAAAAABAAAIIAQAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\StatsUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Turret" Collapsed="true">
+    <Position X="27.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EISAAEAIACMABAAAAABwDQQAAAEFAAAJAACAAAgAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Turret.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TurretBlueprint" Collapsed="true">
+    <Position X="29.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\TurretBlueprint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UILookAtCameraY" Collapsed="true">
+    <Position X="31" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\UILookAtCameraY.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UIManager" Collapsed="true">
+    <Position X="17" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAACAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UpgradeSystem" Collapsed="true">
+    <Position X="18.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQYAAAAQCgAAAAAIACIAAAAAEMAAQQAAoAAAAAABAA=</HashCode>
+      <FileName>Assets\_MyScripts\UpgradeSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Victim" Collapsed="true">
+    <Position X="20.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQSgAAQISABgAAAAAAAAABAAACAAQAAAAAAABAAAEA=</HashCode>
+      <FileName>Assets\_MyScripts\Victim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveSpawner">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="WaveSpawner.SpawnState">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\WaveSpawner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="WaveSpawner.Wave" Collapsed="true">
+        <NestedTypes>
+          <Struct Name="WaveSpawner.Wave.wavePoint" Collapsed="true">
+            <TypeIdentifier>
+              <NewMemberFileName>Assets\_MyScripts\WaveSpawner.cs</NewMemberFileName>
+            </TypeIdentifier>
+          </Struct>
+        </NestedTypes>
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\_MyScripts\WaveSpawner.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>kARAAAAAACQAAAEAAAAAAIAAACACAAAERgBAAAAAAAE=</HashCode>
+      <FileName>Assets\_MyScripts\WaveSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BulletType">
+    <Position X="7.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAgAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MilestoneType" Collapsed="true">
+    <Position X="9.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAIAAAAAAIAAA=</HashCode>
+      <FileName>Assets\_MyScripts\EXPMilestone.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WayPointType" Collapsed="true">
+    <Position X="11.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\_MyScripts\NPCWayPoint.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

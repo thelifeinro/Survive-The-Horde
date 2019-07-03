@@ -25,7 +25,7 @@ public class SlideShow : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("pausing");
+       // Debug.Log("pausing");
         Time.timeScale = 0;
     }
 

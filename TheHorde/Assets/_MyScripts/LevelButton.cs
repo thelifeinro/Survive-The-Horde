@@ -33,7 +33,7 @@ public class LevelButton : MonoBehaviour
     public void LoadLevel()
     {
         //make loading screen
-        Debug.Log("Should be laoding scene " + lvl.scene.handle);
+        //Debug.Log("Should be laoding scene " + lvl.scene.handle);
 
         levelController.LoadLevel(lvl.scene.handle);
     }

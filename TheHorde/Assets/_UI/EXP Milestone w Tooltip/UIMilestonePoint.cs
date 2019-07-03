@@ -33,7 +33,7 @@ public class UIMilestonePoint : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     void UpgradeUnlocked(EXPMilestone ms)
     {
-        Debug.Log(gameObject.name + "Milestone point received upgradeunlocked");
+        //Debug.Log(gameObject.name + "Milestone point received upgradeunlocked");
         //if you are the unlocked upgrade, set button as interactible so it doesn't look greyed out
         if(ms.milestoneEXP == milestoneData.milestoneEXP)
             gameObject.GetComponent<Button>().interactable = true;

@@ -45,7 +45,7 @@ public class NPCManager : MonoBehaviour
             return;
         for (int i = 0; i < count; i++)
             Instantiate(GetRandomToSpawn(), spawnLocation.position, spawnLocation.rotation);
-        Debug.Log("NPC Manager spawned " + count);
+        //Debug.Log("NPC Manager spawned " + count);
     }
 
     private void RemoveNPCs(int count)
@@ -56,7 +56,7 @@ public class NPCManager : MonoBehaviour
         {
             Destroy(existingNPCs[i]);
         }
-        Debug.Log("NPC Manager removed " + count);
+        //Debug.Log("NPC Manager removed " + count);
     }
 
     private GameObject GetRandomToSpawn()

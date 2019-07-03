@@ -10,7 +10,6 @@ public class Victim : MonoBehaviour {
     public Animator animator;
     public NavMeshAgent nav;
     private Transform QuarantineDest;
-    public Patrol patrol;
     public bool isInfected = false;
     public bool targetedByEnemy = false;
     public Quarantine quarantine;
@@ -65,10 +64,6 @@ public class Victim : MonoBehaviour {
         public void Infected()
     {
         // add to infected player stats
-        if (patrol != null)
-        {
-            patrol.enabled = false;
-        }
         PlayerStats.instance.Infect(1);
         // set animation to running
         nav.SetDestination(QuarantineDest.position);

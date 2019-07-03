@@ -42,7 +42,7 @@ public class SwitchCamera : MonoBehaviour {
 
     void DoubleEXP()
     {
-        Debug.Log("Doubling EXP");
+        //Debug.Log("Doubling EXP");
         expAwarded *= 2;
         fbscript.awardedExp *= 2;
         SpawnEffect("X 2");
@@ -70,7 +70,7 @@ public class SwitchCamera : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("hit!");
+        //Debug.Log("hit!");
         if (collision.transform.tag != "Enemy")
         {
             rotatingBlade.GetComponent<rotateBlade>().disableRotation();

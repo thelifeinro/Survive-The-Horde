@@ -48,7 +48,7 @@ public class Turret : MonoBehaviour {
 
     public void UpgradeUnlocked(EXPMilestone mst)
     {
-        Debug.Log(gameObject.name + " upgrade event triggered");
+        //Debug.Log(gameObject.name + " upgrade event triggered");
         if(type == mst.type)
             UnlockLevel(mst.level);
     }

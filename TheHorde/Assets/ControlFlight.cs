@@ -28,11 +28,8 @@ public class ControlFlight : MonoBehaviour {
                 vertical = -0.3f;
             vertical = vertical * rotateSpeed;
             transform.Rotate(vertical, 0, 0);
-            //if (Input.GetKey(KeyCode.UpArrow))
             if (bladeMoving)
             {
-            //Move the Rigidbody forwards constantly at speed you define (the blue arrow axis in Scene view)
-            //m_Rigidbody.velocity = transform.forward * m_Speed;
             transform.Translate(transform.forward * m_Speed * Time.deltaTime, Space.World);
             }
     }

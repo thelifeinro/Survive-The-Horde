@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
         if (!SaveManager.IsSaveFile()){
             continueButton.interactable = false;
-            Debug.Log("Disabling continue button");
+            //Debug.Log("Disabling continue button");
         }
     }
 

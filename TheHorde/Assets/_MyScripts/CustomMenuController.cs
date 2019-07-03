@@ -23,7 +23,7 @@ public class CustomMenuController : MonoBehaviour
     {
         //if component is not in action, open it 
         if (HQ.IsInProgress()) {
-            Debug.Log("Mission in progress!");
+            //Debug.Log("Mission in progress!");
             animation.Play("MissionInProgress");
             // play deny animation
         }

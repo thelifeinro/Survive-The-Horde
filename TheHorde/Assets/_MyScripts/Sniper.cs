@@ -36,7 +36,7 @@ public class Sniper : SpecialAttack {
             //be able to shoot
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("pressed");
+                //Debug.Log("pressed");
                 Shoot();
                 Shake();
             }
@@ -66,7 +66,7 @@ public class Sniper : SpecialAttack {
         RaycastHit hit;
         if(Physics.Raycast(sniperCam.transform.position, sniperCam.transform.forward, out hit))
         {
-            Debug.Log("Hit " + hit.transform.name);
+            //Debug.Log("Hit " + hit.transform.name);
             if (hit.transform.tag == "Enemy")
             {
                 hit.transform.GetComponent<Enemy>().Die();
@@ -98,7 +98,7 @@ public class Sniper : SpecialAttack {
 
     void DoubleEXP()
     {
-        Debug.Log("Doubling EXP");
+        //Debug.Log("Doubling EXP");
         expAwarded *= 2;
         SpawnEffect("X 2");
     }

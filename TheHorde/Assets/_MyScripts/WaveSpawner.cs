@@ -66,7 +66,7 @@ public class WaveSpawner : MonoBehaviour {
             if (!EnemyIsAlive())
             {
                 WaveCompleted();
-                Debug.Log("Wave Completed!");
+                //.Log("Wave Completed!");
             }
             else
             {
@@ -146,7 +146,7 @@ public class WaveSpawner : MonoBehaviour {
         {
             GameObject instance = Instantiate(levelCompletePrefab, Vector3.zero, Quaternion.identity);
             //nextWave = 0;
-            Debug.Log("All waves complete. Looping");
+            //Debug.Log("All waves complete. Looping");
             //TO DO: SHOW LEVEL COMPLETE MESSAGE THEN DO NEXT LEVEL
             state = SpawnState.DONE;
             // let's calculate the awarded EXP

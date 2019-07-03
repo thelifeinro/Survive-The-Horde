@@ -46,14 +46,6 @@ public class SpawnableNPC : MonoBehaviour {
 
         if (!arrived)
         {
-                /*
-                Vector3 dir = target.position - transform.position;
-                transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
-
-                Quaternion lookRotation = Quaternion.LookRotation(dir);
-                Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * speed).eulerAngles;
-                gameObject.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-                */
             if (Vector3.Distance(transform.position, target.position) <= 0.9f)
             {
                 if (npcwp.type == WayPointType.Lean || npcwp.type == WayPointType.Sit)
@@ -77,7 +69,6 @@ public class SpawnableNPC : MonoBehaviour {
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0))
             {
                 //animation is over
-                
                 SetArriveAnimation(false);
                 npcwp.Free(gameObject);
                 GetNextWaypoint();

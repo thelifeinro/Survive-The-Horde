@@ -94,7 +94,7 @@ public class Node : MonoBehaviour {
         if(turret != null)
         {
             //UPGRADE
-            Debug.Log("Can't Build There! - DO THIS ON SCREEN");
+            //Debug.Log("Can't Build There! - DO THIS ON SCREEN");
             DrawRadius();
             upgradeManager.SetNode(gameObject);
             OpenUpgrader();
@@ -116,7 +116,7 @@ public class Node : MonoBehaviour {
     {
         if (PlayerStats.Money < blueprint.cost)
         {
-            Debug.Log("Not enough money to build that!");
+            //Debug.Log("Not enough money to build that!");
             return;
         }
 
@@ -134,7 +134,7 @@ public class Node : MonoBehaviour {
         //GameObject effect = (GameObject)Instantiate(buildManager.buildEffect, transform.position, Quaternion.identity);
         //Destroy(effect, 5f);
 
-        Debug.Log("Turret build!");
+        //Debug.Log("Turret build!");
     }
 
     public void SellTurret()
